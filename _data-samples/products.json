@@ -1,0 +1,13 @@
+{
+    "_id": "5d713995b721c3bb38c1f5d0",
+    "_idCategory": "5d241995b721c3bb38c1f5d0",
+    "user": "5d7a514b5d2c12c7449be045",
+    "email": "enroll@devworks.com",
+    "name": "Devworks Bootcamp",
+    "typeOfProduct": "Facial",
+    "brand": "Sesderma",
+    "brandCountry": "Spain",
+    "ingredientList": ["Water", "Caprylic/Capric Triglyceride", "Isohexadecane", "Glycerin", "Cetyl Alcohol", "Propylene Glycol", "Glyceryl Stearate", "Peg-100 Sterate", "Butyrospermum Parkii Butter Extract", "Aloe Barbadensis Leaf Juice", "Bisabolol", "Tocopheryl Acetate", "Retinyl Propionate", " Cyclopentasiloxane", "Triethanolamine", "Carbomer", "Dimethiconol", "Disodium EDTA", "Centella Asiatica Extract", "Helianthus Annuus Seed Oil"  ],
+    "description": "Devworks is a full stack JavaScript Bootcamp located in the heart of Boston that focuses on the technologies you need to get a high paying job as a web developer",
+    "approvedByAdmin": false
+  }

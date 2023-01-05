@@ -16,6 +16,10 @@ connectDB()
 
 const app = express();
 
+//body parser
+app.use(express.json());
+
+
 //loggers/ messages that allow you to return
 
 if (process.env.NODE_ENV === 'development') {

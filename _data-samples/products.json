@@ -7,7 +7,8 @@
     "typeOfProduct": "Facial",
     "brand": "Sesderma",
     "brandCountry": "Spain",
-    "ingredientList": ["Water", "Caprylic/Capric Triglyceride", "Isohexadecane", "Glycerin", "Cetyl Alcohol", "Propylene Glycol", "Glyceryl Stearate", "Peg-100 Sterate", "Butyrospermum Parkii Butter Extract", "Aloe Barbadensis Leaf Juice", "Bisabolol", "Tocopheryl Acetate", "Retinyl Propionate", " Cyclopentasiloxane", "Triethanolamine", "Carbomer", "Dimethiconol", "Disodium EDTA", "Centella Asiatica Extract", "Helianthus Annuus Seed Oil"  ],
+    "ingredientList": "Water Caprylic/Capric Triglyceride Isohexadecane Glycerin Cetyl Alcohol Propylene Glycol Glyceryl Stearate Peg-100 Sterate Butyrospermum Parkii Butter Extract Aloe Barbadensis Leaf Juice Bisabolol Tocopheryl Acetate Retinyl Propionate  Cyclopentasiloxane Triethanolamine Carbomer Dimethiconol Disodium EDTA Centella Asiatica Extract Helianthus Annuus Seed Oil" ,
     "description": "Devworks is a full stack JavaScript Bootcamp located in the heart of Boston that focuses on the technologies you need to get a high paying job as a web developer",
-    "approvedByAdmin": false
+    "approvedByAdmin": false,
+    "likes": 0
   }

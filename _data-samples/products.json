@@ -1,4 +1,5 @@
-{
+[
+  {
     "_id": "5d713995b721c3bb38c1f5d0",
     "_idCategory": "5d241995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045",
@@ -7,8 +8,55 @@
     "typeOfProduct": "Facial",
     "brand": "Sesderma",
     "brandCountry": "Spain",
-    "ingredientList": "Water Caprylic/Capric Triglyceride Isohexadecane Glycerin Cetyl Alcohol Propylene Glycol Glyceryl Stearate Peg-100 Sterate Butyrospermum Parkii Butter Extract Aloe Barbadensis Leaf Juice Bisabolol Tocopheryl Acetate Retinyl Propionate  Cyclopentasiloxane Triethanolamine Carbomer Dimethiconol Disodium EDTA Centella Asiatica Extract Helianthus Annuus Seed Oil" ,
+    "ingredients": "Water Caprylic/Capric Triglyceride Isohexadecane Glycerin Cetyl Alcohol Propylene Glycol Glyceryl Stearate Peg-100 Sterate Butyrospermum Parkii Butter Extract Aloe Barbadensis Leaf Juice Bisabolol Tocopheryl Acetate Retinyl Propionate  Cyclopentasiloxane Triethanolamine Carbomer Dimethiconol Disodium EDTA Centella Asiatica Extract Helianthus Annuus Seed Oil" ,
     "description": "Devworks is a full stack JavaScript Bootcamp located in the heart of Boston that focuses on the technologies you need to get a high paying job as a web developer",
     "approvedByAdmin": false,
     "likes": 0
+  },
+
+  {
+    "_id": "5d713a66ec8f2b88b8f830b8",
+    "_idCategory": "5d241995b721c3bb38c1f5d0",
+    "user": "5d7a514b5d2c12c7449be045",
+    "email": "enroll@devworks.com",
+    "name": "Serum",
+    "typeOfProduct": "Facial",
+    "brand": "laroche",
+    "brandCountry": "France",
+    "ingredients": "AQUA or WATER GLYCERIN ALCOHOL DENAT PROPYLENE GLYCOL PANTHENOL PENTYLENE GLYCOL DIMETHICONE PEG-6 CAPRYLIC or CAPRIC GLYCERIDES PPG-6-DECYLTETRADECETH-30 GLYCERYL ISOSTEARATE MADECASSOSIDE SODIUM HYALURONATE AMMONIUM POLYACRYLOYLDIMETHYL TAURATE DISODIUM EDTA HYDROLYZED HYALURONIC ACID CAPRYLYL GLYCOL CITRIC ACID XANTHAN GUM BUTYLENE GLYCOL TOCOPHEROL PHENOXYETHANOL PARFUM or FRAGRANCE" ,
+    "description": "a primera solución dermatocosmética de La Roche-Posay que repara1 y rellena de INMEDIATO y reduce significativamente las arrugas. Probado en piel sensible, incluso después de los procedimientos",
+    "approvedByAdmin": false,
+    "likes": 0
+  },
+
+  {
+    "_id": "5d725a037b292f5f8ceff787",
+    "_idCategory": "5d241995b721c3bb38c1f5d0",
+    "user": "5d7a514b5d2c12c7449be045",
+    "email": "enroll@devworks.com",
+    "name": "LIPIKAR",
+    "typeOfProduct": "Facial",
+    "brand": "laroche",
+    "brandCountry": "France",
+    "ingredients": "AQUA / WATER, BUTYROSPERMUM PARKII BUTTER / SHEA BUTTER, GLYCERIN, DIMETHICONE, NIACINAMIDE, CETEARYL ALCOHOL, BRASSICA CAMPESTRIS SEED OIL / RAPESEED SEED OIL, GLYCERYL STEARATE, AMMONIUM POLYACRYLOYLDIMETHYL TAURATE, PEG-100 STEARATE, PROPANEDIOL, OPHIOPOGON JAPONICUS ROOT EXTRACT, PEG-20 METHYL GLUCOSE SESQUISTEARATE, SORBITAN TRISTEARATE, DIMETHICONOL, SODIUM CHLORIDE, MANNOSE, COCO-BETAINE, DISODIUM EDTA, CAPRYLOYL GLYCINE, CAPRYLYL GLYCOL, VITREOSCILLA FERMENT, CITRIC ACID, MALTODEXTRIN, XANTHAN GUM, TOCOPHEROL, PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE" ,
+    "description": " Calma la piel de inmediato y reduce la comezón. Con su eficacia antirrecaídas, espacia los brotes. Nutre la piel y restaura la barrera cutánea. Formulada para bebés, niños y adultos con piel muy reseca.",
+    "approvedByAdmin": false,
+    "likes": 0
+  },
+
+  {
+    "_id": "5c8a1d5b0190b214360dc032",
+    "_idCategory": "5d241995b721c3bb38c1f5d0",
+    "user": "5d7a514b5d2c12c7449be045",
+    "email": "enroll@devworks.com",
+    "name": "EFFACLARDuo",
+    "typeOfProduct": "Facial",
+    "brand": "laroche",
+    "brandCountry": "France",
+    "ingredients": "AQUA / WATER, GLYCERIN, DIMETHICONE, ISOCETYL STEARATE, NIACINAMIDE, ISOPROPYL LAUROYL SARCOSINATE, SI L I CA, AMMONIUM POLYACRYLOYLDIMETHYL TAURATE, METHYL METHACRYLATE CROSSPOLYMER, POTASSIUM CETYL PHOSPHATE, SORBITAN OLEATE, ZINC PCA, G LY C ERY L STEARAT E S E, ISOHEXADECANE, SODIUM HYDROXIDE, M Y R I S T Y L M Y R I S T A T E, 2-OLEAMIDO-1,3-OCTADECANEDIOL, ALUMINUM STARCH OCTENYLSUCCINATE, MANNOSE, POLOXAMER 338, DISODIUM EDTA, CAPRYLOYL SALICYLIC ACID, CAPRYLYL G LYCOL, V ITREOSCILLA F E R M E N T, X A N T H A N G UM, POLYSORBATE 80, ACRYLAMIDE/SODIUM ACRYLOYLDIMETHYLTAURATE COPOLYMER, SALICYLIC ACID, PIROCTONE OLAMINE, PARFUM / FRAGRANCE" ,
+    "description": "es un producto completo con eficacia anti imperfecciones reforzada, que ayuda a aclarar rápidamente las manchas existentes, previene su reaparición y limita el riesgo de que queden marcas.",
+    "approvedByAdmin": false,
+    "likes": 0
   }
+
+]

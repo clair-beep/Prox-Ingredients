@@ -44,6 +44,7 @@ exports.createProduct = async (req, res, next) => {
 };
 
 
+
 exports.updateProduct = async (req, res, next) => {
     try {
         res

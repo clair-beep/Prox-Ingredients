@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const colors = require('colors');
+const errorHandler = require('./middleware/error');
 const connectDB = require('./config/db');
 
 //route files
@@ -47,8 +48,11 @@ app.use(express.static(__dirname + '/node_modules/bootstrap-icons/'));
 
 app.use(express.static(__dirname + '/node_modules/bootstrap/'));
 
+//Mount routers
 app.use('/v1/', getRoutes)
 app.use('/v1/', productRoutes)
+
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 4000
 

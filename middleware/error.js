@@ -23,10 +23,7 @@ const errorHandler = (err, req, res, next) => {
     //Mongoose validatio error 
     if (err.name === 'ValidationError') {
 
-        const message = {};
-        Object.values(err.errors).forEach(val => {
-            message[val.path] = val.message;
-        });
+        const message = Object.values(err.errors).map((val, index) => `${index + 1}. ${val.path}: ${val.message}`).join(";");
         error = new ErrorResponse(message, 400);
     }
 

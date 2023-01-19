@@ -71,7 +71,7 @@ const ProductSchema = new mongoose.Schema({
 
 //Create product slug from the name
 ProductSchema.pre('save', function (next) {
-    console.log(('Slugify ran', this.name))
+    // console.log(('Slugify ran', this.name))
     this.slug = slugify(this.name, { lower: true });
     next();
 });

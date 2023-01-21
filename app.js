@@ -11,7 +11,7 @@ const getRoutes = require('./routes/index');
 const productRoutes = require('./routes/products');
 
 //Use .env file in config folder
-dotenv.config({ path: "./config/.env" });
+dotenv.config({ path: "./config/config.env" });
 
 connectDB()
 

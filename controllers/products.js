@@ -4,9 +4,46 @@ const Product = require('../models/Product');
 
 exports.getProducts = asyncHandler(async (req, res, next) => {
 
-    const products = await Product.find();
+    let query;
 
-    res.status(200).json({ success: true, count: products.length, data: products });
+    //Copy req.query
+    const reqQuery = { ...req.query };
+
+    //Fields to exclude
+    const removeFields = ['select', 'sort'];
+
+    //Loop over removeFields and delete them from reqQuery
+    removeFields.forEach(param => delete reqQuery[param]);
+
+    //Create query string
+    let queryStr = JSON.stringify(reqQuery);
+
+    //Finding rescource 
+    query = Product.find(JSON.parse(queryStr));
+
+    //Select Fields
+    if (req.query.select) {
+        const fields = req.query.select.split(',').join(' ');
+        query = query.select(fields);
+        // console.log(fields)
+
+    }
+
+    //Sort
+    if (req.query.sort) {
+        const sortBy = req.query.sort.split(',').join(' ');
+        query = query.sort(sortBy);
+    } else {
+        query = query.sort('name');;
+    }
+
+
+    //Executing query 
+    const products = await query;
+
+    res
+        .status(200)
+        .json({ success: true, count: products.length, data: products });
 
 });
 

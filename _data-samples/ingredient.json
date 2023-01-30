@@ -3,5 +3,11 @@
 		"title": "something",
 		"description": "something",
 		"references": "document"
+	},
+
+	{
+		"title": "Cyclomethicone ",
+		"description": "Ciclometicono (mezcla) y los siloxanos cíclicos de longitud de cadena específica (n = 4-7) revisados en esta evaluación de seguridad son compuestos de polisiloxano dimetílico cíclico. Estos ingredientes tienen en común la función de agente acondicionador de la piel / cabello. Se asoció una absorción percutánea mínima con estos ingredientes y los datos disponibles no sugieren potencial de irritación o sensibilización de la piel. Además, no es probable que la exposición dermal a estos ingredientes desde cosméticos cause una exposición sistémica significativa. El Panel de Expertos en Revisión de Ingredientes Cosméticos concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	}
 ]

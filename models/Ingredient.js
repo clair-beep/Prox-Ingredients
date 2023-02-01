@@ -6,6 +6,7 @@ const IngredientSchema = new mongoose.Schema({
 		trim: true,
 		required: [true, 'Please add a ingredient title']
 	},
+
 	description: {
 		type: String,
 		required: [true, 'Please add a description']

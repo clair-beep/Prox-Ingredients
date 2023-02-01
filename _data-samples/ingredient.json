@@ -5,6 +5,11 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
+		"title": "Ácido Cítrico",
+		"description": "El Panel de Expertos CIR evaluó la seguridad del ácido cítrico, 12 sales citratas inorgánicas y 20 ésteres de citrato alquílicos cuando se utilizan en cosméticos, concluyendo que estos ingredientes son seguros en las prácticas actuales de uso y concentración. Se informa que el ácido cítrico funciona como ajustador de pH, agente quelante o ingrediente fragante. Algunas de las sales también se informan que funcionan como agentes quelantes, y un número de citratos se informa que funcionan como agentes acondicionadores de la piel, pero también se informan otras funciones. El Panel revisó los datos disponibles de animales y clínicos, pero debido a que el ácido cítrico, el citrato de calcio, el citrato férrico, el citrato de manganeso, el citrato de potasio, el citrato de sodio, el citrato diamonium, el citrato de isopropilo, el citrato estearílico y el citrato trietílico son generalmente reconocidos como aditivos alimentarios directos seguros, la exposición dérmica fue el enfoque para estos ingredientes en este análisis de seguridad de ingredientes cosméticos.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
 		"title": "Acrylates/Vinyl Isodecanoate Crosspolymerthing",
 		"description": "El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) evaluó la seguridad de 126 copolímeros de acrilatos; 56 de estos ingredientes fueron revisados previamente por el Panel y 70 son revisados aquí por primera vez. Muchos de estos ingredientes se informa que tienen varias funciones en cosméticos, siendo la función de formador de película la más comúnmente reportada para los miembros de esta familia; muchos de los ingredientes también pueden funcionar como agentes que aumentan la viscosidad. El Panel revisó los nuevos datos relevantes, incluida la frecuencia y concentración de uso, y consideró los datos de los informes previos del CIR. El Panel concluyó que los 126 copolímeros de acrilatos nombrados en este informe son seguros en cosméticos en las prácticas actuales de uso y concentración descritas en la evaluación de seguridad cuando se formulan para no ser irritantes.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
@@ -12,39 +17,25 @@
 
 	{
 		"title": "Benzyl Alcohol",
-		"description": "something",
+		"description": "El Alcohol bencílico funcionan como ingredientes fragantes, pesticidas, ajustadores de pH, conservantes, solventes y/o agentes que disminuyen la viscosidad en productos cosméticosSe puede encontrar naturalmente en frutas y tés, pero también puede ser fabricado sintéticamente. Sin importar su origen, en pequeñas cantidades (hasta un 1%) es un buen y suave conservante. Debe combinarse con otros buenos conservantes, como el sorbato de potasio, para ser lo suficientemente amplio de espectro.En grandes cantidades, puede ser un irritante de la piel.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
-		"description": "something",
+		"title": "Caprylyl Glycol",
+		"description": "El Caprylyl glycol y otros glicoles relacionados se utilizan principalmente como agentes acondicionadores de piel y cabello y agentes de viscosidad en productos cosméticos, y el Caprylyl glycol y el glicol pentileno también funcionan como conservantes cosméticos. El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) señaló que, aunque estos ingredientes se absorben por vía dérmica, los datos de modelado predecían una disminución de la penetración cutánea de los glicoles de cadena más larga. Debido a que los datos de toxicidad oral negativos en los glicoles de cadena más corta y los datos de genotoxicidad respaldan la seguridad de los glicoles revisados en este análisis de seguridad, el Panel concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración descritas en este análisis de seguridad.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
-		"description": "something",
+		"title": "C13-14 Isoparaffin",
+		"description": "En este análisis de seguridad se revisa la seguridad de los isoparafínicos como se utilizan en productos cosméticos. Estos ingredientes funcionan principalmente como disolventes y también funcionan como emolientes en el rango de concentración del 0001% al 90%. El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) ha revisado los datos relevantes de animales y clínicos y ha concluido que estos ingredientes son seguros en las prácticas actuales de uso y concentración descritas en este análisis de seguridad.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
-		"description": "something",
+		"title": "Cetil Hidroxietilcelulosa",
+		"description": "Un ingrediente auxiliar derivado de celulosa que se crea al unir una molécula que parece ser rechazada de una masa de agua al una molécula que tiene afinidad al agua, Hidroxietilcelulosa. Lo resultante, Cetil Hidroxietilcelulosa, también es un espesante pero con algunas propiedades superficiales activas (ya que parte de la molécula es amante del agua y parte es amante del aceite). Gracias a sus propiedades superficialmente activas, también funciona como estabilizador de emulsión.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
-	{
-		"title": "something",
-		"description": "something",
-		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
-	},
-	{
-		"title": "something",
-		"description": "something",
-		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
-	},
-	{
-		"title": "something",
-		"description": "something",
-		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
-	},
+
 	{
 		"title": "Cyclomethicone ",
 		"description": "Ciclometicono (mezcla) y los siloxanos cíclicos de longitud de cadena específica (n = 4-7) revisados en esta evaluación de seguridad son compuestos de polisiloxano dimetílico cíclico. Estos ingredientes tienen en común la función de agente acondicionador de la piel / cabello. Se asoció una absorción percutánea mínima con estos ingredientes y los datos disponibles no sugieren potencial de irritación o sensibilización de la piel. Además, no es probable que la exposición dermal a estos ingredientes desde cosméticos cause una exposición sistémica significativa. El Panel de Expertos en Revisión de Ingredientes Cosméticos concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración.",

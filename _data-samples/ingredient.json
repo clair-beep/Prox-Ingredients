@@ -10,6 +10,11 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
+		"title": "Ácido Dehidroacético",
+		"description": "El Ácido Dehidroacéticose utilizan como conservantes en formulaciones cosméticas en concentraciones de 1,0 por ciento o menos. Es un ingrediente auxiliar que ayuda a que los productos se conserven por más tiempo. Funciona principalmente contra los hongos y solo tiene un efecto más suave contra las bacterias.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
 		"title": "Acrylates/Vinyl Isodecanoate Crosspolymerthing",
 		"description": "El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) evaluó la seguridad de 126 copolímeros de acrilatos; 56 de estos ingredientes fueron revisados previamente por el Panel y 70 son revisados aquí por primera vez. Muchos de estos ingredientes se informa que tienen varias funciones en cosméticos, siendo la función de formador de película la más comúnmente reportada para los miembros de esta familia; muchos de los ingredientes también pueden funcionar como agentes que aumentan la viscosidad. El Panel revisó los nuevos datos relevantes, incluida la frecuencia y concentración de uso, y consideró los datos de los informes previos del CIR. El Panel concluyó que los 126 copolímeros de acrilatos nombrados en este informe son seguros en cosméticos en las prácticas actuales de uso y concentración descritas en la evaluación de seguridad cuando se formulan para no ser irritantes.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
@@ -42,58 +47,277 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"title": "Cyclopentasiloxane",
+		"description": "Cyclopentasiloxane (mezcla) y los siloxanos cíclicos específicos de longitud de cadena (n = 4-7) revisados en esta evaluación de seguridad son compuestos de polisiloxano dimetílico cíclico. Estos ingredientes tienen en común la función de agente acondicionador de la piel / cabello. Se asoció una absorción percutánea mínima con estos ingredientes y los datos disponibles no sugieren potencial de irritación o sensibilización de la piel. Además, no es probable que la exposición dérmica a estos ingredientes de los cosméticos cause una exposición sistémica significativa. El Panel de Expertos en Revisión de Ingredientes Cosméticos concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+
+	{
+		"englishTitle": "Dimethicone",
+		"spanishTitle": ""
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Dimethicone Crosspolymer",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Dimethylmethoxy Chromanol",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Diaminopropionoyl Tripeptide-33",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Glycerin",
+		"spanishTitle": "",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Glyceryl Caprylate",
+		"spanishTitle": "",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Glycine Soja Oil",
+		"spanishTitle": "",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Glycolic Acid",
+		"spanishTitle": "",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Heptapeptide-15 Palmitate",
+		"spanishTitle": "",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Hydrolyzed
+		"spanishTitle": "", Yeast Extract",
 		"description": "something",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "something",
+		"englishTitle": "Imidazolidinyl Urea"
+		"spanishTitle": "",,
 		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Lactic Acid",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Laureth-23",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Laureth-4",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Laureth-7",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Lecithin ",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Lippia Alba L
+		"spanishTitle": "",eaf/Stem Oil",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Lippia Origa
+		"spanishTitle": "",noides Leaf/Flower/Stem Oil",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+
+	{
+		"spanishTitle": "",
+		"englishTitle": "Lysine HCL",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},	{
+		"englishTitle": "Methyl Gluc
+		"spanishTitle": "",ose Sesquistearate",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Myrciaria D
+		"spanishTitle": "",ubia Fruit Extract",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Niacin",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "PEG-20 Methyl Glucose Sesquistearate",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "PEG-40 Hydrogenated Castor Oil",
+		"description": "something",
+		"spanishTitle": "",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Pentaerythrityl Tetradi-t-Butyl
+		"spanishTitle": "", Hydroxyhydrocinnamate",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Phenethyl Alcohol",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Phenoxye
+		"spanishTitle": "",thanol",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Phenylpropanol",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Phytolacca Bogotensis Leaf Extra
+		"spanishTitle": "",ct",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Polyacrylamide",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Polyglucuronic Acid
+		"spanishTitle": "",",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Polyvinyl Alcoho
+		"spanishTitle": "",l",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Potassium Sorbat
+		"spanishTitle": "",e",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Propanediol",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Rosmarinus Offic
+		"spanishTitle": "",inalis Leaf Oil",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Salvia Miltiorrhiza L
+		"spanishTitle": "",eaf Extract",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Sesamum Indicum See
+		"spanishTitle": "",d Oil",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Sorbic Acid",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Tibouchina Le
+		"spanishTitle": "",pidota Bark/Flower/Leaf Extract",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Tocopherol Acetate",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Triethanolamine",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Tripeptide-9 Citrulline",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Ubiquinone",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Water (Aqua)",
+		"spanishTitle": "",
+		"description": "something",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},	{
+		"englishTitle": "Xanthan Gum",
+		"description": "something",
+		"spanishTitle": "",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	}
+	"spanishTitle": "",
+
 ]

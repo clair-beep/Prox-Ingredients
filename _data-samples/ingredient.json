@@ -158,6 +158,12 @@
 		"references": "https://pubmed.ncbi.nlm.nih.gov/"
 	},
 	{
+		"englishTitle": "Hydroxyethyl Urea",
+		"spanishTitle": "Urea Hidroxietil",
+		"description": "Urea Hidroxietil es un humectante y emoliente utilizado en productos de cuidado personal, como cremas y lociones. Tiene una consistencia líquida y es un ingrediente común en productos diseñados para hidratar la piel. Se utiliza para mejorar la retención de humedad en la piel y para suavizar y suavizar la piel.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
 		"englishTitle": "Imidazolidinyl Urea",
 		"spanishTitle": "Imidazolidinil Urea ",
 		"description": " Imidazolidinyl Urea es un conservante utilizado en cosméticos, productos de cuidado personal y productos de cuidado de la piel para prevenir el crecimiento de bacterias y prolongar la vida útil del producto. Se utiliza comúnmente en hidratantes, cremas, lociones, champús y acondicionadores.",
@@ -167,6 +173,18 @@
 		"englishTitle": "Lactic Acid",
 		"spanishTitle": "Ácido Láctico",
 		"description": "El Ácido Láctico es un ácido alfa-hidroxi (AHA) que se deriva del leche y frutas como manzanas y tomates. Se utiliza comúnmente en cosméticos y productos de cuidado personal como exfoliante, ingrediente para iluminar y humectante.En maquillaje y productos faciales, el ácido láctico se utiliza para mejorar la textura y el tono de la piel. Funciona rompiendo los vínculos entre las células muertas de la piel, permitiéndolas ser fácilmente eliminadas, revelando una piel más brillante y suave. El ácido láctico también se utiliza como humectante, ayudando a retener la humedad en la piel y mantenerla hidratada.En productos de cuidado de la piel, el ácido láctico a menudo se utiliza como una alternativa suave a otros AHAs como el ácido glicólico. Se puede encontrar en productos como peelings faciales, tónicos y sueros. Cuando se utiliza en concentraciones más altas y con un pH adecuado, también puede ayudar a reducir la apariencia de líneas finas y arrugas, mejorar la elasticidad de la piel y unificar el tono de la piel.En general, el ácido láctico es un ingrediente versátil que puede proporcionar una variedad de beneficripciones para la piel, lo que lo convierte en una opción popular en una variedad de productos cosméticos y de cuidado personal.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Lactitol",
+		"spanishTitle": "Lactitol",
+		"description": "Lactitol es un edulcorante artificial utilizado en productos alimenticios y de cuidado personal. Se utiliza comúnmente como un reemplazo del azúcar en productos bajos en calorías y sin azúcar. Lactitol es soluble en agua y tiene un sabor dulce suave.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Lauremidopropyl Betaine",
+		"spanishTitle": "N/A",
+		"description": "Lauremidopropyl Betaine es un tensioactivo utilizado en productos de cuidado personal, como champús y acondicionadores. Es un ingrediente común en productos diseñados para suavizar y proteger el cabello. Tiene una consistencia líquida y es conocido por su capacidad para mejorar la suavidad y la manejabilidad del cabello.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
@@ -194,7 +212,7 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"englishTitle": "Lippia Alba L",
+		"englishTitle": "Lippia Alba Leaf",
 		"spanishTitle": "Aceite de hoja/tallo de Lippia Alba L",
 		"description": "Lippia Alba L es una especie de planta conocida comúnmente como verbena o hierba limón. El aceite obtenido de sus hojas y tallos se utiliza en productos de cuidado personal y cosméticos por su aroma refrescante e invigorante.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
@@ -219,8 +237,8 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"englishTitle": "Myrciaria D",
-		"spanishTitle": "Myrciaria floribunda",
+		"englishTitle": " Myrciaria Dubia Fruit Extract",
+		"spanishTitle": "Myrciaria floribunda extracto de fruta",
 		"description": "El extracto de fruta de uva es un ingrediente natural que se obtiene de las uvas de la planta Myrciaria. Se utiliza en productos de cuidado personal para mejorar la apariencia y la salud de la piel, así como para proporcionar antioxidantes y otros beneficubrimientos benéficos para la piel.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
@@ -230,6 +248,12 @@
 		"description": "La niacina es una vitamina B soluble en agua que se utiliza comúnmente en productos de cuidado personal para mejorar la apariencia y la salud de la piel. También se conoce como vitamina B3.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
+	{
+		"englishTitle": "Panthenol",
+		"spanishTitle": "Pantenol",
+		"description": "Panthenol es una forma de vitamina B5 utilizada en productos de cuidado personal, como cremas y lociones. Tiene una consistencia líquida y es conocido por su capacidad para hidratar y suavizar la piel. Además, se cree que ayuda a mejorar la elasticidad y la firmeza de la piel.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	}
 	{
 		"englishTitle": "PEG-20 Methyl Glucose Sesquistearate",
 		"spanishTitle": "N/A",
@@ -291,13 +315,19 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
+        "englishTitle": "Propylene Glycol",
+        "spanishTitle": "Glicol de Propileno",
+        "description": "El glicol de propileno es un líquido incoloro e inodoro utilizado como humectante y conservante en productos de cuidado personal y de belleza, como cremas, lociones, maquillaje y productos para el cabello. También se utiliza como ingrediente en la fabricación de productos alimenticios y farmacéuticos. Es soluble en agua y tiene una consistencia líquida.",
+        "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+    },
+	{
 		"englishTitle": "Propanediol",
 		"spanishTitle": "Propanodiol",
 		"description": "El propanodiol es un ingrediente utilizado como humectante en productos de cuidado personal y cosméticos. Tiene una consistencia líquida y es soluble en agua. Se encuentra en productos como cremas, lociones, productos para el cabello y productos para la piel. Es un sustituto sostenible del glicol propileno, un ingrediente similar que a menudo se encuentra en productos de cuidado personal y cosméticos.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"englishTitle": "Rosmarinus Offic",
+		"englishTitle": "Rosmarinus Officinalis Leaf Oil",
 		"spanishTitle": "Romero",
 		"description": "El romero es una hierba aromática que se utiliza en productos de cuidado personal y cosméticos como aceite esencial y extracto. Tiene propiedades antioxidantes, antibacterianas y antiinflamatorias, lo que lo hace útil para productos para la piel y para el cabello. Se puede encontrar en productos como lociones, cremas, champús y productos de baño.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
@@ -309,11 +339,29 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
+        "englishTitle": "Sesame Indicum Seed Oil",
+        "spanishTitle": "Aceite de Semilla de Sésamo Indicum",
+        "description": "El aceite de semilla de sésamo indicum es un aceite vegetal obtenido de las semillas de sésamo. Es utilizado como ingrediente en productos de cuidado personal y de belleza, como cremas, lociones y aceites para el cuerpo. Tiene propiedades hidratantes y emolientes, y se utiliza para suavizar y proteger la piel. El aceite de sésamo indicum es de color amarillo claro y tiene una consistencia líquida.",
+        "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+    },
+	{
 		"englishTitle": "Sesamum Indicum Seed",
 		"spanishTitle": "Sésamo",
 		"description": "La semilla de sésamo es un ingrediente comúnmente utilizado en la elaboración de productos de belleza y cuidado personal, como aceites y cremas. Es rica en ácidos grasos esenciales y antioxidantes, por lo que se considera un ingrediente hidratante y protectora para la piel. La textura de la semilla de sésamo es suave y aceitosa, y se utiliza a menudo como emoliente en formulaciones cosméticas.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
+	{
+        "englishTitle": "Sodium BenzoTriazolyl Butylphenol Sulfonate",
+        "spanishTitle": "BenzoTriazolilo Butilfenol Sulfonato de Sodio",
+        "description": "El benzoTriazolilo butilfenol sulfonato de sodio es un tensoactivo utilizado en productos de cuidado personal, como champús, acondicionadores y geles de ducha. Actúa como surfactante, ayudando a dispersar las suciedades y mantener la piel y el cabello limpios. También se utiliza como ingrediente en productos de limpieza y cuidado doméstico.",
+        "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+    },
+	{
+        "englishTitle": "Sodium Cocoyl Glutamate",
+        "spanishTitle": "Glutamato de Cocoil de Sodio",
+        "description": "El glutamato de cocoil de sodio es un tensoactivo suave utilizado en productos de cuidado personal y de belleza, como champús, acondicionadores, geles de ducha y cremas corporales. Actúa como surfactante, ayudando a dispersar las suciedades y mantener la piel y el cabello limpios. También se utiliza como ingrediente en productos de limpieza y cuidado doméstico.",
+        "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+    },
 	{
 		"englishTitle": "Sorbic Acid",
 		"spanishTitle": "Ácido Sorbico",

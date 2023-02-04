@@ -49,6 +49,12 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
+        "englishTitle": "Carrageenan",
+        "spanishTitle": "Carragenano",
+        "description": "Carrageenan es una sustancia gelatinosa obtenida a partir de algas rojas y se utiliza como un agente espesante y estabilizante en productos alimentarios, cosméticos y farmacéuticos. Es comúnmente utilizado en productos de cuidado bucal, cremas y lociones, y es una alternativa natural a los productos químicos sintéticos. La consistencia es viscosa y pegajosa.",
+        "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+    },
+	{
 		"englishTitle": "C13-14 Isoparaffin",
 		"spanishTitle": "C13-14 Isoparaffin",
 		"description": "En este análisis de seguridad se revisa la seguridad de los isoparafínicos como se utilizan en productos cosméticos. Estos ingredientes funcionan principalmente como disolventes y también funcionan como emolientes en el rango de concentración del 0001% al 90%. El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) ha revisado los datos relevantes de animales y clínicos y ha concluido que estos ingredientes son seguros en las prácticas actuales de uso y concentración descritas en este análisis de seguridad.",
@@ -66,6 +72,12 @@
 		"description": "El Panel de Expertos CIR evaluó la seguridad del ácido cítrico, 12 sales citratas inorgánicas y 20 ésteres de citrato alquílicos cuando se utilizan en cosméticos, concluyendo que estos ingredientes son seguros en las prácticas actuales de uso y concentración. Se informa que el ácido cítrico funciona como ajustador de pH, agente quelante o ingrediente fragante. Algunas de las sales también se informan que funcionan como agentes quelantes, y un número de citratos se informa que funcionan como agentes acondicionadores de la piel, pero también se informan otras funciones. El Panel revisó los datos disponibles de animales y clínicos, pero debido a que el ácido cítrico, el citrato de calcio, el citrato férrico, el citrato de manganeso, el citrato de potasio, el citrato de sodio, el citrato diamonium, el citrato de isopropilo, el citrato estearílico y el citrato trietílico son generalmente reconocidos como aditivos alimentarios directos seguros, la exposición dérmica fue el enfoque para estos ingredientes en este análisis de seguridad de ingredientes cosméticos.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
+	{
+        "englishTitle": "Copper Palmitoyl Heptapeptide-14",
+        "spanishTitle": "Palmitoil Heptapeptido de Cobre-14",
+        "description": "Copper Palmitoyl Heptapeptide-14 es un peptido sintético utilizado en productos de cuidado de la piel para mejorar la apariencia de arrugas y líneas finas. Se encuentra comúnmente en productos anti-envejecimiento y de rejuvenecimiento de la piel, y se cree que ayuda a estimular la producción de colágeno y a proteger la piel de los daños ambientales. La consistencia es líquida y suave.",
+        "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+    },
 	{
 		"englishTitle": "Cyclomethicone",
 		"spanishTitle": "Ciclometicona",
@@ -145,6 +157,12 @@
 		"description": "Ácido Glicólico es un tipo de ácido alfa-hidroxi (AHA) que se utiliza comúnmente en la industria cosmética y de cuidado de la piel. Se deriva del azúcar de caña y tiene un tamaño molecular pequeño, lo que le permite penetrar en la piel fácilmente y exfoliar eficazmente las células muertas de la piel. El Ácido Glicólico se utiliza comúnmente en una variedad de productos de cuidado de la piel, incluyendo: limpiadores exfoliantes, peeling químico, Serums y cremas, máscaras, tónicos.Suele usarse en concentraciones de 5-15% en productos de cuidado de la piel y debe usarse con moderación. Es importante usar un protector solar de amplio espectro cuando se utilizan productos que contienen ácido glicólico, ya que puede aumentar la sensibilidad de la piel al sol.",
 		"references": "https://www.scimagojr.com/"
 	},
+	{
+        "englishTitle": "Hexylene Glycol",
+        "spanishTitle": "Glicol de Hexileno",
+        "description": "Hexylene Glycol es un alcohol utilizado como humectante y agente de dispersión en productos cosméticos y de cuidado personal. También se utiliza como solubilizante y para ayudar a mejorar la penetración de otros ingredientes activos en la piel. Se encuentra comúnmente en productos de cuidado de la piel, maquillaje y productos capilares. La consistencia es líquida y transparente.",
+        "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+    },
 	{
 		"englishTitle": "Heptapeptide-15 Palmitate",
 		"spanishTitle": "N/A",
@@ -231,11 +249,18 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"englishTitle": "Methyl Gluc",
+		"englishTitle": "Methyl Glucose",
 		"spanishTitle": "Metil Glucosa",
 		"description": "Metil Glucosa es un compuesto que se utiliza comúnmente en productos de cuidado personal como cremas y lociones. Actúa como un emoliente y humectante para mejorar la apariencia y la textura de la piel.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
+	{
+		"englishTitle": "Methyl Glucose Sesquistearate",
+		"spanishTitle": "Methyl Glucosa Sesquistearato",
+		"description": "Methyl Glucose Sesquistearate es un emulgente y espesante comúnmente utilizado en productos de cuidado personal y cosméticos. Es una mezcla de glicerol y ácido esteárico y se utiliza para mejorar la textura y estabilidad de los productos. También se puede encontrar en cremas hidratantes, lociones corporales, productos para el cabello y otros productos similares. Es un ingrediente suave y no irritante, por lo que es una buena opción para pieles sensibles.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	
 	{
 		"englishTitle": " Myrciaria Dubia Fruit Extract",
 		"spanishTitle": "Myrciaria floribunda extracto de fruta",
@@ -282,6 +307,12 @@
 		"englishTitle": "Phenoxyethanol",
 		"spanishTitle": "Fenoxietanol",
 		"description": "El fenoxietanol es un conservante utilizado en productos de cuidado personal y cosméticos para prevenir la contaminación bacteriana. Se considera seguro para su uso en productos de cuidado personal y ha sido aprobado por la FDA. Se encuentra comúnmente en productos como lociones, cremas y productos para el cuidado de la piel.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Phenylpropanol",
+		"spanishTitle": "Phenylpropanol",
+		"description": "El Phenylpropanol es un conservante y estabilizante comúnmente utilizado en productos de cuidado personal y de belleza, como lociones, cremas y productos para el cabello. Tiene un olor suave y fresco y es efectivo para prevenir el crecimiento de bacterias y hongos. La consistencia es líquida y transparente.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
@@ -369,6 +400,24 @@
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
+		"englishTitle": "Sodium Laureoyl Sarcosinate",
+		"spanishTitle": "Sodio Laureoil Sarcosinato",
+		"description": "El sodio laureoil sarcosinato es un tensioactivo suave utilizado en productos de cuidado personal, como champús y acondicionadores. Es un surfactante aniónico que ayuda a mantener la humedad en la piel y el cabello, y su consistencia es líquida. Se utiliza en productos para suavizar la piel y mejorar la textura y la apariencia del cabello.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Thermus Thermophillus Ferment",
+		"spanishTitle": "Fermento de Thermus Thermophillus",
+		"description": "El fermento de Thermus Thermophillus es un ingrediente activo obtenido a partir de una bacteria termófila y se utiliza en productos de cuidado de la piel y del cabello para mejorar su apariencia y textura. También se cree que tiene propiedades antioxidantes y antiinflamatorias. La consistencia es líquida y viscosa.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Tibouchina Lepidota Bark/Flower/Leaf Extract",
+		"spanishTitle": "Extracto de Corteza/Flor/Hoja de Tibouchina Lepidota",
+		"description": "El extracto de corteza/flor/hoja de tibouchina lepidota se encuentra en productos de cuidado de la piel y el cabello. Esta planta es una fuente rica de antioxidantes y nutrientes que pueden mejorar la salud de la piel y el cabello. Es un extracto líquido que se utiliza en productos para proteger la piel y el cabello de los daños ambientales y mejorar su apariencia y salud.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
 		"englishTitle": "Tibouchina Leucocephala",
 		"spanishTitle": "N/A",
 		"description": "Tibouchina Leucocephala es un ingrediente de origen natural que se utiliza en productos de belleza y cuidado personal, como cremas, lociones y productos capilares. Se cree que tiene propiedades antioxidantes y antiinflamatorias, lo que lo hace útil para calmar y proteger la piel y el cabello. La consistencia de Tibouchina Leucocephala es suave y se encuentra en forma de extracto en las formulaciones cosméticas.",
@@ -378,6 +427,12 @@
 		"englishTitle": "Tocopherol Acetate",
 		"spanishTitle": "Acetato de Tocoferol",
 		"description": "El Acetato de Tocoferol es una forma sintética de la vitamina E que se utiliza comúnmente en productos de belleza y cuidado personal, como cremas, lociones y productos para el cabello. Se conoce por sus propiedades antioxidantes e antiinflamatorias, que lo hacen útil para proteger la piel y el cabello del daño causado por factores ambientales como los rayos UV y la contaminación. El Acetato de Tocoferol se utiliza en pequeñas cantidades en formulaciones cosméticas, y puede ayudar a mejorar la apariencia y la salud general de la piel. Cuando se utiliza en productos de cuidado de la piel, el Acetato de Tocoferol puede ayudar a nutrir, hidratar y proteger la piel del daño y el envejecimiento prematuro."
+	},
+	{
+		"englishTitle": "Tributyl Citrate",
+		"spanishTitle": "Tributil Citrato",
+		"description": "El tributil citrato es un conservante y agente plasticizante utilizado en productos de cuidado personal, como lociones, cremas y productos de maquillaje. Es un líquido incoloro y se utiliza para mejorar la consistencia de los productos y ayudar a prolongar su vida útil.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
 		"englishTitle": "Triethanolamine",
@@ -407,6 +462,12 @@
 		"englishTitle": "Xanthan Gum",
 		"spanishTitle": "Goma de Xanthan",
 		"description": "La goma de xanthan es un ingrediente que se utiliza comúnmente en productos de cuidado personal y cosméticos como emulsionantes y estabilizantes. Se obtiene a partir de una bacteria y se añade a productos líquidos para mejorar su consistencia y textura. También se utiliza como un espesante y un gelificante para mejorar la aplicación de los productos.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Xylitol",
+		"spanishTitle": "Xilitol",
+		"description": "El xilitol es un edulcorante natural utilizado en productos de cuidado personal, como enjuagues bucales y productos para el cuidado dental. Es un polvo blanco cristalino con un sabor dulce similar al azúcar. Se utiliza como edulcorante y humectante para mejorar la sensación en la boca y ayudar a mantener la humedad en la piel y el cabello.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	}
 ]

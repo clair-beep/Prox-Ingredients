@@ -1,57 +1,95 @@
 [
 	{
-		"title": "Ácido Benzoico",
+		"englishTitle": "2-Bromo-2-Nitropropane-1",
+		"spanishTitle": "2-Bromo-2-Nitropropano-1",
+		"description": "2-Bromo-2-Nitropropane-1 es un conservante utilizado en productos de cuidado personal y de belleza. Es eficaz contra una amplia gama de gérmenes y moho, lo que lo hace ideal para productos que requieren una larga vida útil y una buena preservación. Está disponible en forma líquida y se utiliza en concentraciones bajas para evitar la proliferación de microorganismos.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Ácido Benzoico",
+		"spanishTitle": "Benzonic Acid",
 		"description": "Los ácidos benzoicos funcionan como ingredientes fragantes, pesticidas, ajustadores de pH, conservantes, solventes y/o agentes que disminuyen la viscosidad en productos cosméticos. Se consideran suaves y no irritantes para la piel.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "Ácido Cítrico",
-		"description": "El Panel de Expertos CIR evaluó la seguridad del ácido cítrico, 12 sales citratas inorgánicas y 20 ésteres de citrato alquílicos cuando se utilizan en cosméticos, concluyendo que estos ingredientes son seguros en las prácticas actuales de uso y concentración. Se informa que el ácido cítrico funciona como ajustador de pH, agente quelante o ingrediente fragante. Algunas de las sales también se informan que funcionan como agentes quelantes, y un número de citratos se informa que funcionan como agentes acondicionadores de la piel, pero también se informan otras funciones. El Panel revisó los datos disponibles de animales y clínicos, pero debido a que el ácido cítrico, el citrato de calcio, el citrato férrico, el citrato de manganeso, el citrato de potasio, el citrato de sodio, el citrato diamonium, el citrato de isopropilo, el citrato estearílico y el citrato trietílico son generalmente reconocidos como aditivos alimentarios directos seguros, la exposición dérmica fue el enfoque para estos ingredientes en este análisis de seguridad de ingredientes cosméticos.",
-		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
-	},
-	{
-		"title": "Ácido Dehidroacético",
-		"description": "El Ácido Dehidroacéticose utilizan como conservantes en formulaciones cosméticas en concentraciones de 1,0 por ciento o menos. Es un ingrediente auxiliar que ayuda a que los productos se conserven por más tiempo. Funciona principalmente contra los hongos y solo tiene un efecto más suave contra las bacterias.",
-		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
-	},
-	{
-		"title": "Acrylates/Vinyl Isodecanoate Crosspolymerthing",
+		"englishTitle": "Acrylates/Vinyl Isodecanoate Crosspolymerthing",
+		"spanishTitle": "N/A",
 		"description": "El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) evaluó la seguridad de 126 copolímeros de acrilatos; 56 de estos ingredientes fueron revisados previamente por el Panel y 70 son revisados aquí por primera vez. Muchos de estos ingredientes se informa que tienen varias funciones en cosméticos, siendo la función de formador de película la más comúnmente reportada para los miembros de esta familia; muchos de los ingredientes también pueden funcionar como agentes que aumentan la viscosidad. El Panel revisó los nuevos datos relevantes, incluida la frecuencia y concentración de uso, y consideró los datos de los informes previos del CIR. El Panel concluyó que los 126 copolímeros de acrilatos nombrados en este informe son seguros en cosméticos en las prácticas actuales de uso y concentración descritas en la evaluación de seguridad cuando se formulan para no ser irritantes.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Aloe Barbadensis Leaf Extract",
+		"spanishTitle": "Extracto de hoja de Aloe Barbadensis",
+		"description": "El extracto de hoja de Aloe Barbadensis es un ingrediente común en productos de cuidado de la piel y el cabello. Se conoce por sus propiedades hidratantes y antiinflamatorias, y se utiliza para tratar quemaduras, irritaciones y otros problemas de la piel. También se encuentra en algunos productos de cuidado bucal y corporal. Es un líquido viscoso con un color verde claro.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 
 	{
-		"title": "Benzyl Alcohol",
+		"englishTitle": "Benzyl Alcohol",
+		"spanishTitle": "Benzyl Alcohol",
 		"description": "El Alcohol bencílico funcionan como ingredientes fragantes, pesticidas, ajustadores de pH, conservantes, solventes y/o agentes que disminuyen la viscosidad en productos cosméticosSe puede encontrar naturalmente en frutas y tés, pero también puede ser fabricado sintéticamente. Sin importar su origen, en pequeñas cantidades (hasta un 1%) es un buen y suave conservante. Debe combinarse con otros buenos conservantes, como el sorbato de potasio, para ser lo suficientemente amplio de espectro.En grandes cantidades, puede ser un irritante de la piel.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "Caprylyl Glycol",
+		"englishTitle": "Buteth-3",
+		"spanishTitle": "Buteth-3",
+		"description": "Buteth-3 es un ingrediente químico utilizado en productos de cuidado personal y cosméticos. Se utiliza como un agente de mejoramiento de la textura y como conservante. Se encuentra en productos como lociones, cremas y champús. Tiene una consistencia líquida.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Calendula Officinalis Flower Extract",
+		"spanishTitle": "Extracto de Flores de Caléndula Oficinalis",
+		"description": "El extracto de flores de caléndula oficinalis es un ingrediente natural que se extrae de las flores de la planta caléndula. Se utiliza comúnmente en productos para el cuidado de la piel y los labios, como cremas y bálsamos, debido a sus propiedades antiinflamatorias y suavizantes. Tiene una consistencia líquida y puede ser encontrado en productos de marcas naturales y orgánicas.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Caprylyl Glycol",
+		"spanishTitle": "N/A",
 		"description": "El Caprylyl glycol y otros glicoles relacionados se utilizan principalmente como agentes acondicionadores de piel y cabello y agentes de viscosidad en productos cosméticos, y el Caprylyl glycol y el glicol pentileno también funcionan como conservantes cosméticos. El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) señaló que, aunque estos ingredientes se absorben por vía dérmica, los datos de modelado predecían una disminución de la penetración cutánea de los glicoles de cadena más larga. Debido a que los datos de toxicidad oral negativos en los glicoles de cadena más corta y los datos de genotoxicidad respaldan la seguridad de los glicoles revisados en este análisis de seguridad, el Panel concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración descritas en este análisis de seguridad.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "C13-14 Isoparaffin",
+		"englishTitle": "C13-14 Isoparaffin",
+		"spanishTitle": "C13-14 Isoparaffin",
 		"description": "En este análisis de seguridad se revisa la seguridad de los isoparafínicos como se utilizan en productos cosméticos. Estos ingredientes funcionan principalmente como disolventes y también funcionan como emolientes en el rango de concentración del 0001% al 90%. El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) ha revisado los datos relevantes de animales y clínicos y ha concluido que estos ingredientes son seguros en las prácticas actuales de uso y concentración descritas en este análisis de seguridad.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "Cetil Hidroxietilcelulosa",
+		"englishTitle": "Cetil Hidroxietilcelulosa",
+		"spanishTitle": "Cetyl Hydroxyethylcellulose",
 		"description": "Un ingrediente auxiliar derivado de celulosa que se crea al unir una molécula que parece ser rechazada de una masa de agua al una molécula que tiene afinidad al agua, Hidroxietilcelulosa. Lo resultante, Cetil Hidroxietilcelulosa, también es un espesante pero con algunas propiedades superficiales activas (ya que parte de la molécula es amante del agua y parte es amante del aceite). Gracias a sus propiedades superficialmente activas, también funciona como estabilizador de emulsión.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
-
 	{
-		"title": "Cyclomethicone ",
-		"description": "Ciclometicono (mezcla) y los siloxanos cíclicos de longitud de cadena específica (n = 4-7) revisados en esta evaluación de seguridad son compuestos de polisiloxano dimetílico cíclico. Estos ingredientes tienen en común la función de agente acondicionador de la piel / cabello. Se asoció una absorción percutánea mínima con estos ingredientes y los datos disponibles no sugieren potencial de irritación o sensibilización de la piel. Además, no es probable que la exposición dermal a estos ingredientes desde cosméticos cause una exposición sistémica significativa. El Panel de Expertos en Revisión de Ingredientes Cosméticos concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración.",
+		"englishTitle": "Citric Acid",
+		"spanishTitle": "Ácido Cítrico",
+		"description": "El Panel de Expertos CIR evaluó la seguridad del ácido cítrico, 12 sales citratas inorgánicas y 20 ésteres de citrato alquílicos cuando se utilizan en cosméticos, concluyendo que estos ingredientes son seguros en las prácticas actuales de uso y concentración. Se informa que el ácido cítrico funciona como ajustador de pH, agente quelante o ingrediente fragante. Algunas de las sales también se informan que funcionan como agentes quelantes, y un número de citratos se informa que funcionan como agentes acondicionadores de la piel, pero también se informan otras funciones. El Panel revisó los datos disponibles de animales y clínicos, pero debido a que el ácido cítrico, el citrato de calcio, el citrato férrico, el citrato de manganeso, el citrato de potasio, el citrato de sodio, el citrato diamonium, el citrato de isopropilo, el citrato estearílico y el citrato trietílico son generalmente reconocidos como aditivos alimentarios directos seguros, la exposición dérmica fue el enfoque para estos ingredientes en este análisis de seguridad de ingredientes cosméticos.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"title": "Cyclopentasiloxane",
-		"description": "Cyclopentasiloxane (mezcla) y los siloxanos cíclicos específicos de longitud de cadena (n = 4-7) revisados en esta evaluación de seguridad son compuestos de polisiloxano dimetílico cíclico. Estos ingredientes tienen en común la función de agente acondicionador de la piel / cabello. Se asoció una absorción percutánea mínima con estos ingredientes y los datos disponibles no sugieren potencial de irritación o sensibilización de la piel. Además, no es probable que la exposición dérmica a estos ingredientes de los cosméticos cause una exposición sistémica significativa. El Panel de Expertos en Revisión de Ingredientes Cosméticos concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración.",
+		"englishTitle": "Cyclomethicone",
+		"spanishTitle": "Ciclometicona",
+		"description": "Ciclometicona (mezcla) y los siloxanos cíclicos de longitud de cadena específica (n = 4-7) revisados en esta evaluación de seguridad son compuestos de polisiloxano dimetílico cíclico. Estos ingredientes tienen en común la función de agente acondicionador de la piel / cabello. Se asoció una absorción percutánea mínima con estos ingredientes y los datos disponibles no sugieren potencial de irritación o sensibilización de la piel. Además, no es probable que la exposición dermal a estos ingredientes desde cosméticos cause una exposición sistémica significativa. El Panel de Expertos en Revisión de Ingredientes Cosméticos concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
-
+	{
+		"englishTitle": "Cyclopentasiloxane",
+		"spanishTitle": "Ciclopentasiloxano",
+		"description": "Ciclopentasiloxano (mezcla) y los siloxanos cíclicos específicos de longitud de cadena (n = 4-7) revisados en esta evaluación de seguridad son compuestos de polisiloxano dimetílico cíclico. Estos ingredientes tienen en común la función de agente acondicionador de la piel / cabello. Se asoció una absorción percutánea mínima con estos ingredientes y los datos disponibles no sugieren potencial de irritación o sensibilización de la piel. Además, no es probable que la exposición dérmica a estos ingredientes de los cosméticos cause una exposición sistémica significativa. El Panel de Expertos en Revisión de Ingredientes Cosméticos concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Dehydroacetic Acid",
+		"spanishTitle": "Ácido Dehidroacético",
+		"description": "El Ácido Dehidroacético utilizan como conservantes en formulaciones cosméticas en concentraciones de 1,0 por ciento o menos. Es un ingrediente auxiliar que ayuda a que los productos se conserven por más tiempo. Funciona principalmente contra los hongos y solo tiene un efecto más suave contra las bacterias.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+	{
+		"englishTitle": "Diaminopropionoyl Tripeptide-33",
+		"spanishTitle": "Diaminopropiónico Tripéptido-33",
+		"description": "Diaminopropiónico tripéptido-33 es una molécula de péptido sintético utilizada en cosméticos como agente de condicionamiento de la piel. Se afirma que tiene un impacto potencial en la firmeza y elasticidad de la piel al estimular la producción de fibras de colágeno y elastina en la piel. Sin embargo, la evidencia científica que respalda estas afirmaciones es limitada y se necesita más investigación para comprender plenamente su efectividad y posibles efectos secundarios.",
+		"references": "https://www.jdsjournal.com/"
+	},
 	{
 		"englishTitle": "Dimethicone",
 		"spanishTitle": "Dimeticona ",
@@ -67,15 +105,22 @@
 	{
 		"englishTitle": "Dimethylmethoxy Chromanol",
 		"spanishTitle": "Dimetilmetoxicromanol",
-		"description": "Dimethylmethoxy Chromanol es una molécula sintética que tiene una estructura similar a la del α-Tocoferol (vitamina E) y funciona como un potente antioxidant. Se conoce por no solo proteger contra las especies de oxígeno reactivo (ROS), sino también contra las especies de nitrógeno reactivo (RNS) (ambos son moléculas reactivas dañinas que causan daño a las células y los tejidos y son responsables de varios mecanismos que activan el envejecimiento de la piel).Hay diferentes métodos para evaluar la potencia antioxidant de un ingrediente y según el llamado ensayo TBA, Dimethylmethoxy Chromanol es un antioxidant más potente que BHT, trolox o tocoferol. Su dosis recomendada es solo del 0,01 al 0,05%, lo que también indica la potencia de Lipochroman-6.",
+		"description": "Dimetilmetoxicromanol es una molécula sintética que tiene una estructura similar a la del α-Tocoferol (vitamina E) y funciona como un potente antioxidant. Se conoce por no solo proteger contra las especies de oxígeno reactivo (ROS), sino también contra las especies de nitrógeno reactivo (RNS) (ambos son moléculas reactivas dañinas que causan daño a las células y los tejidos y son responsables de varios mecanismos que activan el envejecimiento de la piel).Hay diferentes métodos para evaluar la potencia antioxidant de un ingrediente y según el llamado ensayo TBA, Dimethylmethoxy Chromanol es un antioxidant más potente que BHT, trolox o tocoferol. Su dosis recomendada es solo del 0,01 al 0,05%, lo que también indica la potencia de Lipochroman-6.",
 		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
 	{
-		"englishTitle": "Diaminopropionoyl Tripeptide-33",
-		"spanishTitle": "Diaminopropiónico Tripéptido-33",
-		"description": "Diaminopropiónico tripéptido-33 es una molécula de péptido sintético utilizada en cosméticos como agente de condicionamiento de la piel. Se afirma que tiene un impacto potencial en la firmeza y elasticidad de la piel al estimular la producción de fibras de colágeno y elastina en la piel. Sin embargo, la evidencia científica que respalda estas afirmaciones es limitada y se necesita más investigación para comprender plenamente su efectividad y posibles efectos secundarios.",
-		"references": "https://www.jdsjournal.com/"
+		"englishTitle": "Disodium Cocoyl Glutamate",
+		"spanishTitle": "N/A",
+		"description": "El Disodium Cocoyl Glutamate es un surfactante suave utilizado en productos de cuidado personal y limpieza, como jabones y champús. Funciona como un agente de limpieza eficaz al reducir la tensión superficial de la suciedad y la grasa en la piel y el cabello. Tiene una consistencia líquida.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
 	},
+	{
+		"englishTitle": "Disodium Edta",
+		"spanishTitle": "Disodio Edta",
+		"description": "El disodio EDTA es un conservante y estabilizante comúnmente utilizado en productos de cuidado personal y cosméticos. También se utiliza para mejorar la eficacia de otros ingredientes activos. Se encuentra en una variedad de productos, incluyendo lociones, cremas y champús, y tiene una consistencia líquida.",
+		"references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+	},
+
 	{
 		"englishTitle": "Glycerin",
 		"spanishTitle": "Glicerina",

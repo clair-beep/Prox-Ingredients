@@ -49,7 +49,13 @@
     "description": "El extracto de flores de caléndula oficinalis es un ingrediente natural que se extrae de las flores de la planta caléndula. Se utiliza comúnmente en productos para el cuidado de la piel y los labios, como cremas y bálsamos, debido a sus propiedades antiinflamatorias y suavizantes. Tiene una consistencia líquida y puede ser encontrado en productos de marcas naturales y orgánicas.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
-
+  {
+    "_id": "63dfc4c0a181837b1f9296ee",
+    "englishTitle": "Caprylyl Glycol",
+    "spanishTitle": "N/A",
+    "description": "El Caprylyl glycol y otros glicoles relacionados se utilizan principalmente como agentes acondicionadores de piel y cabello y agentes de viscosidad en productos cosméticos, y el Caprylyl glycol y el glicol pentileno también funcionan como conservantes cosméticos. El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) señaló que, aunque estos ingredientes se absorben por vía dérmica, los datos de modelado predecían una disminución de la penetración cutánea de los glicoles de cadena más larga. Debido a que los datos de toxicidad oral negativos en los glicoles de cadena más corta y los datos de genotoxicidad respaldan la seguridad de los glicoles revisados en este análisis de seguridad, el Panel concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración descritas en este análisis de seguridad.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
   {
     "_id": "63dfc4c7d15aee90d5a4e334",
     "englishTitle": "Carrageenan",

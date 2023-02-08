@@ -23,17 +23,17 @@ app.use(express.json());
 //loggers/ messages that allow you to return
 
 if (process.env.NODE_ENV === 'development') {
-	app.use(morgan('dev'));
+  app.use(morgan('dev'));
 }
 
 //Handlebars
 app.engine(
-	'.hbs',
-	exphbs.engine({
-		//this is the defaut layout passed every time
-		defaultLayout: 'main',
-		extname: '.hbs'
-	})
+  '.hbs',
+  exphbs.engine({
+    //this is the defaut layout passed every time
+    defaultLayout: 'main',
+    extname: '.hbs'
+  })
 );
 // doing this will set for handle bars to look for a folder called 'views'
 app.set('view engine', '.hbs');
@@ -55,15 +55,15 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 4000;
 
 app.listen(
-	PORT,
-	console.log(
-		`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
-	)
+  PORT,
+  console.log(
+    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
+  )
 );
 
 // Handle unhandled promise rejections
 process.on('unhandled rejection', (err, promise) => {
-	console.log(`Error ${err.message}.red`);
-	//close server &exis process
-	server.close(() => process.exit(1));
+  console.log(`Error ${err.message}.red`);
+  //close server &exis process
+  server.close(() => process.exit(1));
 });

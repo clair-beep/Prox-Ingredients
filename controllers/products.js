@@ -3,128 +3,132 @@ const asyncHandler = require('../middleware/async');
 const Product = require('../models/Product');
 
 exports.getProducts = asyncHandler(async (req, res, next) => {
-	let query;
+  let query;
 
-	//Copy req.query
-	const reqQuery = { ...req.query };
+  //Copy req.query
+  const reqQuery = { ...req.query };
 
-	//Fields to exclude
-	const removeFields = ['select', 'sort', 'page', 'limit'];
+  //Fields to exclude
+  const removeFields = ['select', 'sort', 'page', 'limit'];
 
-	//Loop over removeFields and delete them from reqQuery
-	removeFields.forEach((param) => delete reqQuery[param]);
+  //Loop over removeFields and delete them from reqQuery
+  removeFields.forEach(param => delete reqQuery[param]);
 
-	//Create query string
-	let queryStr = JSON.stringify(reqQuery);
+  //Create query string
+  let queryStr = JSON.stringify(reqQuery);
 
-	//Finding rescource
-	query = Product.find(JSON.parse(queryStr));
+  //Finding rescource
+  query = Product.find(JSON.parse(queryStr));
 
-	//Select Fields
-	if (req.query.select) {
-		const fields = req.query.select.split(',').join(' ');
-		query = query.select(fields);
-		// console.log(fields)
-	}
+  //Select Fields
+  if (req.query.select) {
+    const fields = req.query.select.split(',').join(' ');
+    query = query.select(fields);
+    // console.log(fields)
+  }
 
-	//Sort
-	if (req.query.sort) {
-		const sortBy = req.query.sort.split(',').join(' ');
-		query = query.sort(sortBy);
-	} else {
-		query = query.sort('name');
-	}
+  //Sort
+  if (req.query.sort) {
+    const sortBy = req.query.sort.split(',').join(' ');
+    query = query.sort(sortBy);
+  } else {
+    query = query.sort('name');
+  }
 
-	//Pagination
-	const page = parseInt(req.query.page, 10) || 1;
-	const limit = parseInt(req.query.limit, 10) || 1;
-	const startIndex = (page - 1) * limit;
-	const endIndex = page * limit;
-	const total = await Product.countDocuments();
+  //Pagination
+  const page = parseInt(req.query.page, 10) || 1;
+  //set up the limit of elements per page
+  const limit = parseInt(req.query.limit, 10) || 20;
 
-	query = query.skip(startIndex).limit(limit);
+  const startIndex = (page - 1) * limit;
+  const endIndex = page * limit;
+  const total = await Product.countDocuments();
 
-	//Pagination result
-	const pagination = {};
+  query = query.skip(startIndex).limit(limit);
 
-	if (endIndex < total) {
-		pagination.next = {
-			page: page + 1,
-			limit
-		};
-	}
+  //Pagination result
+  const pagination = {};
 
-	if (startIndex > 0) {
-		pagination.prev = {
-			page: page - 1,
-			limit
-		};
-	}
+  if (endIndex < total) {
+    pagination.next = {
+      page: page + 1,
+      limit
+    };
+  }
 
-	//Executing query
-	const products = await query;
+  if (startIndex > 0) {
+    pagination.prev = {
+      page: page - 1,
+      limit
+    };
+  }
 
-	res.status(200).json({
-		success: true,
-		count: products.length,
-		pagination,
-		data: products
-	});
+  //Executing query
+  const products = await query;
+
+  res.status(200).json({
+    success: true,
+    count: products.length,
+    pagination,
+    data: products
+  });
 });
 
 exports.getProduct = asyncHandler(async (req, res, next) => {
-	const product = await Product.findById(req.params.id);
-	if (!product) {
-		return next(
-			new ErrorResponse(`Product not found with id of ${req.params.id}`, 404)
-		);
-	}
-	res
-		.status(200)
-		.json({ success: true, count: products.length, pagination, data: product });
+  const product = await Product.findById(req.params.id);
+  if (!product) {
+    return next(
+      new ErrorResponse(`Product not found with id of ${req.params.id}`, 404)
+    );
+  }
+
+  res.status(200).json({ success: true, data: product });
 });
 
+// add a header with:
+// @description Create new product
+// @route POST /v1/products
+// @access Private
 exports.createProduct = asyncHandler(async (req, res, next) => {
-	try {
-		const product = await Product.create(req.body);
-		for (let i = 0; i < req.body.ingredients.length.length; i++) {
-			const ingredient = await Ingredient.findById(req.body.ingredients[i]);
-			product.ingredients.push(ingredient._id);
-		}
-		await product.save();
-		res.status(201).json({
-			success: true,
-			data: product
-		});
-	} catch (err) {
-		next(err);
-	}
+  const product = await Product.create(req.body);
+
+  res.status(201).json({
+    success: true,
+    data: product
+  });
 });
 
+// add a header with:
+// @description update product
+// @route PUT /v1/products/:id
+// @access Private
 exports.updateProduct = asyncHandler(async (req, res, next) => {
-	const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
-		new: true,
-		runValidators: true
-	});
+  const product = await Product.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
 
-	if (!product) {
-		return next(
-			new ErrorResponse(`Product not found with id of ${req.params.id}`, 404)
-		);
-	}
-	product.ingredients = req.body.ingredients;
-	await product.save();
-	res.status(200).json({ sucess: true, data: product });
+  if (!product) {
+    return next(
+      new ErrorResponse(`Product not found with id of ${req.params.id}`, 404)
+    );
+  }
+  res.status(200).json({ sucess: true, data: product });
 });
 
+// add a header with:
+// @description Delete product
+// @route DELETE /v1/products/:id
+// @access Private
 exports.deleteProduct = asyncHandler(async (req, res, next) => {
-	const product = await Product.findByIdAndDelete(req.params.id);
+  const product = await Product.findById(req.params.id);
 
-	if (!product) {
-		return next(
-			new ErrorResponse(`Product not found with id of ${req.params.id}`, 404)
-		);
-	}
+  if (!product) {
+    return next(
+      new ErrorResponse(`Product not found with id of ${req.params.id}`, 404)
+    );
+  }
 
-	res.status(200).json({ sucess: true, data: {} });
+  product.remove();
+  res.status(200).json({ sucess: true, data: {} });
 });

@@ -4,11 +4,7 @@ const IngredientSchema = new mongoose.Schema({
   englishTitle: {
     type: String,
     trim: true,
-    required: [true, 'Please add a ingredient title'],
-    match: [
-      /^[a-zA-Z0-9 áéíóúüñ]+$/,
-      'Name can only contain alphanumeric characters and spaces'
-    ]
+    required: [true, 'Please add a ingredient title']
   },
 
   spanishTitle: {

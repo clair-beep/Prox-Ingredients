@@ -7,7 +7,7 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
-    "_id": "63dfc44f280b8472bce37e17",
+    "_id": "63e3f4ce37aba21f56087e30",
     "englishTitle": "Ácido Benzoico",
     "spanishTitle": "Benzonic Acid",
     "description": "Los ácidos benzoicos funcionan como ingredientes fragantes, pesticidas, ajustadores de pH, conservantes, solventes y/o agentes que disminuyen la viscosidad en productos cosméticos. Se consideran suaves y no irritantes para la piel.",
@@ -21,7 +21,7 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
-    "_id": "63dfc4a8ad257415bb216d14",
+    "_id": "63e3f7df37aba21f56087e34",
     "englishTitle": "Aloe Barbadensis Leaf Extract",
     "spanishTitle": "Extracto de hoja de Aloe Barbadensis",
     "description": "El extracto de hoja de Aloe Barbadensis es un ingrediente común en productos de cuidado de la piel y el cabello. Se conoce por sus propiedades hidratantes y antiinflamatorias, y se utiliza para tratar quemaduras, irritaciones y otros problemas de la piel. También se encuentra en algunos productos de cuidado bucal y corporal. Es un líquido viscoso con un color verde claro.",
@@ -36,14 +36,14 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
-    "_id": "63dfc4b20e033bfbd29ce848",
+    "_id": "63e3f52637aba21f56087e31",
     "englishTitle": "Buteth-3",
     "spanishTitle": "Buteth-3",
     "description": "Buteth-3 es un ingrediente químico utilizado en productos de cuidado personal y cosméticos. Se utiliza como un agente de mejoramiento de la textura y como conservante. Se encuentra en productos como lociones, cremas y champús. Tiene una consistencia líquida.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
-    "_id": "63dfc4b20e033bfbd29ce848",
+    "_id": "63e3f53437aba21f56087e32",
     "englishTitle": "Calendula Officinalis Flower Extract",
     "spanishTitle": "Extracto de Flores de Caléndula Oficinalis",
     "description": "El extracto de flores de caléndula oficinalis es un ingrediente natural que se extrae de las flores de la planta caléndula. Se utiliza comúnmente en productos para el cuidado de la piel y los labios, como cremas y bálsamos, debido a sus propiedades antiinflamatorias y suavizantes. Tiene una consistencia líquida y puede ser encontrado en productos de marcas naturales y orgánicas.",
@@ -71,7 +71,7 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
-    "_id": "63dfc4cebdf533cdb85dfc3a",
+    "_id": "63e3f57837aba21f56087e33",
     "englishTitle": "Cetil Hidroxietilcelulosa",
     "spanishTitle": "Cetyl Hydroxyethylcellulose",
     "description": "Un ingrediente auxiliar derivado de celulosa que se crea al unir una molécula que parece ser rechazada de una masa de agua al una molécula que tiene afinidad al agua, Hidroxietilcelulosa. Lo resultante, Cetil Hidroxietilcelulosa, también es un espesante pero con algunas propiedades superficiales activas (ya que parte de la molécula es amante del agua y parte es amante del aceite). Gracias a sus propiedades superficialmente activas, también funciona como estabilizador de emulsión.",
@@ -403,7 +403,7 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
-    "_id": "63dfc5c12b7f61f5d2af192c",
+    "_id": "63e3f80137aba21f56087e35",
     "englishTitle": "Potassium Sorbate",
     "spanishTitle": "Sorbato de Potasio",
     "description": "El sorbato de potasio es un conservante utilizado en productos de cuidado personal y cosméticos para prevenir la crecimiento de hongos y bacterias. Tiene una consistencia sólida y puede ser encontrado en productos como cremas, lociones y productos de baño. Está aprobado para su uso en la industria cosmética y alimentaria por organizaciones reguladoras como la FDA y la UE.",
@@ -504,7 +504,8 @@
     "_id": "63dfc61a85f7454a2ccda378",
     "englishTitle": "Tocopherol Acetate",
     "spanishTitle": "Acetato de Tocoferol",
-    "description": "El Acetato de Tocoferol es una forma sintética de la vitamina E que se utiliza comúnmente en productos de belleza y cuidado personal, como cremas, lociones y productos para el cabello. Se conoce por sus propiedades antioxidantes e antiinflamatorias, que lo hacen útil para proteger la piel y el cabello del daño causado por factores ambientales como los rayos UV y la contaminación. El Acetato de Tocoferol se utiliza en pequeñas cantidades en formulaciones cosméticas, y puede ayudar a mejorar la apariencia y la salud general de la piel. Cuando se utiliza en productos de cuidado de la piel, el Acetato de Tocoferol puede ayudar a nutrir, hidratar y proteger la piel del daño y el envejecimiento prematuro."
+    "description": "El Acetato de Tocoferol es una forma sintética de la vitamina E que se utiliza comúnmente en productos de belleza y cuidado personal, como cremas, lociones y productos para el cabello. Se conoce por sus propiedades antioxidantes e antiinflamatorias, que lo hacen útil para proteger la piel y el cabello del daño causado por factores ambientales como los rayos UV y la contaminación. El Acetato de Tocoferol se utiliza en pequeñas cantidades en formulaciones cosméticas, y puede ayudar a mejorar la apariencia y la salud general de la piel. Cuando se utiliza en productos de cuidado de la piel, el Acetato de Tocoferol puede ayudar a nutrir, hidratar y proteger la piel del daño y el envejecimiento prematuro.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
     "_id": "63dfc622e5dd088259f7408f",

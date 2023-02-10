@@ -51,7 +51,7 @@ app.use(express.static(__dirname + '/node_modules/bootstrap/'));
 app.use('/v1/', getRoutes);
 app.use('/v1/', productRoutes);
 app.use('/v1/', ingredients);
-/* app.use('/v1/', categories); */
+app.use('/v1/', categories);
 
 app.use(errorHandler);
 

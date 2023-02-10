@@ -10,6 +10,8 @@ const connectDB = require('./config/db');
 const getRoutes = require('./routes/index');
 const productRoutes = require('./routes/products');
 const ingredients = require('./routes/ingredients');
+const categories = require('./routes/categories');
+
 //Use .env file in config folder
 dotenv.config({ path: './config/config.env' });
 
@@ -49,6 +51,7 @@ app.use(express.static(__dirname + '/node_modules/bootstrap/'));
 app.use('/v1/', getRoutes);
 app.use('/v1/', productRoutes);
 app.use('/v1/', ingredients);
+/* app.use('/v1/', categories); */
 
 app.use(errorHandler);
 

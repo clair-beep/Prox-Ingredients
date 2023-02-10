@@ -10,7 +10,7 @@ dotenv.config({ path: './config/config.env' });
 //Load models
 const Product = require('./models/Product');
 const Ingredient = require('./models/Ingredient');
-
+const Category = require('./models/Category');
 //Connect to DB
 mongoose.connect(process.env.MONGO_URI);
 
@@ -23,11 +23,15 @@ const ingredients = JSON.parse(
   fs.readFileSync(`${__dirname}/_data-samples/ingredients.json`, 'utf-8')
 );
 
+const categories = JSON.parse(
+  fs.readFileSync(`${__dirname}/_data-samples/categories.json`, 'utf-8')
+);
 //Import into DB
 const importData = async () => {
   try {
     await Product.create(products);
     await Ingredient.create(ingredients);
+    await Category.create(categories);
 
     console.log('Data Imported...'.green.inverse);
     process.exit();
@@ -41,6 +45,8 @@ const deleteData = async () => {
   try {
     await Product.deleteMany();
     await Ingredient.deleteMany();
+    await Category.deleteMany();
+
     console.log('Data Destroyed...'.red.inverse);
     process.exit();
   } catch (err) {
@@ -53,5 +59,3 @@ if (process.argv[2] === '-i') {
 } else if (process.argv[2] === '-d') {
   deleteData();
 }
-
-const num = 123123;

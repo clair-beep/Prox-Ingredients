@@ -1,4 +1,15 @@
 const express = require('express');
+const { getProducts } = require('../controllers/products');
+
+//Main Routes - simplified for now
+
+const router = express.Router({ mergeParams: true });
+
+router.route('/').get(getProducts);
+
+module.exports = router;
+
+/* const express = require('express');
 const {
   getProducts,
   getProduct,
@@ -11,7 +22,7 @@ const {
 
 const router = express.Router();
 
-router.route('/products').get(getProducts).post(createProduct);
+router.route('/').get(getProducts).post(createProduct);
 
 router
   .route('/products/:category/:id')
@@ -20,3 +31,4 @@ router
   .delete(deleteProduct);
 
 module.exports = router;
+ */

@@ -2,79 +2,29 @@ const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
 const Product = require('../models/Product');
 
+// add a header with:
+// @description Get all products
+// @route GET /v1/categories/:categoriesId/products
+// @access Public
 exports.getProducts = asyncHandler(async (req, res, next) => {
   let query;
 
-  //Copy req.query
-  const reqQuery = { ...req.query };
-
-  //Fields to exclude
-  const removeFields = ['select', 'sort', 'page', 'limit'];
-
-  //Loop over removeFields and delete them from reqQuery
-  removeFields.forEach(param => delete reqQuery[param]);
-
-  //Create query string
-  let queryStr = JSON.stringify(reqQuery);
-
-  //Finding rescource
-  query = Product.find(JSON.parse(queryStr));
-
-  //Select Fields
-  if (req.query.select) {
-    const fields = req.query.select.split(',').join(' ');
-    query = query.select(fields);
-    // console.log(fields)
-  }
-
-  //Sort
-  if (req.query.sort) {
-    const sortBy = req.query.sort.split(',').join(' ');
-    query = query.sort(sortBy);
+  if (req.params.categoryId) {
+    query = Product.find({ category: req.params.categoryId });
   } else {
-    query = query.sort('name');
+    query = Product.find();
   }
 
-  //Pagination
-  const page = parseInt(req.query.page, 10) || 1;
-  //set up the limit of elements per page
-  const limit = parseInt(req.query.limit, 10) || 20;
-
-  const startIndex = (page - 1) * limit;
-  const endIndex = page * limit;
-  const total = await Product.countDocuments();
-
-  query = query.skip(startIndex).limit(limit);
-
-  //Pagination result
-  const pagination = {};
-
-  if (endIndex < total) {
-    pagination.next = {
-      page: page + 1,
-      limit
-    };
-  }
-
-  if (startIndex > 0) {
-    pagination.prev = {
-      page: page - 1,
-      limit
-    };
-  }
-
-  //Executing query
   const products = await query;
 
   res.status(200).json({
     success: true,
     count: products.length,
-    pagination,
     data: products
   });
 });
 
-exports.getProduct = asyncHandler(async (req, res, next) => {
+/* exports.getProduct = asyncHandler(async (req, res, next) => {
   const product = await Product.findById(req.params.id);
   if (!product) {
     return next(
@@ -132,3 +82,4 @@ exports.deleteProduct = asyncHandler(async (req, res, next) => {
   product.remove();
   res.status(200).json({ sucess: true, data: {} });
 });
+ */

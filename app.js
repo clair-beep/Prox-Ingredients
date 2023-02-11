@@ -8,7 +8,7 @@ const connectDB = require('./config/db');
 
 //route files
 const getRoutes = require('./routes/index');
-const productRoutes = require('./routes/products');
+const products = require('./routes/products');
 const ingredients = require('./routes/ingredients');
 const categories = require('./routes/categories');
 
@@ -49,9 +49,9 @@ app.use(express.static(__dirname + '/node_modules/bootstrap/'));
 
 //Mount routers
 app.use('/v1/', getRoutes);
-app.use('/v1/', productRoutes);
-app.use('/v1/', ingredients);
-app.use('/v1/', categories);
+app.use('/v1/products', products);
+app.use('/v1/ingredients', ingredients);
+app.use('/v1/categories', categories);
 
 app.use(errorHandler);
 

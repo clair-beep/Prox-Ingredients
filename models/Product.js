@@ -15,6 +15,11 @@ const ProductSchema = new mongoose.Schema({
     ],
     uppercase: true
   },
+  category: {
+    type: mongoose.Schema.ObjectId,
+    ref: 'Category',
+    required: true
+  },
 
   slug: String,
 

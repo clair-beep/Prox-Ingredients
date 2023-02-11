@@ -7,14 +7,20 @@ const {
   deleteCategory
 } = require('../controllers/categories');
 
+//Include other resource from routers
+
+const productRouter = require('./products');
 //Main Routes - simplified for now
 
 const router = express.Router();
 
-router.route('/categories').get(getCategories).post(createCategory);
+//Re-route into other resource routers
+router.use('/:categoryId/products', productRouter);
+
+router.route('/').get(getCategories).post(createCategory);
 
 router
-  .route('/categories/:id')
+  .route('/:id')
   .get(getCategory)
   .put(updateCategory)
   .delete(deleteCategory);

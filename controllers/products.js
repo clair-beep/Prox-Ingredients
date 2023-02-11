@@ -12,7 +12,11 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
   if (req.params.categoryId) {
     query = Product.find({ category: req.params.categoryId });
   } else {
-    query = Product.find();
+    query = Product.find().populate({
+      path: 'category',
+      select: 'name description ',
+      options: { limit: 1 }
+    });
   }
 
   const products = await query;

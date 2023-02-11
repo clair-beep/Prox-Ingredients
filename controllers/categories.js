@@ -12,13 +12,14 @@ exports.getCategories = asyncHandler(async (req, res, next) => {
   const removeFields = ['select', 'sort', 'page', 'limit'];
 
   //Loop over removeFields and delete them from reqQuery
-  removeFields.forEach(param => delete reqQuery[param]);
+  removeFields.forEach((param) => delete reqQuery[param]);
 
   //Create query string
   let queryStr = JSON.stringify(reqQuery);
 
   //Finding rescource
-  query = Category.find(JSON.parse(queryStr));
+  //products being passed is a virtual reourse
+  query = Category.find(JSON.parse(queryStr)).populate('products');
 
   //Select Fields
   if (req.query.select) {
@@ -124,10 +125,11 @@ exports.deleteCategory = asyncHandler(async (req, res, next) => {
 
   if (!category) {
     return next(
-      new ErrorResponse(`Category not found with id of ${req.params.id}`, 404)
+      new ErrorResponse(`Category not found with id of ${req.params.id} `, 404)
     );
   }
 
   category.remove();
+
   res.status(200).json({ sucess: true, data: {} });
 });

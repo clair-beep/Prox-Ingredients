@@ -91,8 +91,8 @@ exports.addProduct = asyncHandler(
   }
 );
 
-// @description Add a single product
-// @route POST /v1/products/:id
+// @description update a single product
+// @route PUT /v1/products/:id
 // @access Private
 exports.updateProduct = asyncHandler(
   async (req, res, next) => {
@@ -118,6 +118,31 @@ exports.updateProduct = asyncHandler(
     res.status(200).json({
       success: true,
       data: product
+    });
+  }
+);
+
+// @description delete a single product
+// @route DELETE /v1/products/:id
+// @access Private
+exports.deleteProduct = asyncHandler(
+  async (req, res, next) => {
+    const product = await Product.findById(req.params.id);
+
+    if (!product) {
+      return next(
+        new ErrorResponse(
+          `No product with the id of ${req.params.id}`
+        ),
+        404
+      );
+    }
+
+    await product.remove();
+
+    res.status(200).json({
+      success: true,
+      data: `Product ${product.name} was deleted`
     });
   }
 );

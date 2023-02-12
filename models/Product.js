@@ -6,8 +6,14 @@ const ProductSchema = new mongoose.Schema({
     required: [true, 'Please add a name'],
     unique: true,
     trim: true,
-    minLength: [5, 'Name can not be less than 5 characters'],
-    maxlength: [75, 'Name can not be more than 75 characters'],
+    minLength: [
+      5,
+      'Name can not be less than 5 characters'
+    ],
+    maxlength: [
+      75,
+      'Name can not be more than 75 characters'
+    ],
     match: [
       /^[a-zA-Z0-9 áéíóúüñÁÉÍÓÚÜÑ]+$/,
       'Name can only contain alphanumeric characters and spaces'
@@ -41,7 +47,7 @@ const ProductSchema = new mongoose.Schema({
     // Array of strings
     type: String,
     required: true,
-    enum: ['Spain', 'Francia']
+    enum: ['España', 'Francia']
   },
 
   ingredients: [
@@ -56,8 +62,14 @@ const ProductSchema = new mongoose.Schema({
     required: [true, 'Please add a description'],
     unique: true,
     trim: true,
-    minlength: [10, 'Description must be at least 10 characters'],
-    maxlength: [1500, 'Description can not be more than 500 characters'],
+    minlength: [
+      10,
+      'Description must be at least 10 characters'
+    ],
+    maxlength: [
+      1500,
+      'Description can not be more than 500 characters'
+    ],
     lowercase: true
   },
 

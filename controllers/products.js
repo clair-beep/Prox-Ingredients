@@ -39,13 +39,12 @@ exports.getProducts = asyncHandler(
 // @access Public
 exports.getProduct = asyncHandler(
   async (req, res, next) => {
-    const product =
-      await Product.findById(
-        req.params.id
-      ).populate({
-        path: 'category',
-        select: 'name description'
-      });
+    const product = await Product.findById(
+      req.params.id
+    ).populate({
+      path: 'category',
+      select: 'name description'
+    });
 
     if (!product) {
       return next(
@@ -68,13 +67,11 @@ exports.getProduct = asyncHandler(
 // @access Private
 exports.addProduct = asyncHandler(
   async (req, res, next) => {
-    req.body.category =
-      req.params.categoryId;
+    req.body.category = req.params.categoryId;
 
-    const category =
-      await Category.findById(
-        req.params.categoryId
-      );
+    const category = await Category.findById(
+      req.params.categoryId
+    );
 
     if (!category) {
       return next(
@@ -85,8 +82,38 @@ exports.addProduct = asyncHandler(
       );
     }
 
-    const product =
-      await Product.create(req.body);
+    const product = await Product.create(req.body);
+
+    res.status(200).json({
+      success: true,
+      data: product
+    });
+  }
+);
+
+// @description Add a single product
+// @route POST /v1/products/:id
+// @access Private
+exports.updateProduct = asyncHandler(
+  async (req, res, next) => {
+    let product = await Product.findById(req.params.id);
+    if (!product) {
+      return next(
+        new ErrorResponse(
+          `No product with the id of ${req.params.id}`
+        ),
+        404
+      );
+    }
+
+    product = await Product.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+        runValidators: true
+      }
+    );
 
     res.status(200).json({
       success: true,

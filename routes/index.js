@@ -11,7 +11,6 @@ const {
 
 const router = express.Router();
 
-router.route('/products/:category').get(getProductByCategories);
 router.route('/search').get(getSearch);
 router.route('/about').get(getAbout);
 router.route('/terms_of_use').get(getTermsOfUse);

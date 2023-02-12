@@ -15,9 +15,15 @@ const productRouter = require('./products');
 const router = express.Router();
 
 //Re-route into other resource routers
-router.use('/:categoryId/products', productRouter);
+router.use(
+  '/:categoryId/products',
+  productRouter
+);
 
-router.route('/').get(getCategories).post(createCategory);
+router
+  .route('/')
+  .get(getCategories)
+  .post(createCategory);
 
 router
   .route('/:id')

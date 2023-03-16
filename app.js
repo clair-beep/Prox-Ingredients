@@ -11,6 +11,7 @@ const getRoutes = require('./routes/index');
 const products = require('./routes/products');
 const ingredients = require('./routes/ingredients');
 const categories = require('./routes/categories');
+const auth = require('./routes/auth');
 
 //Use .env file in config folder
 dotenv.config({ path: './config/config.env' });
@@ -52,6 +53,7 @@ app.use('/v1/', getRoutes);
 app.use('/v1/products', products);
 app.use('/v1/ingredients', ingredients);
 app.use('/v1/categories', categories);
+app.use('/v1/auth', auth);
 
 app.use(errorHandler);
 

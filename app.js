@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const colors = require('colors');
+const cookieParser = require('cookie-parser');
 const errorHandler = require('./middleware/error');
 const connectDB = require('./config/db');
 
@@ -35,8 +36,8 @@ app.engine(
   exphbs.engine({
     //this is the defaut layout passed every time
     defaultLayout: 'main',
-    extname: '.hbs'
-  })
+    extname: '.hbs',
+  }),
 );
 // doing this will set for handle bars to look for a folder called 'views'
 app.set('view engine', '.hbs');
@@ -62,8 +63,8 @@ const PORT = process.env.PORT || 4000;
 app.listen(
   PORT,
   console.log(
-    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
-  )
+    `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow,
+  ),
 );
 
 // Handle unhandled promise rejections

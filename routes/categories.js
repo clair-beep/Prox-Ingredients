@@ -4,7 +4,7 @@ const {
   getCategory,
   createCategory,
   updateCategory,
-  deleteCategory
+  deleteCategory,
 } = require('../controllers/categories');
 
 //Include other resource from routers
@@ -14,21 +14,17 @@ const productRouter = require('./products');
 
 const router = express.Router();
 
-//Re-route into other resource routers
-router.use(
-  '/:categoryId/products',
-  productRouter
-);
+const { protect } = require('../middleware/auth');
 
-router
-  .route('/')
-  .get(getCategories)
-  .post(createCategory);
+//Re-route into other resource routers
+router.use('/:categoryId/products', productRouter);
+
+router.route('/').get(getCategories).post(protect, createCategory);
 
 router
   .route('/:id')
   .get(getCategory)
-  .put(updateCategory)
-  .delete(deleteCategory);
+  .put(protect, updateCategory)
+  .delete(protect, deleteCategory);
 
 module.exports = router;

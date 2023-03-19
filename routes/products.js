@@ -16,18 +16,26 @@ const router = express.Router({
   mergeParams: true,
 });
 
-const { protect } = require('../middleware/auth');
+const { protect, authorize } = require('../middleware/auth');
 
-router.route('/').get(getProducts).post(protect, addProduct);
+router
+  .route('/')
+  .get(getProducts)
+  .post(protect, authorize('publisher', 'admin'), addProduct);
 
 router
   .route('/:id')
   .get(getProduct)
-  .put(protect, updateProduct)
-  .delete(protect, deleteProduct);
+  .put(protect, authorize('publisher', 'admin'), updateProduct)
+  .delete(protect, authorize('publisher', 'admin'), deleteProduct);
 
 router
   .route('/:id/photo')
-  .put(protect, upload.single('file'), productPhotoUpload);
+  .put(
+    protect,
+    authorize('publisher', 'admin'),
+    upload.single('file'),
+    productPhotoUpload,
+  );
 
 module.exports = router;

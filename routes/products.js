@@ -7,19 +7,27 @@ const {
   addProduct,
   updateProduct,
   deleteProduct,
-  productPhotoUpload
+  productPhotoUpload,
 } = require('../controllers/products');
 
 //Main Routes - simplified for now
 
 const router = express.Router({
-  mergeParams: true
+  mergeParams: true,
 });
 
-router.route('/').get(getProducts).post(addProduct);
+const { protect } = require('../middleware/auth');
 
-router.route('/:id').get(getProduct).put(updateProduct).delete(deleteProduct);
+router.route('/').get(getProducts).post(protect, addProduct);
 
-router.put('/:id/photo', upload.single('file'), productPhotoUpload);
+router
+  .route('/:id')
+  .get(getProduct)
+  .put(protect, updateProduct)
+  .delete(protect, deleteProduct);
+
+router
+  .route('/:id/photo')
+  .put(protect, upload.single('file'), productPhotoUpload);
 
 module.exports = router;

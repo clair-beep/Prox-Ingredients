@@ -12,13 +12,13 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
 
   if (req.params.categoryId) {
     query = Product.find({
-      category: req.params.categoryId
+      category: req.params.categoryId,
     });
   } else {
     query = Product.find().populate({
       path: 'category',
       select: 'name description ',
-      options: { limit: 1 }
+      options: { limit: 1 },
     });
   }
 
@@ -27,7 +27,7 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
   res.status(200).json({
     success: true,
     count: products.length,
-    data: products
+    data: products,
   });
 });
 
@@ -38,19 +38,19 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
 exports.getProduct = asyncHandler(async (req, res, next) => {
   const product = await Product.findById(req.params.id).populate({
     path: 'category',
-    select: 'name description'
+    select: 'name description',
   });
 
   if (!product) {
     return next(
       new ErrorResponse(`No product with the id of ${req.params.id}`),
-      404
+      404,
     );
   }
 
   res.status(200).json({
     success: true,
-    data: product
+    data: product,
   });
 });
 
@@ -65,7 +65,7 @@ exports.addProduct = asyncHandler(async (req, res, next) => {
   if (!category) {
     return next(
       new ErrorResponse(`No category with the id of ${req.params.categoryId}`),
-      404
+      404,
     );
   }
 
@@ -73,7 +73,7 @@ exports.addProduct = asyncHandler(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
-    data: product
+    data: product,
   });
 });
 
@@ -85,18 +85,18 @@ exports.updateProduct = asyncHandler(async (req, res, next) => {
   if (!product) {
     return next(
       new ErrorResponse(`No product with the id of ${req.params.id}`),
-      404
+      404,
     );
   }
 
   product = await Product.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
-    runValidators: true
+    runValidators: true,
   });
 
   res.status(200).json({
     success: true,
-    data: product
+    data: product,
   });
 });
 
@@ -109,7 +109,7 @@ exports.deleteProduct = asyncHandler(async (req, res, next) => {
   if (!product) {
     return next(
       new ErrorResponse(`No product with the id of ${req.params.id}`),
-      404
+      404,
     );
   }
 
@@ -117,7 +117,7 @@ exports.deleteProduct = asyncHandler(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
-    data: `Product ${product.name} was deleted`
+    data: `Product ${product.name} was deleted`,
   });
 });
 
@@ -132,7 +132,7 @@ exports.productPhotoUpload = asyncHandler(async (req, res, next) => {
   if (!product) {
     return next(
       new ErrorResponse(`No product with the id of ${req.params.id}`),
-      404
+      404,
     );
   }
 
@@ -151,8 +151,8 @@ exports.productPhotoUpload = asyncHandler(async (req, res, next) => {
     return next(
       new ErrorResponse(
         `Please upload an image less than ${process.env.MAX_FILE_UPLOAD}`,
-        400
-      )
+        400,
+      ),
     );
   }
 
@@ -168,6 +168,6 @@ exports.productPhotoUpload = asyncHandler(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
-    data: product
+    data: product,
   });
 });

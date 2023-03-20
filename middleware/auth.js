@@ -51,3 +51,25 @@ exports.authorize = (...roles) => {
     next();
   };
 };
+
+// Review the   ownership of resource/ permistion to perform an action
+exports.checkExistenceOwnership = (model) =>
+  asyncHandler(async (req, res, next) => {
+    let resource = await model.findById(req.params.id);
+    // Check that resource exists
+    if (!resource) {
+      return next(
+        new ErrorResponse(`Resource not found with id:${req.params.id}`, 404),
+      );
+    }
+    // If resource exists, make sure user owns the resource, unless they're admin
+    if (req.user.role !== 'admin' && resource.user.toString() !== req.user.id) {
+      return next(
+        new ErrorResponse(
+          `You don't have permission to modify that resource`,
+          401,
+        ),
+      );
+    }
+    next();
+  });

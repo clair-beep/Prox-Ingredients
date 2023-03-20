@@ -8,23 +8,28 @@ const categorySchema = new Schema(
       type: String,
       required: [true, 'Please add a name'],
       unique: true,
-      trim: true
+      trim: true,
     },
     description: {
       type: String,
       required: [true, 'Please add a description'],
-      maxlength: [500, 'Description can not be more than 500 characters']
-    }
+      maxlength: [500, 'Description can not be more than 500 characters'],
+    },
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: 'User',
+      required: true,
+    },
   },
   {
     toJSON: {
       virtuals: true,
       transform: function (doc, ret) {
         delete ret.id; // exclude the 'id' field from the output
-      }
+      },
     },
-    toObject: { virtuals: true }
-  }
+    toObject: { virtuals: true },
+  },
 );
 
 //Create product slug from the name
@@ -46,7 +51,7 @@ categorySchema.virtual('products', {
   ref: 'Product',
   localField: '_id',
   foreignField: 'category',
-  justOne: false
+  justOne: false,
 });
 
 module.exports = mongoose.model('Category', categorySchema);

@@ -53,14 +53,14 @@ exports.getCategories = asyncHandler(async (req, res, next) => {
   if (endIndex < total) {
     pagination.next = {
       page: page + 1,
-      limit
+      limit,
     };
   }
 
   if (startIndex > 0) {
     pagination.prev = {
       page: page - 1,
-      limit
+      limit,
     };
   }
 
@@ -71,7 +71,7 @@ exports.getCategories = asyncHandler(async (req, res, next) => {
     success: true,
     count: categories.length,
     pagination,
-    data: categories
+    data: categories,
   });
 });
 
@@ -79,7 +79,7 @@ exports.getCategory = asyncHandler(async (req, res, next) => {
   const category = await Category.findById(req.params.id);
   if (!category) {
     return next(
-      new ErrorResponse(`Category not found with id of ${req.params.id}`, 404)
+      new ErrorResponse(`Category not found with id of ${req.params.id}`, 404),
     );
   }
 
@@ -91,11 +91,25 @@ exports.getCategory = asyncHandler(async (req, res, next) => {
 // @route POST /v1/categories
 // @access Private
 exports.createCategory = asyncHandler(async (req, res, next) => {
+  //Add user to req.body
+  req.body.user = req.user.id;
+
+  //Check for published categories
+  // const publishedCategory = await Category.findOne({ user: req.user.id });
+  //If the user is not an admin, they cannot   add a category
+  if (req.user.role !== 'admin') {
+    return next(
+      new ErrorResponse(
+        `The user with ID ${req.user.id} has no the required role to create a category`,
+        403,
+      ),
+    );
+  }
   const category = await Category.create(req.body);
 
   res.status(201).json({
     success: true,
-    data: category
+    data: category,
   });
 });
 // add a header with:
@@ -105,12 +119,12 @@ exports.createCategory = asyncHandler(async (req, res, next) => {
 exports.updateCategory = asyncHandler(async (req, res, next) => {
   const category = await Category.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
-    runValidators: true
+    runValidators: true,
   });
 
   if (!category) {
     return next(
-      new ErrorResponse(`Category not found with id of ${req.params.id}`, 404)
+      new ErrorResponse(`Category not found with id of ${req.params.id}`, 404),
     );
   }
   res.status(200).json({ sucess: true, data: category });
@@ -125,7 +139,7 @@ exports.deleteCategory = asyncHandler(async (req, res, next) => {
 
   if (!category) {
     return next(
-      new ErrorResponse(`Category not found with id of ${req.params.id} `, 404)
+      new ErrorResponse(`Category not found with id of ${req.params.id} `, 404),
     );
   }
 

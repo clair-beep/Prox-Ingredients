@@ -58,6 +58,15 @@ exports.getProduct = asyncHandler(async (req, res, next) => {
 // @route POST /v1/categories/:categoryId/products
 // @access Private
 exports.addProduct = asyncHandler(async (req, res, next) => {
+  const validRoles = ['admin', 'publisher'];
+  if (!validRoles.includes(req.user.role)) {
+    return next(
+      new ErrorResponse(
+        `The user with ID ${req.user.id} has no the required role to create a category`,
+        403,
+      ),
+    );
+  }
   req.body.category = req.params.categoryId;
 
   const category = await Category.findById(req.params.categoryId);

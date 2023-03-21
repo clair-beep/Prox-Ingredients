@@ -22,12 +22,12 @@ router.use('/:categoryId/products', productRouter);
 router
   .route('/')
   .get(getCategories)
-  .post(protect, authorize('publisher', 'admin'), createCategory);
+  .post(protect, authorize('admin'), createCategory);
 
 router
   .route('/:id')
   .get(getCategory)
-  .put(protect, authorize('publisher', 'admin'), updateCategory)
-  .delete(protect, authorize('publisher', 'admin'), deleteCategory);
+  .put(protect, authorize('admin'), updateCategory)
+  .delete(protect, authorize('admin'), deleteCategory);
 
 module.exports = router;

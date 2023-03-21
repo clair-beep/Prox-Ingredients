@@ -1,22 +1,43 @@
 const express = require('express');
+const Ingredient = require('../models/Ingredient');
+
 const {
   getIngredients,
   getIngredient,
   createIngredient,
   updateIngredient,
-  deleteIngredient
+  deleteIngredient,
 } = require('../controllers/ingredients');
 
 //Main Routes - simplified for now
 
 const router = express.Router();
 
-router.route('/').get(getIngredients).post(createIngredient);
+const {
+  protect,
+  authorize,
+  checkExistenceOwnership,
+} = require('../middleware/auth');
+
+router
+  .route('/')
+  .get(getIngredients)
+  .post(protect, authorize('publisher', 'admin'), createIngredient);
 
 router
   .route('/:id')
   .get(getIngredient)
-  .put(updateIngredient)
-  .delete(deleteIngredient);
+  .put(
+    protect,
+    authorize('publisher', 'admin'),
+    checkExistenceOwnership(Ingredient),
+    updateIngredient,
+  )
+  .delete(
+    protect,
+    authorize('publisher', 'admin'),
+    checkExistenceOwnership(Ingredient),
+    deleteIngredient,
+  );
 
 module.exports = router;

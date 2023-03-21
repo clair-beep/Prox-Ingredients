@@ -28,7 +28,7 @@ exports.protect = asyncHandler(async (req, res, next) => {
     //Verify if the Token given matches
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-    console.log(decoded);
+    //console.log(decoded);
     //Asign the user found with the token
     req.user = await User.findById(decoded.id);
     next();
@@ -63,6 +63,7 @@ exports.checkExistenceOwnership = (model) =>
       );
     }
     // If resource exists, make sure user owns the resource, unless they're admin
+    console.log(resource);
     if (req.user.role !== 'admin' && resource.user.toString() !== req.user.id) {
       return next(
         new ErrorResponse(

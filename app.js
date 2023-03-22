@@ -13,6 +13,7 @@ const products = require('./routes/products');
 const ingredients = require('./routes/ingredients');
 const categories = require('./routes/categories');
 const auth = require('./routes/auth');
+const users = require('./routes/users');
 
 //Use .env file in config folder
 dotenv.config({ path: './config/config.env' });
@@ -55,6 +56,7 @@ app.use('/v1/products', products);
 app.use('/v1/ingredients', ingredients);
 app.use('/v1/categories', categories);
 app.use('/v1/auth', auth);
+app.use('/v1/users', users);
 
 app.use(errorHandler);
 

@@ -8,27 +8,19 @@ const cloudinary = require('../middleware/cloudinary');
 // @route GET /v1/categories/:categoriesId/products
 // @access Public
 exports.getProducts = asyncHandler(async (req, res, next) => {
-  let query;
-
   if (req.params.categoryId) {
-    query = Product.find({
+    const products = await Product.find({
       category: req.params.categoryId,
     });
-  } else {
-    query = Product.find().populate({
-      path: 'category',
-      select: 'name description ',
-      options: { limit: 1 },
+
+    return res.status(200).json({
+      success: true,
+      count: products.length,
+      data: products,
     });
+  } else {
+    res.status(200).json(res.advancedResults);
   }
-
-  const products = await query;
-
-  res.status(200).json({
-    success: true,
-    count: products.length,
-    data: products,
-  });
 });
 
 // add a header with:

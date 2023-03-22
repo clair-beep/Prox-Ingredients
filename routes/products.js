@@ -17,6 +17,7 @@ const router = express.Router({
   mergeParams: true,
 });
 
+const advancedResults = require('../middleware/advancedResults');
 const {
   protect,
   authorize,
@@ -25,7 +26,13 @@ const {
 
 router
   .route('/')
-  .get(getProducts)
+  .get(
+    advancedResults(Product, {
+      path: 'category',
+      select: 'name description',
+    }),
+    getProducts,
+  )
   .post(protect, authorize('publisher', 'admin'), addProduct);
 
 router

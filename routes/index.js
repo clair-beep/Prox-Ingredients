@@ -1,11 +1,6 @@
 const express = require('express');
 
-const {
-  getProductByCategories,
-  getSearch,
-  getAbout,
-  getTermsOfUse
-} = require('../controllers/index');
+const { getSearch, getAbout, getTermsOfUse } = require('../controllers/index');
 
 //Main Routes - simplified for now
 

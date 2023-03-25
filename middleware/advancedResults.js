@@ -15,7 +15,7 @@ const advancedResults = (model, populate) => async (req, res, next) => {
   //Create operatos ($gt, $gte, etc)
   queryStr = queryStr.replace(
     /\b(gt|gte|lt|lte|in)\b/g,
-    (match) => `$${match}`
+    (match) => `$${match}`,
   );
 
   //Finding rescource
@@ -58,14 +58,14 @@ const advancedResults = (model, populate) => async (req, res, next) => {
   if (endIndex < total) {
     pagination.next = {
       page: page + 1,
-      limit
+      limit,
     };
   }
 
   if (startIndex > 0) {
     pagination.prev = {
       page: page - 1,
-      limit
+      limit,
     };
   }
 
@@ -73,7 +73,7 @@ const advancedResults = (model, populate) => async (req, res, next) => {
     success: true,
     count: results.length,
     pagination,
-    data: results
+    data: results,
   };
   next();
 };

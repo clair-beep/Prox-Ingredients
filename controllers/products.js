@@ -8,19 +8,18 @@ const cloudinary = require('../middleware/cloudinary');
 // @route GET /v1/categories/:categoriesId/products
 // @access Public
 exports.getProducts = asyncHandler(async (req, res, next) => {
-  if (req.params.categoryId) {
-    const products = await Product.find({
-      category: req.params.categoryId,
-    });
+  let products;
 
-    return res.status(200).json({
-      success: true,
-      count: products.length,
-      data: products,
+  if (req.params.categoryId) {
+    products = await Product.find({
+      category: mongoose.Types.ObjectId(req.params.categoryId),
     });
   } else {
-    res.status(200).json(res.advancedResults);
+    const advancedResults = res.advancedResults;
+    products = advancedResults.data;
   }
+
+  res.render('main', { products: products.map((product) => product.toJSON()) });
 });
 
 // add a header with:

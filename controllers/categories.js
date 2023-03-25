@@ -2,8 +2,6 @@ const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
 const Category = require('../models/Category');
 
-console.log('Testing merge');
-
 exports.getCategories = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults);
 });

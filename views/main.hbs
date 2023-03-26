@@ -93,56 +93,25 @@
         <div class="col-lg-9">
           <div class="ps-lg-2">
             <div class="row gx-3 mb-7">
+              {{#each products}}
               <div class="col-sm-6 col-md-4 mb-3 mb-md-0">
                 <!-- Card -->
                 <a class="card custom-card custom-card card-transition shadow-none h-100" href="@@autopath/demo-app-marketplace/app-overview.html">
-                  <img class="card-img-top" src="@@autopath/assets/img/400x200/img5.jpg" alt="Image Description">
+                  <img class="card-img-top" src="{{image}}" alt="Image Description">
 
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2">
-                      <h4 class="card-title mb-0">La Roche Posay</h4>
-                      <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                      <h4 class="card-title mb-0">{{brand}}</h4>
+
                     </div>
-                    <p class="card-text text-body">EFFACLAR Gel purifica suavemente la piel grasa sin resecar</p>
+                    <p class="card-text text-body">{{name}}</p>
                   </div>
                 </a>
                 <!-- End Card -->
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3 mb-md-0">
-                <!-- Card -->
-                <a class="card custom-card custom-card card-transition shadow-none h-100" href="@@autopath/demo-app-marketplace/app-overview.html">
-                  <img class="card-img-top" src="@@autopath/assets/img/400x200/img2.jpg" alt="Image Description">
-
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-2">
-                      <h4 class="card-title mb-0">Cetaphil</h4>
-                      <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
-                    </div>
-                    <p class="card-text text-body">Limpiador líquido para piel grasa</p>
-                  </div>
-                </a>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6 col-md-4">
-                <!-- Card -->
-                <a class="card custom-card custom-card card-transition shadow-none h-100" href="@@autopath/demo-app-marketplace/app-overview.html">
-                  <img class="card-img-top" src="@@autopath/assets/img/400x200/img3.jpg" alt="Image Description">
-
-                  <div class="card-body">
-                    <div class="d-flex align-items-center mb-2">
-                      <h4 class="card-title mb-0">Alsace</h4>
-                      <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
-                    </div>
-                    <p class="card-text text-body">Limpiador cútaneo sustito del jabón</p>
-                  </div>
-                </a>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
+            {{/each}}
             </div>
             <!-- End Row -->
 

@@ -19,6 +19,10 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
     products = advancedResults.data;
   }
 
+  // res.status(200).json({
+  //   success: true,
+  //   data: products,
+  // });
   res.render('main', { products: products.map((product) => product.toJSON()) });
 });
 
@@ -149,7 +153,6 @@ exports.productPhotoUpload = asyncHandler(async (req, res, next) => {
 
   // Upload the file to Cloudinary using the Cloudinary API and store the result in the `result` variable
   const result = await cloudinary.uploader.upload(req.file.path);
-  console.log(result);
   // Set the `product.image` field to the secure URL of the uploaded image and `product.cloudinaryId` to the public ID of the image on Cloudinary
   product.image = result.secure_url;
   product.cloudinaryId = result.public_id;

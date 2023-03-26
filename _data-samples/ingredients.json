@@ -29,6 +29,13 @@
   },
 
   {
+    "_id": "641f64674f060c1d7fc5ddab",
+    "englishTitle": "Behenic Acid",
+    "spanishTitle": "El ácido behénico es un ácido graso que se utiliza como espesante, agente limpiador y opacificante en cosméticos. También conocido como ácido docosanoico, este ingrediente puede ser de origen vegetal o sintético. Es un componente importante del aceite de moringa y también se encuentra en el aceite de cacahuete.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+
+  {
     "_id": "63dfc4b20e033bfbd29ce848",
     "englishTitle": "Benzyl Alcohol",
     "spanishTitle": "Benzyl Alcohol",
@@ -71,12 +78,34 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "641f65a32eedab22989b6c9b",
+    "englishTitle": "Ceteth-20 ",
+    "spanishTitle": "N/A",
+    "description": "Ceteth-20 es un tensioactivo no iónico de la familia del polietilenglicol que se utiliza con frecuencia en productos cosméticos. Facilita la disolución de otros ingredientes en un solvente en el que normalmente no se disolverían.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "641f669ef6808d045c421271",
+    "englishTitle": "Cetyl Alcohol",
+    "spanishTitle": "N/A",
+    "description": "El alcohol cetílico es un alcohol graso que proporciona consistencia a los productos cosméticos. Es un excelente emoliente que suaviza, ablanda y protege la piel. En los productos para el cabello, facilita el desenredado al tiempo que suaviza el cabello. En general, es muy adecuado para pieles secas. El alcohol cetílico puede ser producido a partir de aceite de coco y está permitido en cosmética natural.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "641f6707a1582e586c43b521",
+    "englishTitle": "Cetyl Behenate",
+    "spanishTitle": "N/A",
+    "description": "Cetyl Behenate es una sustancia cerosa que se deriva de la combinación de alcohol cetílico y ácido behénico. Se utiliza comúnmente en productos cosméticos y de cuidado personal como lubricante, emoliente y espesante. El Cetyl Behenate ayuda a mejorar la textura y consistencia de los productos, haciéndolos más suaves y fáciles de aplicar. También se utiliza para prevenir la separación de ingredientes a base de aceite y agua en las fórmulas. Además, el Cetyl Behenate se utiliza en productos farmacéuticos y alimenticios como agente de recubrimiento y glaseado.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
     "_id": "63e3f57837aba21f56087e33",
-    "englishTitle": "Cetil Hidroxietilcelulosa",
+    "englishTitle": "Cetyl Hidroxietilcelulosa",
     "spanishTitle": "Cetyl Hydroxyethylcellulose",
     "description": "Un ingrediente auxiliar derivado de celulosa que se crea al unir una molécula que parece ser rechazada de una masa de agua al una molécula que tiene afinidad al agua, Hidroxietilcelulosa. Lo resultante, Cetil Hidroxietilcelulosa, también es un espesante pero con algunas propiedades superficiales activas (ya que parte de la molécula es amante del agua y parte es amante del aceite). Gracias a sus propiedades superficialmente activas, también funciona como estabilizador de emulsión.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
+
   {
     "_id": "63dfc4d5b90d71928acf3983",
     "englishTitle": "Citric Acid",
@@ -127,6 +156,13 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "641f67d559674354873cbe98",
+    "englishTitle": "Dihydroxy Methylchromone",
+    "spanishTitle": "N/A",
+    "description": "Es un  buen ingrediente que  ayudan a tu piel a combatir los radicales libres que dañan el colágeno. Hace parte de los antioxidantes que  combate anti-envejecimiento",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
     "_id": "63dfc514e73b772c2adbe950",
     "englishTitle": "Dimethicone Crosspolymer",
     "spanishTitle": "N/A",
@@ -170,6 +206,13 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "642016d93f87842638ddada3",
+    "englishTitle": "Glyceryl Stearate",
+    "spanishTitle": "Estearato de Glicerina",
+    "description": "Un material sólido, blanco, ceroso y muy común que ayuda a que el agua y el aceite se mezclen, da cuerpo a las cremas y deja la piel suave y tersa. Químicamente hablando, es la unión de una molécula de glicerina con el ácido graso llamado ácido esteárico. Se puede producir a partir de la mayoría de los aceites vegetales (en los aceites, tres moléculas de ácido graso están unidas a la glicerina en lugar de solo una como aquí) en un proceso bastante sencillo y verde que es similar a la fabricación de jabón. Es fácilmente biodegradable.También se encuentra de forma natural en nuestro cuerpo y se utiliza como aditivo alimentario. Según el químico cosmético Colins, su seguridad está realmente más allá de toda duda",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
     "_id": "63dfc52e3438c6edcd6ed166",
     "englishTitle": "Glycine Soja Oil",
     "spanishTitle": "Aceite de Soja",
@@ -209,6 +252,14 @@
     "englishTitle": "Hydroxyethyl Urea",
     "spanishTitle": "Urea Hidroxietil",
     "description": "Urea Hidroxietil es un humectante y emoliente utilizado en productos de cuidado personal, como cremas y lociones. Tiene una consistencia líquida y es un ingrediente común en productos diseñados para hidratar la piel. Se utiliza para mejorar la retención de humedad en la piel y para suavizar y suavizar la piel.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+
+  {
+    "_id": "641f61b6a986f8047323ba21",
+    "englishTitle": "Isononyl Isononanoate",
+    "spanishTitle": "Isononyl Isononanoate",
+    "description": "Un éster emoliente con una sensación rica y cremosa en la piel, pero no grasosa. Hace que la piel sea flexible y protege la piel seca.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
@@ -326,6 +377,13 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "6420191699cbda46623e090d",
+    "englishTitle": "Palmitoyl Oligopeptide",
+    "spanishTitle": "Palmitoil oligopéptido",
+    "description": "Los palmitoil oligopéptidos son ingredientes comúnmente encontrados en productos cosméticos que ayudan a acondicionar la piel, las uñas y el cabello. Algunos tipos de palmitoil oligopéptidos también funcionan como agentes limpiadores-surfactantes, modificadores de superficie, antioxidantes o agentes antimicrobianos. Se utilizan en una variedad de productos cosméticos, como preparaciones para el bronceado y polvos faciales, que se pueden aplicar con frecuencia y durante períodos prolongados de tiempo. Si bien existe un potencial de toxicidad por inhalación al usar aerosoles cosméticos, la mayoría de las gotas o partículas no son respirables y no entrarían en los pulmones.",
+    "references": "https://www.cir-safety.org/sites/default/files/palmit072012slr.pdf"
+  },
+  {
     "_id": "63dfc58b98dc44ef45c4965d",
     "englishTitle": "Panthenol",
     "spanishTitle": "Pantenol",
@@ -344,6 +402,13 @@
     "englishTitle": "PEG-40 Hydrogenated Castor Oil",
     "spanishTitle": "Aceite de ricino hidrogenado PEG-40",
     "description": "PEG-40 Hydrogenated Castor Oil es una forma hidrogenada del aceite de ricino. Se utiliza como emulsionante y dispersante en productos de cuidado personal y cosméticos. Es seguro para su uso en productos para el cuidado personal y ha sido aprobado por la FDA. Se encuentra comúnmente en productos como champús, acondicionadores y productos para el cuidado de la piel.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "6420197eb3ffbb957ad15a9f",
+    "englishTitle": "PEG-75 Stearate",
+    "spanishTitle": "N/A",
+    "description": "PEG-75 Stearate es una mezcla de éster de glicol de polietileno y ácido esteárico. Funciona para emulsionar disolventes en fórmulas cosméticas, puede contribuir a la textura del producto y, en cantidades mayores, también puede ser un agente limpiador. El PEG-75 Stearate puede ser de origen animal o sintético; Paula's Choice utiliza la forma sintética. Es uno de los muchos compuestos de PEG considerados seguros para su uso en cosméticos.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
@@ -480,6 +545,20 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "64201b79fb586edb2f516ccb",
+    "englishTitle": "Sorbitol",
+    "spanishTitle": "Sorbitol",
+    "description": "Es un sustituto de azúcar con sabor dulce que ayuda a que la piel retenga agua cuando se usa en productos cosméticos. También ayuda a espesar los productos y darles un poco más de deslizamiento.",
+    "references": "https://incidecoder.com/ingredients/sorbitol"
+  },
+  {
+    "_id": "64201bded88d7476237a1017",
+    "englishTitle": "Steareth-20",
+    "spanishTitle": "Sorbitol",
+    "description": "Un material sólido y ceroso que ayuda a mezclar aceite y agua, también conocido como emulsionante. Se deriva del alcohol graso llamado alcohol estearílico mediante la etoxilación, lo que hace que la molécula sea más soluble en agua. El resultado final es un emulsionante, también llamado solubilizante, que prefiere principalmente el agua, y que puede ayudar a disolver pequeñas cantidades de ingredientes que prefieren el aceite en productos a base de agua. O también puede combinarse con emulsionantes que prefieren el aceite (como su hermano, Steareth-2) para crear emulsiones estables.",
+    "references": "https://incidecoder.com/ingredients/steareth-20"
+  },
+  {
     "_id": "63dfc6088120c98229243d44",
     "englishTitle": "Thermus Thermophillus Ferment",
     "spanishTitle": "Fermento de Thermus Thermophillus",
@@ -502,7 +581,7 @@
   },
   {
     "_id": "63dfc61a85f7454a2ccda378",
-    "englishTitle": "Tocopherol Acetate",
+    "englishTitle": "Tocopheryl Acetate",
     "spanishTitle": "Acetato de Tocoferol",
     "description": "El Acetato de Tocoferol es una forma sintética de la vitamina E que se utiliza comúnmente en productos de belleza y cuidado personal, como cremas, lociones y productos para el cabello. Se conoce por sus propiedades antioxidantes e antiinflamatorias, que lo hacen útil para proteger la piel y el cabello del daño causado por factores ambientales como los rayos UV y la contaminación. El Acetato de Tocoferol se utiliza en pequeñas cantidades en formulaciones cosméticas, y puede ayudar a mejorar la apariencia y la salud general de la piel. Cuando se utiliza en productos de cuidado de la piel, el Acetato de Tocoferol puede ayudar a nutrir, hidratar y proteger la piel del daño y el envejecimiento prematuro.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"

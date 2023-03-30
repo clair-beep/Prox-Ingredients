@@ -1,8 +1,11 @@
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
 const Product = require('../models/Product');
+const Ingredient = require('../models/Ingredient');
 const Category = require('../models/Category');
 const cloudinary = require('../middleware/cloudinary');
+const sortResults = require('../middleware/sortResults');
+
 // add a header with:
 // @description Get all products
 // @route GET /v1/categories/:categoriesId/products
@@ -10,20 +13,35 @@ const cloudinary = require('../middleware/cloudinary');
 exports.getProducts = asyncHandler(async (req, res, next) => {
   if (req.params.categoryId) {
     const products = await Product.find({ category: req.params.categoryId });
-    //console.log(products);
+
     res.render('product-categories', {
       products: products.map((product) => product.toJSON()),
     });
   } else {
+    const ingredients = await Ingredient.find().sort({ createdAt: 'asc' });
+    const ingredientsData = ingredients.map((ingredient) => {
+      return {
+        id: ingredient._id,
+        name:
+          ingredient.spanishTitle === 'N/A'
+            ? ingredient.englishTitle
+            : ingredient.spanishTitle,
+        description: ingredient.description,
+        source: ingredient.references,
+      };
+    });
+    //.sort((a, b) => a.name.localeCompare(b.name)); // Sort ingredientsData by name in ascending order
+
     const products = await Product.find();
-    const categories = await Category.find();
-    for (const category of categories) {
-      console.log('something');
-      const test = await Product.find({ category: category._id });
-      category.productCount = test.length;
-    }
-    console.log(categories);
-    // Get a list of unique brands from the products
+    const categories = await Category.find().populate('products');
+    const categoryData = categories.map((category) => {
+      return {
+        id: category._id,
+        name: category.name,
+        description: category.description,
+        productCount: category.products.length,
+      };
+    });
     const brands = Array.from(
       new Set(
         products.map(
@@ -35,9 +53,9 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
     );
     res.render('main', {
       products: products.map((product) => product.toJSON()),
-      categories: categories.map((category) => category.toJSON()),
-
-      brands,
+      categories: categoryData,
+      brands: brands,
+      ingredients: ingredientsData,
     });
   }
 });

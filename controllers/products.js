@@ -8,22 +8,38 @@ const cloudinary = require('../middleware/cloudinary');
 // @route GET /v1/categories/:categoriesId/products
 // @access Public
 exports.getProducts = asyncHandler(async (req, res, next) => {
-  let products;
-
   if (req.params.categoryId) {
-    products = await Product.find({
-      category: mongoose.Types.ObjectId(req.params.categoryId),
+    const products = await Product.find({ category: req.params.categoryId });
+    //console.log(products);
+    res.render('product-categories', {
+      products: products.map((product) => product.toJSON()),
     });
   } else {
-    const advancedResults = res.advancedResults;
-    products = advancedResults.data;
-  }
+    const products = await Product.find();
+    const categories = await Category.find();
+    for (const category of categories) {
+      console.log('something');
+      const test = await Product.find({ category: category._id });
+      category.productCount = test.length;
+    }
+    console.log(categories);
+    // Get a list of unique brands from the products
+    const brands = Array.from(
+      new Set(
+        products.map(
+          (product) =>
+            product.brand[0].toUpperCase() +
+            product.brand.slice(1).toLowerCase(),
+        ),
+      ),
+    );
+    res.render('main', {
+      products: products.map((product) => product.toJSON()),
+      categories: categories.map((category) => category.toJSON()),
 
-  // res.status(200).json({
-  //   success: true,
-  //   data: products,
-  // });
-  res.render('main', { products: products.map((product) => product.toJSON()) });
+      brands,
+    });
+  }
 });
 
 // add a header with:

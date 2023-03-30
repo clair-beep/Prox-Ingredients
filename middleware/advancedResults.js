@@ -1,3 +1,4 @@
+// Create middleware function that takes in a model and a populate object
 const advancedResults = (model, populate) => async (req, res, next) => {
   let query;
   //Copy req.query
@@ -12,13 +13,13 @@ const advancedResults = (model, populate) => async (req, res, next) => {
   //Create query string
   let queryStr = JSON.stringify(reqQuery);
 
-  //Create operatos ($gt, $gte, etc)
+  //Create operators ($gt, $gte, etc)
   queryStr = queryStr.replace(
     /\b(gt|gte|lt|lte|in)\b/g,
     (match) => `$${match}`,
   );
 
-  //Finding rescource
+  //Finding resource
   query = model.find(JSON.parse(queryStr));
 
   //Select Fields
@@ -38,13 +39,14 @@ const advancedResults = (model, populate) => async (req, res, next) => {
 
   //Pagination
   const page = parseInt(req.query.page, 10) || 1;
-  const limit = parseInt(req.query.limit, 10) || 25;
+  const limit = parseInt(req.query.limit, 10) || 5; // Change limit to 4
   const startIndex = (page - 1) * limit;
   const endIndex = page * limit;
   const total = await model.countDocuments();
 
   query = query.skip(startIndex).limit(limit);
 
+  // Populate data if populate object is passed in
   if (populate) {
     query = query.populate(populate);
   }
@@ -69,6 +71,7 @@ const advancedResults = (model, populate) => async (req, res, next) => {
     };
   }
 
+  // Attach results to response object and call next middleware
   res.advancedResults = {
     success: true,
     count: results.length,
@@ -78,4 +81,5 @@ const advancedResults = (model, populate) => async (req, res, next) => {
   next();
 };
 
+// Export middleware function
 module.exports = advancedResults;

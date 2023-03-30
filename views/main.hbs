@@ -1,4 +1,6 @@
- <main id="content" role="main">
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
     <!-- Hero -->
     <div class="container content-space-1 contenspace-t-md-0">
       <div class="row justify-content-md-between align-items-md-center">
@@ -29,6 +31,7 @@
 
         <div class="col-md-5">
           <img class="img-fluid filter-green" src="/svg/illustrations/oc-lost.svg" alt="Image Descriptio">
+
         </div>
         <!-- End Col -->
       </div>
@@ -41,51 +44,7 @@
       <div class="row col-lg-divider">
         <div class="col-lg-3">
           <!-- Navbar -->
-          <div class="navbar-expand-lg">
-            <!-- Navbar Toggle -->
-            <div class="d-grid">
-              <button type="button" class="navbar-toggler btn btn-white rounded mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
-                <span class="d-flex justify-content-between align-items-center">
-                  <span class="text-dark">Menu</span>
-
-                  <span class="navbar-toggler-default">
-                    <i class="bi-list"></i>
-                  </span>
-
-                  <span class="navbar-toggler-toggled">
-                    <i class="bi-x"></i>
-                  </span>
-                </span>
-              </button>
-            </div>
-            <!-- End Navbar Toggle -->
-
-            <!-- Navbar Collapse -->
-            <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
-              <div class="d-grid gap-4 flex-grow-1">
-                
-                <div class="nav nav-sm nav-pills nav-vertical">
-                  <h5 class="nav-subtitle">Tipos de Productos<aside></aside></h5>
-                  <a class="nav-link d-flex justify-content-between" href="#">Cuidado Solar <span class="badge text-dark border rounded-pill">1</span></a>
-                  <a class="nav-link" href="#">Rostro</a>
-                  <a class="nav-link" href="#">Corporal</a>
-                </div>
-
-                <div class="nav nav-sm nav-pills nav-vertical">
-                  <h5 class="nav-subtitle">Marcas</h5>
-                  <a class="nav-link d-flex justify-content-between" href="#">XXX <span class="badge text-dark border rounded-pill">9+</span></a>
-                  <a class="nav-link" href="#">XXX</a>
-                </div>
-
-                <div class="nav nav-sm nav-pills nav-vertical">
-                  <h5 class="nav-subtitle">Ingredientes</h5>
-                  <a class="nav-link" href="#">ZZZZZ</a>
-                  <a class="nav-link" href="#">ZZZZZ</a>
-                </div>
-              </div>
-            </div>
-            <!-- End Navbar Collapse -->
-          </div>
+          {{> _add_btn}}
           <!-- End Navbar -->
         </div>
         <!-- End Col -->
@@ -93,16 +52,15 @@
         <div class="col-lg-9">
           <div class="ps-lg-2">
             <div class="row gx-3 mb-7">
-              {{#each products}}
-              <div class="col-sm-6 col-md-4 mb-3 mb-md-0">
+            {{#each products}}
+              <div class="col-sm-6 col-md-4 mb-7">
                 <!-- Card -->
                 <a class="card custom-card custom-card card-transition shadow-none h-100" href="@@autopath/demo-app-marketplace/app-overview.html">
                   <img class="card-img-top" src="{{image}}" alt="Image Description">
-
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-2">
                       <h4 class="card-title mb-0">{{brand}}</h4>
-
+{{!--                       <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor"> --}}
                     </div>
                     <p class="card-text text-body">{{name}}</p>
                   </div>
@@ -110,11 +68,9 @@
                 <!-- End Card -->
               </div>
               <!-- End Col -->
-
             {{/each}}
             </div>
             <!-- End Row -->
-
             <!-- Heading -->
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h4 class="mb-0">Destacado</h4>

@@ -1,0 +1,62 @@
+<div class='navbar-expand-lg'>
+  <!-- Navbar Toggle -->
+  <div class='d-grid'>
+    <button
+      type='button'
+      class='navbar-toggler btn btn-white rounded mb-3'
+      data-bs-toggle='collapse'
+      data-bs-target='#navbarVerticalNavMenu'
+      aria-label='Toggle navigation'
+      aria-expanded='false'
+      aria-controls='navbarVerticalNavMenu'
+    >
+      <span class='d-flex justify-content-between align-items-center'>
+        <span class='text-dark'>Menu</span>
+
+        <span class='navbar-toggler-default'>
+          <i class='bi-list'></i>
+        </span>
+
+        <span class='navbar-toggler-toggled'>
+          <i class='bi-x'></i>
+        </span>
+      </span>
+    </button>
+  </div>
+  <!-- End Navbar Toggle -->
+
+  <!-- Navbar Collapse -->
+  <div id='navbarVerticalNavMenu' class='collapse navbar-collapse'>
+    <div class='d-grid gap-4 flex-grow-1'>
+
+      <div class='nav nav-sm nav-pills nav-vertical'>
+
+        <h5 class='nav-subtitle'>Tipos de Productos<aside></aside></h5>
+        {{#each categories}}
+          <a class='nav-link d-flex justify-content-between' href='#'>{{name}}
+     <span class='badge text-dark border rounded-pill'>{{productCount}}</span>
+
+        {{/each}}
+
+      </div>
+
+      <div class='nav nav-sm nav-pills nav-vertical'>
+        <h5 class='nav-subtitle'>Marcas</h5>
+        {{#each brands}}
+          <a class='nav-link d-flex justify-content-between' href='#'>{{this}}
+            <span
+              class='badge text-dark border rounded-pill'
+            >{{this.length}}</span></a>
+
+        {{/each}}
+      </div>
+
+      <div class='nav nav-sm nav-pills nav-vertical'>
+        <h5 class='nav-subtitle'>Ingredientes</h5>
+        <a class='nav-link' href='#'>ZZZZZ</a>
+        <a class='nav-link' href='#'>ZZZZZ</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Navbar Collapse -->
+</div>

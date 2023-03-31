@@ -34,8 +34,10 @@
         <h5 class='nav-subtitle'>Tipos de Productos<aside></aside></h5>
         {{#each categories}}
           <a class='nav-link d-flex justify-content-between' href='#'>{{name}}
-     <span class='badge text-dark border rounded-pill'>{{productCount}}</span>
-
+            <span
+              class='badge text-dark border rounded-pill'
+            >{{productCount}}</span>
+          </a>
         {{/each}}
 
       </div>
@@ -52,10 +54,55 @@
       </div>
 
       <div class='nav nav-sm nav-pills nav-vertical'>
-        <h5 class='nav-subtitle'>Ingredientes</h5>
-        {{#each ingredients}}
-        <a class='nav-link' href='#'>{{name}}</a>
-        {{/each}}
+        <div class='accordion-item'>
+          <div class='accordion-header' id='headingBasicsSix'>
+            <a
+              class='accordion-button collapsed'
+              role='button'
+              data-bs-toggle='collapse'
+              data-bs-target='#accordionCourseSix'
+              aria-expanded='false'
+              aria-controls='accordionCourseSix'
+            >
+              <h5 class='nav-subtitle'>Ingredientes</h5>
+            </a>
+          </div>
+          <div
+            id='accordionCourseSix'
+            class='accordion-collapse collapse'
+            aria-labelledby='headingBasicsSix'
+          >
+            <div class='accordion-body'>
+              <!-- List Group -->
+              <div class='list-group list-group-flush list-group-no-gutters'>
+                <!-- Item -->
+                <div class='list-group-item text-muted'>
+                  <div class='row'>
+                    <div class='col-8'>
+                      <div class='d-flex'>
+                        <div class='flex-grow-1 ms-2'>
+                          {{#each ingredients}}
+                            <a
+                              class='nav-link d-flex justify-content-between'
+                              href='#'
+                            >{{name}}
+                              <span
+                                class='badge text-dark border rounded-pill'
+                              >{{productCount}}</span>
+                            </a>
+                          {{/each}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Item -->
+              </div>
+              <!-- End List Group -->
+            </div>
+          </div>
+        </div>
+        <!-- End Accordion Item -->
       </div>
     </div>
   </div>

@@ -4,7 +4,6 @@ const Product = require('../models/Product');
 const Ingredient = require('../models/Ingredient');
 const Category = require('../models/Category');
 const cloudinary = require('../middleware/cloudinary');
-const sortResults = require('../middleware/sortResults');
 
 // add a header with:
 // @description Get all products
@@ -18,21 +17,27 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
       products: products.map((product) => product.toJSON()),
     });
   } else {
-    const ingredients = await Ingredient.find().sort({ createdAt: 'asc' });
-    const ingredientsData = ingredients.map((ingredient) => {
-      return {
-        id: ingredient._id,
-        name:
-          ingredient.spanishTitle === 'N/A'
-            ? ingredient.englishTitle
-            : ingredient.spanishTitle,
-        description: ingredient.description,
-        source: ingredient.references,
-      };
-    });
-    //.sort((a, b) => a.name.localeCompare(b.name)); // Sort ingredientsData by name in ascending order
+    const ingredients = await Ingredient.find();
+    const ingredientsData = ingredients
+      .map((ingredient) => {
+        return {
+          id: ingredient._id,
+          name:
+            ingredient.spanishTitle === 'N/A'
+              ? ingredient.englishTitle
+              : ingredient.spanishTitle,
+          description: ingredient.description,
+          source: ingredient.references,
+        };
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
 
     const products = await Product.find();
+    const randomProducts = await Product.aggregate([{ $sample: { size: 5 } }]);
+    const latestProducts = await Product.find()
+      .sort({ createdAt: -1 })
+      .limit(10);
+
     const categories = await Category.find().populate('products');
     const categoryData = categories.map((category) => {
       return {
@@ -53,6 +58,8 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
     );
     res.render('main', {
       products: products.map((product) => product.toJSON()),
+      randomProducts,
+      latestProducts,
       categories: categoryData,
       brands: brands,
       ingredients: ingredientsData,

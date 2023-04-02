@@ -229,20 +229,22 @@
             <!-- End Heading -->
 
             <div class="row gx-3 mx-n2 mb-7">
-              <div class="col-sm-6 col-md-4 mb-3">
+              {{# each latestProducts}}
+              <div class="col-sm-6 col-md-5 mb-3">
+
                 <!-- Card -->
                 <div class="card custom-card card-transition shadow-none h-100">
                   <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
                     <div class="d-flex">
                       <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/the-ocean-icon.svg" alt="Logo">
+                        <img class="avatar avatar-lg avatar-4x3" src="{{image}}" alt="Logo">
                       </div>
 
                       <div class="flex-grow-1 ms-3">
                         <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">The Ocean</h5>
+                          <h5 class="card-title mb-0">{{brand}}</h5>
                         </div>
-                        <p class="card-text text-body small">Productivity</p>
+                        <p class="card-text text-body small">{{name}}</p>
                       </div>
                     </div>
                   </a>
@@ -250,118 +252,7 @@
                 <!-- End Card -->
               </div>
               <!-- End Col -->
-
-              <div class="col-sm-6 col-md-4 mb-3">
-                <!-- Card -->
-                <div class="card custom-card card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/twilio-icon.svg" alt="Logo">
-                      </div>
-
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Twilio</h5>
-                        </div>
-                        <p class="card-text text-body small">Channel</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6 col-md-4 mb-3">
-                <!-- Card -->
-                <div class="card custom-card card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/mudbox-icon.svg" alt="Logo">
-                      </div>
-
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Mudbox</h5>
-                        </div>
-                        <p class="card-text text-body small">3D computer graphics</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6 col-md-4 mb-3">
-                <!-- Card -->
-                <div class="card custom-card card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/github-icon.svg" alt="Logo">
-                      </div>
-
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Github</h5>
-                          <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
-                        </div>
-                        <p class="card-text text-body small">Collaborative</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6 col-md-4 mb-3">
-                <!-- Card -->
-                <div class="card custom-card card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/sentry-icon.svg" alt="Logo">
-                      </div>
-
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Sentry</h5>
-                          <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
-                        </div>
-                        <p class="card-text text-body small">Tax calculation</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6 col-md-4 mb-3">
-                <!-- Card -->
-                <div class="card custom-card card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/frontapp-icon.svg" alt="Logo">
-                      </div>
-
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">FrontApp</h5>
-                        </div>
-                        <p class="card-text text-body small">Communication</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
+              {{/each}}
             </div>
             <!-- End Row -->
             </div>

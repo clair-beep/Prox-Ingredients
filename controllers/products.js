@@ -33,10 +33,10 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
       .sort((a, b) => a.name.localeCompare(b.name));
 
     const products = await Product.find();
-    const randomProducts = await Product.aggregate([{ $sample: { size: 5 } }]);
+    const randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
     const latestProducts = await Product.find()
       .sort({ createdAt: -1 })
-      .limit(10);
+      .limit(6);
 
     const categories = await Category.find().populate('products');
     const categoryData = categories.map((category) => {
@@ -58,8 +58,9 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
     );
     res.render('main', {
       products: products.map((product) => product.toJSON()),
+      latestProducts: latestProducts.map((product) => product.toJSON()),
+
       randomProducts,
-      latestProducts,
       categories: categoryData,
       brands: brands,
       ingredients: ingredientsData,

@@ -72,11 +72,14 @@
             </div>
             <!-- End Row -->
             <!-- Heading -->
-            <div class="d-flex justify-content-between align-items-center mb-3">
+           {{!-- This will need to be enabled in the controller first, for now it 
+           <div class="d-flex justify-content-between align-items-center mb-3">
               <h4 class="mb-0">Destacado</h4>
-              <a class="link" href="#">Ver todo <i class="bi-chevron-right small ms-1"></i></a>
+               <a class="link" href="#">Ver todo <i class="bi-chevron-right small ms-1"></i></a> 
             </div>
             <!-- End Heading -->
+ 
+            #each outstandingProducts
 
             <div class="row gx-3 mx-n2 mb-7">
               <div class="col-sm-6 col-md-4 mb-3">
@@ -213,13 +216,15 @@
                 <!-- End Card -->
               </div>
               <!-- End Col -->
-            </div>
+              /each
+
+            </div> --}}
             <!-- End Row -->
 
             <!-- Heading -->
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h4 class="mb-0">Nuevo</h4>
-              <a class="link" href="#">Ver todo <i class="bi-chevron-right small ms-1"></i></a>
+              {{!-- <a class="link" href="#">Ver todo <i class="bi-chevron-right small ms-1"></i></a> --}}
             </div>
             <!-- End Heading -->
 

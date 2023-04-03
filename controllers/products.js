@@ -33,6 +33,8 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
       .sort((a, b) => a.name.localeCompare(b.name));
 
     const products = await Product.find();
+    console.log(products);
+
     const randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
     const latestProducts = await Product.find()
       .sort({ createdAt: -1 })
@@ -73,22 +75,28 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
 // @route GET /v1/product/:id
 // @access Public
 exports.getProduct = asyncHandler(async (req, res, next) => {
-  const product = await Product.findById(req.params.id).populate({
-    path: 'category',
-    select: 'name description',
-  });
-
+  let product = await Product.findById(req.params.id);
   if (!product) {
-    return next(
-      new ErrorResponse(`No product with the id of ${req.params.id}`),
-      404,
-    );
-  }
+    res.render('error/404', {
+      message: `No product with the id of ${req.params.id} was found`,
+    });
+  } else {
+    product = await Product.findById(req.params.id).populate('ingredients');
+    console.log(product.ingredients);
+    const ingredientsData = product.ingredients.map((ingredient) => {
+      return {
+        id: ingredient._id,
+        name: ingredient.englishTitle,
+        description: ingredient.description,
+      };
+    });
+    console.log(ingredientsData);
 
-  res.status(200).json({
-    success: true,
-    data: product,
-  });
+    res.render('product-overview', {
+      product,
+      ingredientsData,
+    });
+  }
 });
 
 // @description Add a single product

@@ -68,9 +68,7 @@ exports.getProduct = asyncHandler(async (req, res, next) => {
   const { id } = req.params;
   let product = await Product.findById(id).populate('ingredients');
   if (!product) {
-    res.render('error/404', {
-      message: `${id}`,
-    });
+    return next(new ErrorResponse('ValidationError'), 401);
   } else {
     const mappedIngredients = sortAndMapIngredientsData(product.ingredients);
 

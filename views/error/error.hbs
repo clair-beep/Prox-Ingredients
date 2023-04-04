@@ -1,0 +1,37 @@
+<!-- Testimonials -->
+<div class='overflow-hidden'>
+  <div class='container content-space-b-2'>
+    <div class='position-relative'>
+      <div class='bg-info text-center rounded-2 p-4 p-md-7'>
+
+        <!-- Blockquote -->
+        {{#if error.errorType}}
+
+          <figure class='w-md-80 w-lg-50 mx-md-auto'>
+            <blockquote class='blockquote text-white'>{{error.message}}</blockquote>
+
+            <figcaption class='blockquote-footer text-white'>
+              {{error.statusCode}}
+              <span class='blockquote-footer-source'><a
+                  href='/v1/products'
+                  class='btn text-white'
+                >Go to Home page</a></span>
+            </figcaption>
+          </figure>
+          <!-- End Blockquote -->
+        {{else}}
+          <figure class='w-md-80 w-lg-50 mx-md-auto'>
+            <blockquote class='blockquote text-white'>Seems what you're trying to access
+              doesn't exist.</blockquote>
+              <span class='blockquote-footer-source'><a
+                  href='/v1/products'
+                  class='btn text-white'
+                >Go to Home page</a></span>
+            </figcaption>
+          </figure>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Testimonials -->

@@ -10,4 +10,10 @@ function mapIngredientData(ingredient) {
   };
 }
 
-module.exports = mapIngredientData;
+function sortAndMapIngredientsData(ingredients) {
+  return ingredients
+    .map(mapIngredientData)
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+module.exports = { mapIngredientData, sortAndMapIngredientsData };

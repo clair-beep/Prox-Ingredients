@@ -4,71 +4,60 @@ const Product = require('../models/Product');
 const Ingredient = require('../models/Ingredient');
 const Category = require('../models/Category');
 const cloudinary = require('../middleware/cloudinary');
-const mapIngredientData = require('../utils/mapIngredientData');
+const {
+  mapIngredientData,
+  sortAndMapIngredientsData,
+} = require('../utils/mapIngredientData');
 
 // add a header with:
 // @description Get all products
 // @route GET /v1/categories/:categoriesId/products
 // @access Public
 exports.getProducts = asyncHandler(async (req, res, next) => {
-  if (req.params.categoryId) {
-    const products = await Product.find({ category: req.params.categoryId });
+  let categoryId = req.params.categoryId;
+  let products, ingredients, categories;
 
-    res.render('product-categories', {
-      products: products.map((product) => product.toJSON()),
-    });
-  } else {
-    const ingredients = await Ingredient.find();
-    const ingredientsData = ingredients
-      .map((ingredient) => {
-        return {
-          id: ingredient._id,
-          name:
-            ingredient.spanishTitle === 'N/A'
-              ? ingredient.englishTitle
-              : ingredient.spanishTitle,
-          description: ingredient.description,
-          source: ingredient.references,
-        };
-      })
-      .sort((a, b) => a.name.localeCompare(b.name));
-
-    const products = await Product.find();
-    console.log(products);
-
-    const randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
-    const latestProducts = await Product.find()
-      .sort({ createdAt: -1 })
-      .limit(6);
-
-    const categories = await Category.find().populate('products');
-    const categoryData = categories.map((category) => {
-      return {
-        id: category._id,
-        name: category.name,
-        description: category.description,
-        productCount: category.products.length,
-      };
-    });
-    const brands = Array.from(
-      new Set(
-        products.map(
-          (product) =>
-            product.brand[0].toUpperCase() +
-            product.brand.slice(1).toLowerCase(),
-        ),
-      ),
-    );
-    res.render('main', {
-      products: products.map((product) => product.toJSON()),
-      latestProducts: latestProducts.map((product) => product.toJSON()),
-
-      randomProducts,
-      categories: categoryData,
-      brands: brands,
-      ingredients: ingredientsData,
-    });
+  if (categoryId) {
+    products = await Product.find({ category: categoryId });
+    let productData = products.map((product) => product.toJSON());
+    return res.render('product-categories', { products: productData });
   }
+
+  ingredients = await Ingredient.find();
+  let mappedIngredients = sortAndMapIngredientsData(ingredients);
+
+  products = await Product.find();
+  let randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
+  let latestProducts = await Product.find().sort({ createdAt: -1 }).limit(6);
+
+  categories = await Category.find().populate('products');
+  let categoryData = categories.map((category) => ({
+    id: category._id,
+    name: category.name,
+    description: category.description,
+    productCount: category.products.length,
+  }));
+
+  let brands = Array.from(
+    new Set(
+      products.map(
+        (product) =>
+          product.brand[0].toUpperCase() + product.brand.slice(1).toLowerCase(),
+      ),
+    ),
+  );
+
+  let productData = products.map((product) => product.toJSON());
+  let latestProductData = latestProducts.map((product) => product.toJSON());
+
+  return res.render('main', {
+    products: productData,
+    latestProducts: latestProductData,
+    randomProducts,
+    categories: categoryData,
+    brands,
+    ingredients: mappedIngredients,
+  });
 });
 
 // add a header with:
@@ -83,10 +72,11 @@ exports.getProduct = asyncHandler(async (req, res, next) => {
       message: `${id}`,
     });
   } else {
-    const mappedIngredients = product.ingredients.map(mapIngredientData);
+    const mappedIngredients = sortAndMapIngredientsData(product.ingredients);
+
     res.render('product-overview', {
       product,
-      mappedIngredients,
+      ingredients: mappedIngredients,
     });
   }
 });

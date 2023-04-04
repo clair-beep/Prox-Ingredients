@@ -1,10 +1,11 @@
 <h1>products</h1>
 {{#each product}}
   <p>{{name}}</p>
-
+  <p>{{description}}</p>
 {{/each}}
+<h2>Ingredientes:</h2>
 <ul>
-  {{#each ingredientsData}}
+  {{#each mappedIngredients}}
     <li>{{name}}</li>
   {{/each}}
 </ul>

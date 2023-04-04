@@ -4,6 +4,7 @@ const Product = require('../models/Product');
 const Ingredient = require('../models/Ingredient');
 const Category = require('../models/Category');
 const cloudinary = require('../middleware/cloudinary');
+const mapIngredientData = require('../utils/mapIngredientData');
 
 // add a header with:
 // @description Get all products
@@ -75,26 +76,17 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
 // @route GET /v1/product/:id
 // @access Public
 exports.getProduct = asyncHandler(async (req, res, next) => {
-  let product = await Product.findById(req.params.id);
+  const { id } = req.params;
+  let product = await Product.findById(id).populate('ingredients');
   if (!product) {
     res.render('error/404', {
-      message: `No product with the id of ${req.params.id} was found`,
+      message: `${id}`,
     });
   } else {
-    product = await Product.findById(req.params.id).populate('ingredients');
-    console.log(product.ingredients);
-    const ingredientsData = product.ingredients.map((ingredient) => {
-      return {
-        id: ingredient._id,
-        name: ingredient.englishTitle,
-        description: ingredient.description,
-      };
-    });
-    console.log(ingredientsData);
-
+    const mappedIngredients = product.ingredients.map(mapIngredientData);
     res.render('product-overview', {
       product,
-      ingredientsData,
+      mappedIngredients,
     });
   }
 });

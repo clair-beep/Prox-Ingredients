@@ -77,14 +77,27 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
 exports.getProduct = asyncHandler(async (req, res, next) => {
   const { id } = req.params;
   try {
-    let product = await Product.findById(id).populate('ingredients');
+    let product;
+
+    product = await Product.findById(id)
+      .populate('ingredients')
+      .populate('category');
     if (!product) {
       return next(new ErrorResponse('ValidationError'), 401);
     } else {
       const mappedIngredients = sortAndMapIngredientsData(product.ingredients);
+      let productData = {
+        id: product._id,
+        name: product.name,
+        category: product.category.name,
+        description: product.description,
+        image: product.image,
+        brand: product.brand,
+        brandCountry: product.brandCountry,
+      };
 
       res.render('product-overview', {
-        product,
+        product: productData,
         ingredients: mappedIngredients,
       });
     }

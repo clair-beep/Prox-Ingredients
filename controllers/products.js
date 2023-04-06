@@ -18,46 +18,56 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
   let products, ingredients, categories;
 
   if (categoryId) {
-    products = await Product.find({ category: categoryId });
-    let productData = products.map((product) => product.toJSON());
-    return res.render('product-categories', { products: productData });
+    try {
+      products = await Product.find({ category: categoryId });
+      let productData = products.map((product) => product.toJSON());
+      return res.render('product-categories', { products: productData });
+    } catch (err) {
+      return next(err);
+    }
   }
 
-  ingredients = await Ingredient.find();
-  let mappedIngredients = sortAndMapIngredientsData(ingredients);
+  try {
+    ingredients = await Ingredient.find();
+    let mappedIngredients = sortAndMapIngredientsData(ingredients);
 
-  products = await Product.find();
-  let randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
-  let latestProducts = await Product.find().sort({ createdAt: -1 }).limit(6);
+    products = await Product.find();
+    let randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
+    let latestProducts = await Product.find().sort({ createdAt: -1 }).limit(6);
 
-  categories = await Category.find().populate('products');
-  let categoryData = categories.map((category) => ({
-    id: category._id,
-    name: category.name,
-    description: category.description,
-    productCount: category.products.length,
-  }));
+    categories = await Category.find().populate('products');
+    let categoryData = categories.map((category) => ({
+      id: category._id,
+      name: category.name,
+      description: category.description,
+      productCount: category.products.length,
+    }));
 
-  let brands = Array.from(
-    new Set(
-      products.map(
-        (product) =>
-          product.brand[0].toUpperCase() + product.brand.slice(1).toLowerCase(),
+    let brands = Array.from(
+      new Set(
+        products.map(
+          (product) =>
+            product.brand[0].toUpperCase() +
+            product.brand.slice(1).toLowerCase(),
+        ),
       ),
-    ),
-  );
+    );
 
-  let productData = products.map((product) => product.toJSON());
-  let latestProductData = latestProducts.map((product) => product.toJSON());
+    let productData = products.map((product) => product.toJSON());
+    let latestProductData = latestProducts.map((product) => product.toJSON());
 
-  return res.render('main', {
-    products: productData,
-    latestProducts: latestProductData,
-    randomProducts,
-    categories: categoryData,
-    brands,
-    ingredients: mappedIngredients,
-  });
+    return res.render('main', {
+      products: productData,
+      latestProducts: latestProductData,
+      randomProducts,
+      categories: categoryData,
+      brands,
+      ingredients: mappedIngredients,
+    });
+  } catch (error) {
+    console.log('error');
+    return next(err);
+  }
 });
 
 // add a header with:
@@ -66,16 +76,20 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
 // @access Public
 exports.getProduct = asyncHandler(async (req, res, next) => {
   const { id } = req.params;
-  let product = await Product.findById(id).populate('ingredients');
-  if (!product) {
-    return next(new ErrorResponse('ValidationError'), 401);
-  } else {
-    const mappedIngredients = sortAndMapIngredientsData(product.ingredients);
+  try {
+    let product = await Product.findById(id).populate('ingredients');
+    if (!product) {
+      return next(new ErrorResponse('ValidationError'), 401);
+    } else {
+      const mappedIngredients = sortAndMapIngredientsData(product.ingredients);
 
-    res.render('product-overview', {
-      product,
-      ingredients: mappedIngredients,
-    });
+      res.render('product-overview', {
+        product,
+        ingredients: mappedIngredients,
+      });
+    }
+  } catch (err) {
+    next(err);
   }
 });
 

@@ -40,11 +40,11 @@ Copyright (c) 2022-2023 Claire Mateus and others
     <p>Any person who downloads or uses the Software agrees to indemnify, defend, and hold harmless Licensor from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or in connection with the use or inability to use the Software.</p>
   </li>
   <li><strong>Governing Law</strong>
-    <p>This Agreement shall be governed by and construed in accordance with the laws of [Your State or Country], without giving effect to its conflict of laws provisions.</p>
+    <p>This Agreement shall be governed by and construed in accordance with the laws of Colombia, without giving effect to its conflict of laws provisions.</p>
   </li>
   <li><strong>Entire Agreement</strong>
     <p>This Agreement constitutes the entire agreement between Licensor and any person who downloads or uses the Software and supersedes all prior or contemporaneous communications and proposals, whether oral or written, between Licensor and such person.</p>
   </li>
 </ol>
-<p>By downloading or using the SkinCare Analyzer Full-Stack Application, you agree to be bound by the terms and conditions of this Agreement. If you do not agree to the terms and conditions of this Agreement, do not download or use the Software.</p>
+<p>By downloading or using the Prox Full-Stack Application, you agree to be bound by the terms and conditions of this Agreement. If you do not agree to the terms and conditions of this Agreement, do not download or use the Software.</p>
 <p>Marie Claire Mateus</p>

@@ -16,24 +16,36 @@ That's it.
 
 ### License ###
 
-Copyright (c) 2012-2022 Scott Chacon and others
+Copyright (c) 2022-2023 Claire Mateus and others
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+<h1>License Agreement for Prox Full-Stack Application</h1>
+	<p>This License Agreement (the "Agreement") is made and entered into on [date] by and between [Your Name] ("Licensor") and any person who downloads or uses the SkinCare Analyzer Full-Stack Application (the "Software").</p>
+	<ol>
+		<li><strong>License Grant</strong></li>
+		<p>Licensor hereby grants to any person who downloads or uses the Software a non-exclusive, royalty-free, worldwide license to use, modify, reproduce, distribute, display, and perform the Software and to make derivative works based on the Software, solely for non-commercial purposes.</p>
+		
+		<li><strong>Contributions</strong></li>
+		<p>Any person who contributes to the Software shall grant to Licensor a perpetual, irrevocable, worldwide, royalty-free, non-exclusive license to use, modify, reproduce, distribute, display, and perform any contributions.</p>
+		
+		<li><strong>Disclaimer of Medical Advice</strong></li>
+		<p>The Software is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Licensor is not a doctor and does not recommend the use of any particular skincare product. Users should always consult with their healthcare providers regarding any skincare concerns.</p>
+		
+		<li><strong>No Warranty</strong></li>
+		<p>The Software is provided "as is" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. Licensor makes no warranty that the Software will be error-free or that it will meet any particular criteria of performance or quality.</p>
+		
+		<li><strong>Limitation of Liability</strong></li>
+		<p>In no event shall Licensor be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use or inability to use the Software, even if Licensor has been advised of the possibility of such damages.</p>
+		
+		<li><strong>Indemnification</strong></li>
+		<p>Any person who downloads or uses the Software agrees to indemnify, defend, and hold harmless Licensor from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or in connection with the use or inability to use the Software.</p>
+		
+		<li><strong>Governing Law</strong></li>
+		<p>This Agreement shall be governed by and construed in accordance with the laws of [Your State or Country], without giving effect to its conflict of laws provisions.</p>
+		
+		<li><strong>Entire Agreement</strong></li>
+		<p>This Agreement constitutes the entire agreement between Licensor and any person who downloads or uses the Software and supersedes all prior or contemporaneous communications and proposals, whether oral or written, between Licensor and such person.</p>
+	</ol>
+	
+	<p>By downloading or using the SkinCare Analyzer Full-Stack Application, you agree to be bound by the terms and conditions of this Agreement. If you do not agree to the terms and conditions of this Agreement, do not download or use the Software.</p>
+	
+	<p>Marie Claire Mateus</p>

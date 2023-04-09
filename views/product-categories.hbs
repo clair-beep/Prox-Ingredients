@@ -1,13 +1,116 @@
-<h1>Categories</h1>
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="container content-space-1 contenspace-t-md-0">
+      <div class="row justify-content-md-between align-items-md-center">
+        <div class="col-md-5 mb-7 mb-md-0">
+          <!-- Heading -->
+          <div class="mb-4">
+            <h1>Busca  los ingredientes de tus productos,  sin esfuerzo </h1>
+            <p>Usa esta herramienta para conocer mas sobre los poductos que usas - directamente en Prox.
+            </p>
+          </div>
+          <!-- End Heading -->
 
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
-<h1>Categories</h1>
+          <form>
+            <!-- Input Card -->
+            <div class="input-card border">
+              <div class="input-card-form">
+                <label for="searchAppsForm" class="form-label visually-hidden">Búsqueda de productos</label>
+                <input type="text" class="form-control" id="searchAppsForm" placeholder="Búsqueda de productos" aria-label="Search for apps">
+              </div>
+              <button type="button" class="btn btn-primary">
+                <i class="bi-search"></i>
+              </button>
+            </div>
+            <!-- End Input Card -->
+          </form>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-5">
+          <img class="img-fluid filter-green" src="/svg/illustrations/oc-lost.svg" alt="Image Description">
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Hero -->
+
+    <!-- Card Grid -->
+    <div class="container content-space-b-2 content-space-b-lg-3">
+      <div class="row col-lg-divider">
+        <div class="col-lg-4">
+          <!-- Navbar -->
+          {{> _add_btn}}
+          <!-- End Navbar -->
+        </div>
+        <!-- End Col -->
+        
+        <div class="col-lg-7">
+          <div class="ps-lg-2">
+            <div class="row gx-3 mb-7">
+            {{#each productsbyCategory}}
+              <div class="col-sm-6 col-md-4 mb-7">
+                <!-- Card -->
+                <a class="card custom-card custom-card card-transition shadow-none h-100" href="/v1/products/{{this._id}}">
+                  <img class="card-img-top" src="{{image}}" alt="Image Description">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                      <h4 class="card-title mb-0">{{brand}}</h4>
+
+                    </div>
+                    <p class="card-text text-body">{{name}}</p>
+                  </div>
+                </a>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+            {{/each}}
+            </div>
+
+            <!-- Heading -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="mb-0">Nuevo</h4>
+              {{!-- <a class="link" href="#">Ver todo <i class="bi-chevron-right small ms-1"></i></a> --}}
+            </div>
+            <!-- End Heading -->
+
+            <div class="row gx-3 mx-n2 mb-7">
+              {{# each latestProducts}}
+              <div class="col-sm-6 col-md-5 mb-3">
+
+                <!-- Card -->
+                <div class="card custom-card card-transition shadow-none h-100">
+                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-lg avatar-4x3" src="{{image}}" alt="Logo">
+                      </div>
+
+                      <div class="flex-grow-1 ms-3">
+                        <div class="d-flex align-items-center">
+                          <h5 class="card-title mb-0">{{brand}}</h5>
+                        </div>
+                        <p class="card-text text-body small">{{name}}</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- End Card -->
+              </div>
+              <!-- End Col -->
+              {{/each}}
+            </div>
+            <!-- End Row -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- End Card Grid -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->

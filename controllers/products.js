@@ -22,8 +22,24 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
   if (categoryId) {
     try {
       products = await Product.find({ category: categoryId });
+      const { mappedIngredients, categoryData } =
+        await productService.getIngredientsAndCategories();
+      const { brands } = await productService.getProductData();
+      ingredients = mappedIngredients;
+      categories = categoryData;
+
+      let latestProducts = await Product.find()
+        .sort({ createdAt: -1 })
+        .limit(6);
       let productData = products.map((product) => product.toJSON());
-      return res.render('product-categories', { products: productData });
+      let latestProductData = latestProducts.map((product) => product.toJSON());
+      return res.render('product-categories', {
+        productsbyCategory: productData,
+        latestProducts: latestProductData,
+        brands,
+        ingredients,
+        categories,
+      });
     } catch (err) {
       return next(err);
     }

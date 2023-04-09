@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const colors = require('colors');
 const cookieParser = require('cookie-parser');
+
 const errorHandler = require('./middleware/error');
 const connectDB = require('./config/db');
 

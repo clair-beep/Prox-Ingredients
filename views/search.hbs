@@ -1,127 +1,112 @@
-
-
 <body>
 
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main id="content" role="main">
+  <main id='content' role='main'>
     <!-- Breadcrumb -->
-    <div class="border-top border-bottom">
-      <div class="container py-3">
+    <div class='border-top border-bottom'>
+      <div class='container py-3'>
         <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item">
-              <a href="/v1">Productos</a>
+        <nav aria-label='breadcrumb'>
+          <ol class='breadcrumb mb-0'>
+            <li class='breadcrumb-item'>
+              <a href='/v1'>Productos</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Resultados de la Búsqueda</li>
+            <li class='breadcrumb-item active' aria-current='page'>Resultados de
+              la Búsqueda</li>
           </ol>
         </nav>
         <!-- End Breadcrumb -->
       </div>
     </div>
     <!-- End Breadcrumb -->
-    
+
     <!-- Card Grid -->
-    <div class="container content-space-2">
-      <div class="row col-lg-divider">
-        <div class="col-lg-3">
+    <div class='container content-space-2'>
+      <div class='row col-lg-divider'>
+        <div class='col-lg-3'>
           <!-- Navbar -->
-          <div class="navbar-expand-lg">
-            <!-- Navbar Toggle -->
-            <div class="d-grid">
-              <button type="button" class="navbar-toggler btn btn-white rounded mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
-                <span class="d-flex justify-content-between align-items-center">
-                  <span class="text-dark">Menu</span>
-
-                  <span class="navbar-toggler-default">
-                    <i class="bi-list"></i>
-                  </span>
-
-                  <span class="navbar-toggler-toggled">
-                    <i class="bi-x"></i>
-                  </span>
-                </span>
-              </button>
-            </div>
-            <!-- End Navbar Toggle -->
-
-            <!-- Navbar Collapse -->
-            <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
-              <div class="d-grid gap-4 flex-grow-1">
-                
-                <div class="nav nav-sm nav-pills nav-vertical">
-                  <h5 class="nav-subtitle">Tipos de Productos<aside></aside></h5>
-                  <a class="nav-link d-flex justify-content-between" href="#">Cuidado Solar <span class="badge text-dark border rounded-pill">1</span></a>
-                  <a class="nav-link" href="#">Cuidado de la piel</a>
-                  <a class="nav-link" href="#">Maquillaje</a>
-                </div>
-
-                <div class="nav nav-sm nav-pills nav-vertical">
-                  <h5 class="nav-subtitle">Marcas</h5>
-                  <a class="nav-link d-flex justify-content-between" href="#">XXX <span class="badge text-dark border rounded-pill">9+</span></a>
-                  <a class="nav-link" href="#">XXX</a>
-                </div>
-
-                <div class="nav nav-sm nav-pills nav-vertical">
-                  <h5 class="nav-subtitle">Ingredientes</h5>
-                  <a class="nav-link" href="#">ZZZZZ</a>
-                  <a class="nav-link" href="#">ZZZZZ</a>
-                </div>
-              </div>
-            </div>
-            <!-- End Navbar Collapse -->
-          </div>
+            {{>_add_btn}}
           <!-- End Navbar -->
         </div>
         <!-- End Col -->
 
-        <div class="col-lg-9">
-          <div class="ps-lg-2">
+        <div class='col-lg-9'>
+          <div class='ps-lg-2'>
             <!-- Search -->
-            <div class="mb-4">
-              <div class="mb-3">
-                <h4>24 Resultados <span class="text-body small">para "Aquatop"</span></h4>
+            <div class='mb-4'>
+              <div class='mb-3'>
+                <h4>24 Resultados
+                  <span class='text-body small'>para "Aquatop"</span></h4>
               </div>
 
-              <form>
+              <form method="GET" action="/v1/products/search">
                 <!-- Input Card -->
-                <div class="input-card border">
-                  <div class="input-card-form">
-                    <label for="searchAppsForm" class="form-label visually-hidden">Search for apps</label>
-                    <div class="input-group input-group-merge">
-                      <span class="input-group-prepend input-group-text">
-                        <i class="bi-search"></i>
+                <div class='input-card border'>
+                  <div class='input-card-form'>
+                    <label
+                      for='searchAppsForm'
+                      class='form-label visually-hidden'
+                    >Search for apps</label>
+                    <div class='input-group input-group-merge'>
+                      <span class='input-group-prepend input-group-text'>
+                        <i class='bi-search'></i>
                       </span>
-                      <input type="text" class="form-control" id="searchAppsForm" placeholder="Buscar" aria-label="Search for apps">
+                      <input type='text' name="q" class='form-control' id='searchAppsForm' placeholder='Buscar' aria-label='Search for apps'/>
+
                     </div>
                   </div>
-                  <button type="button" class="btn btn-primary">
-                    <i class="bi-arrow-right"></i>
+                  <button type='submit button' class='btn btn-primary'>
+                    <i class='bi-arrow-right'></i>
                   </button>
                 </div>
                 <!-- End Input Card -->
               </form>
             </div>
             <!-- End Search -->
+            <h1>Search Results for "{{query}}"</h1>
 
-            <div class="row gx-3">
-              <div class="col-sm-6 col-md-4 mb-3">
+            {{#if products.length}}
+              <ul>
+                {{#each products}}
+                  <li>{{this.name}} by {{this.brand}}</li>
+                {{/each}}
+              </ul>
+            {{else}}
+              <p>No results found.</p>
+            {{/if}}
+{{!-- 
+            <div class='row gx-3'>
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/spotify-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/spotify-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Spotify</h5>
-                          <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Spotify</h5>
+                          <img
+                            class='avatar avatar-xss ms-1'
+                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
+                            alt='Image Description'
+                            title='Top Vendor'
+                          />
                         </div>
-                        <p class="card-text text-body small">Entertainment</p>
+                        <p class='card-text text-body small'>Entertainment</p>
                       </div>
                     </div>
                   </a>
@@ -130,20 +115,29 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/slack-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/slack-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Slack</h5>
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Slack</h5>
                         </div>
-                        <p class="card-text text-body small">Communication</p>
+                        <p class='card-text text-body small'>Communication</p>
                       </div>
                     </div>
                   </a>
@@ -152,21 +146,35 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/google-drive-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/google-drive-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Google Drive</h5>
-                          <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Google Drive</h5>
+                          <img
+                            class='avatar avatar-xss ms-1'
+                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
+                            alt='Image Description'
+                            title='Top Vendor'
+                          />
                         </div>
-                        <p class="card-text text-body small">File management</p>
+                        <p class='card-text text-body small'>File management</p>
                       </div>
                     </div>
                   </a>
@@ -175,20 +183,29 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/atlassian-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/atlassian-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Atlassian</h5>
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Atlassian</h5>
                         </div>
-                        <p class="card-text text-body small">Developer tools</p>
+                        <p class='card-text text-body small'>Developer tools</p>
                       </div>
                     </div>
                   </a>
@@ -197,21 +214,35 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/behance-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/behance-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Behance</h5>
-                          <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Behance</h5>
+                          <img
+                            class='avatar avatar-xss ms-1'
+                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
+                            alt='Image Description'
+                            title='Top Vendor'
+                          />
                         </div>
-                        <p class="card-text text-body small">Design tools</p>
+                        <p class='card-text text-body small'>Design tools</p>
                       </div>
                     </div>
                   </a>
@@ -220,20 +251,29 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/invision-studio-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/invision-studio-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">InVision Studio</h5>
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>InVision Studio</h5>
                         </div>
-                        <p class="card-text text-body small">Design tools</p>
+                        <p class='card-text text-body small'>Design tools</p>
                       </div>
                     </div>
                   </a>
@@ -242,21 +282,35 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/google-shopping-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/google-shopping-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Google Shopping</h5>
-                          <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Google Shopping</h5>
+                          <img
+                            class='avatar avatar-xss ms-1'
+                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
+                            alt='Image Description'
+                            title='Top Vendor'
+                          />
                         </div>
-                        <p class="card-text text-body small">Price comparison</p>
+                        <p class='card-text text-body small'>Price comparison</p>
                       </div>
                     </div>
                   </a>
@@ -265,20 +319,29 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/asana-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/asana-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Asana</h5>
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Asana</h5>
                         </div>
-                        <p class="card-text text-body small">Productivity</p>
+                        <p class='card-text text-body small'>Productivity</p>
                       </div>
                     </div>
                   </a>
@@ -287,20 +350,29 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/jira-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/jira-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Jira Core</h5>
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Jira Core</h5>
                         </div>
-                        <p class="card-text text-body small">Developer tools</p>
+                        <p class='card-text text-body small'>Developer tools</p>
                       </div>
                     </div>
                   </a>
@@ -309,21 +381,35 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/shopify-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/shopify-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Shopify</h5>
-                          <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor">
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Shopify</h5>
+                          <img
+                            class='avatar avatar-xss ms-1'
+                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
+                            alt='Image Description'
+                            title='Top Vendor'
+                          />
                         </div>
-                        <p class="card-text text-body small">E-commerce</p>
+                        <p class='card-text text-body small'>E-commerce</p>
                       </div>
                     </div>
                   </a>
@@ -332,20 +418,29 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/adobe-creative-cloud-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/adobe-creative-cloud-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Adobe Creative Cloud</h5>
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Adobe Creative Cloud</h5>
                         </div>
-                        <p class="card-text text-body small">Developer tools</p>
+                        <p class='card-text text-body small'>Developer tools</p>
                       </div>
                     </div>
                   </a>
@@ -354,20 +449,29 @@
               </div>
               <!-- End Col -->
 
-              <div class="col-sm-6 col-md-4 mb-3">
+              <div class='col-sm-6 col-md-4 mb-3'>
                 <!-- Card -->
-                <div class="card card-bordered card-transition shadow-none h-100">
-                  <a class="card-body" href="@@autopath/demo-app-marketplace/app-overview.html">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <img class="avatar avatar-xs" src="@@autopath/assets/svg/brands/weave-icon.svg" alt="Logo">
+                <div
+                  class='card card-bordered card-transition shadow-none h-100'
+                >
+                  <a
+                    class='card-body'
+                    href='@@autopath/demo-app-marketplace/app-overview.html'
+                  >
+                    <div class='d-flex'>
+                      <div class='flex-shrink-0'>
+                        <img
+                          class='avatar avatar-xs'
+                          src='@@autopath/assets/svg/brands/weave-icon.svg'
+                          alt='Logo'
+                        />
                       </div>
 
-                      <div class="flex-grow-1 ms-3">
-                        <div class="d-flex align-items-center">
-                          <h5 class="card-title mb-0">Weave</h5>
+                      <div class='flex-grow-1 ms-3'>
+                        <div class='d-flex align-items-center'>
+                          <h5 class='card-title mb-0'>Weave</h5>
                         </div>
-                        <p class="card-text text-body small">Customer service</p>
+                        <p class='card-text text-body small'>Customer service</p>
                       </div>
                     </div>
                   </a>
@@ -375,7 +479,7 @@
                 <!-- End Card -->
               </div>
               <!-- End Col -->
-            </div>
+            </div> --}}
             <!-- End Row -->
           </div>
         </div>
@@ -387,6 +491,4 @@
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
-  
 </body>
-

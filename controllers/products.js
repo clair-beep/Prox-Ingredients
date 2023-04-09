@@ -9,6 +9,8 @@ const {
   sortAndMapIngredientsData,
 } = require('../utils/mapIngredientData');
 
+const productService = require('../utils/productService');
+
 // add a header with:
 // @description Get all products
 // @route GET /v1/categories/:categoriesId/products
@@ -28,30 +30,15 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
   }
 
   try {
-    ingredients = await Ingredient.find();
-    let mappedIngredients = sortAndMapIngredientsData(ingredients);
+    const { mappedIngredients, categoryData } =
+      await productService.getIngredientsAndCategories();
+    ingredients = mappedIngredients;
+    categories = categoryData;
 
-    products = await Product.find();
+    const { products, brands } = await productService.getProductData();
+
     let randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
     let latestProducts = await Product.find().sort({ createdAt: -1 }).limit(6);
-
-    categories = await Category.find().populate('products');
-    let categoryData = categories.map((category) => ({
-      id: category._id,
-      name: category.name,
-      description: category.description,
-      productCount: category.products.length,
-    }));
-
-    let brands = Array.from(
-      new Set(
-        products.map(
-          (product) =>
-            product.brand[0].toUpperCase() +
-            product.brand.slice(1).toLowerCase(),
-        ),
-      ),
-    );
 
     let productData = products.map((product) => product.toJSON());
     let latestProductData = latestProducts.map((product) => product.toJSON());
@@ -60,11 +47,11 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
       products: productData,
       latestProducts: latestProductData,
       randomProducts,
-      categories: categoryData,
+      categories,
       brands,
-      ingredients: mappedIngredients,
+      ingredients,
     });
-  } catch (error) {
+  } catch (err) {
     console.log('error');
     return next(err);
   }
@@ -90,19 +77,67 @@ exports.getProduct = asyncHandler(async (req, res, next) => {
         id: product._id,
         name: product.name,
         category: product.category.name,
+        categoryId: product.category._id,
         description: product.description,
         image: product.image,
         brand: product.brand,
         brandCountry: product.brandCountry,
       };
 
+      // Find other products with the same category
+      const relatedProducts = await Product.find({
+        category: product.category._id,
+      })
+        .limit(3)
+        .lean();
+      // limit the number of related products to 3
+      console.log(`relatedProducts: ${relatedProducts}`);
       res.render('product-overview', {
         product: productData,
         ingredients: mappedIngredients,
+        relatedProducts: relatedProducts,
+        brands,
       });
     }
   } catch (err) {
     next(err);
+  }
+});
+
+// @route GET /v1/products/search
+// @access Public
+exports.searchProducts = asyncHandler(async (req, res, next) => {
+  let products, ingredients, categories;
+  const searchQuery = req.query.q;
+  console.log(`searchQuery: ${searchQuery}`);
+  try {
+    const { mappedIngredients, categoryData } =
+      await productService.getIngredientsAndCategories();
+    ingredients = mappedIngredients;
+    categories = categoryData;
+    const { brands } = await productService.getProductData();
+
+    if (typeof searchQuery === 'string' && searchQuery.trim().length > 0) {
+      products = await Product.find({
+        $or: [
+          { name: { $regex: searchQuery, $options: 'i' } },
+          { brand: { $regex: searchQuery, $options: 'i' } },
+          { description: { $regex: searchQuery, $options: 'i' } },
+        ],
+      }).lean();
+    } else {
+      products = []; // or some default value
+    }
+    res.render('search', {
+      query: searchQuery,
+      products: products,
+      categories,
+      brands,
+      ingredients,
+    });
+  } catch (err) {
+    console.log('error');
+    return next(err);
   }
 });
 

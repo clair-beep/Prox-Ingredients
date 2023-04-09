@@ -90,6 +90,8 @@ exports.getProduct = asyncHandler(async (req, res, next) => {
       })
         .limit(3)
         .lean();
+      const { brands } = await productService.getProductData();
+
       // limit the number of related products to 3
       console.log(`relatedProducts: ${relatedProducts}`);
       res.render('product-overview', {

@@ -3,7 +3,8 @@
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main id='content' role='main'>
+  <main id='content' role='main' >
+    
     <!-- Breadcrumb -->
     <div class='border-top border-bottom'>
       <div class='container py-3'>
@@ -11,7 +12,7 @@
         <nav aria-label='breadcrumb'>
           <ol class='breadcrumb mb-0'>
             <li class='breadcrumb-item'>
-              <a href='/v1'>Productos</a>
+              <a href='/v1/products'>Productos</a>
             </li>
             <li class='breadcrumb-item active' aria-current='page'>Resultados de
               la Búsqueda</li>
@@ -23,22 +24,24 @@
     <!-- End Breadcrumb -->
 
     <!-- Card Grid -->
-    <div class='container content-space-2'>
-      <div class='row col-lg-divider'>
-        <div class='col-lg-3'>
+    <div class='container my-5 content-space-3 '>
+      <div class='row col-lg-divider '>
+        <div class="col-lg-4">
           <!-- Navbar -->
             {{>_add_btn}}
           <!-- End Navbar -->
         </div>
         <!-- End Col -->
 
-        <div class='col-lg-9'>
+        <div class="col-lg-7">
           <div class='ps-lg-2'>
             <!-- Search -->
             <div class='mb-4'>
               <div class='mb-3'>
-                <h4>24 Resultados
-                  <span class='text-body small'>para "Aquatop"</span></h4>
+                {{#if products.length}}
+                <h4>{{products.length}} Resultados
+                  <span class='text-body small'>para "{{query}}"</span></h4>
+                {{/if}}  
               </div>
 
               <form method="GET" action="/v1/products/search">
@@ -65,20 +68,11 @@
               </form>
             </div>
             <!-- End Search -->
-            <h1>Search Results for "{{query}}"</h1>
+            {{#if products}}
+            <div class='row gx-4'>
+              {{#each products}}
 
-            {{#if products.length}}
-              <ul>
-                {{#each products}}
-                  <li>{{this.name}} by {{this.brand}}</li>
-                {{/each}}
-              </ul>
-            {{else}}
-              <p>No results found.</p>
-            {{/if}}
-{{!-- 
-            <div class='row gx-3'>
-              <div class='col-sm-6 col-md-4 mb-3'>
+              <div class='col-sm-6 col-md-6 mb-3'>
                 <!-- Card -->
                 <div
                   class='card card-bordered card-transition shadow-none h-100'
@@ -90,23 +84,17 @@
                     <div class='d-flex'>
                       <div class='flex-shrink-0'>
                         <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/spotify-icon.svg'
+                          class='avatar avatar-xl'
+                          src='{{image}}'
                           alt='Logo'
                         />
                       </div>
 
                       <div class='flex-grow-1 ms-3'>
                         <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Spotify</h5>
-                          <img
-                            class='avatar avatar-xss ms-1'
-                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
-                            alt='Image Description'
-                            title='Top Vendor'
-                          />
+                          <h6 class='card-title mb-0'>{{name}}</h6>
                         </div>
-                        <p class='card-text text-body small'>Entertainment</p>
+                        <p class='card-text text-body small'>{{brand}}</p>
                       </div>
                     </div>
                   </a>
@@ -114,373 +102,10 @@
                 <!-- End Card -->
               </div>
               <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/slack-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Slack</h5>
-                        </div>
-                        <p class='card-text text-body small'>Communication</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/google-drive-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Google Drive</h5>
-                          <img
-                            class='avatar avatar-xss ms-1'
-                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
-                            alt='Image Description'
-                            title='Top Vendor'
-                          />
-                        </div>
-                        <p class='card-text text-body small'>File management</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/atlassian-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Atlassian</h5>
-                        </div>
-                        <p class='card-text text-body small'>Developer tools</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/behance-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Behance</h5>
-                          <img
-                            class='avatar avatar-xss ms-1'
-                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
-                            alt='Image Description'
-                            title='Top Vendor'
-                          />
-                        </div>
-                        <p class='card-text text-body small'>Design tools</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/invision-studio-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>InVision Studio</h5>
-                        </div>
-                        <p class='card-text text-body small'>Design tools</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/google-shopping-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Google Shopping</h5>
-                          <img
-                            class='avatar avatar-xss ms-1'
-                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
-                            alt='Image Description'
-                            title='Top Vendor'
-                          />
-                        </div>
-                        <p class='card-text text-body small'>Price comparison</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/asana-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Asana</h5>
-                        </div>
-                        <p class='card-text text-body small'>Productivity</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/jira-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Jira Core</h5>
-                        </div>
-                        <p class='card-text text-body small'>Developer tools</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/shopify-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Shopify</h5>
-                          <img
-                            class='avatar avatar-xss ms-1'
-                            src='@@autopath/assets/svg/illustrations/top-vendor.svg'
-                            alt='Image Description'
-                            title='Top Vendor'
-                          />
-                        </div>
-                        <p class='card-text text-body small'>E-commerce</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/adobe-creative-cloud-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Adobe Creative Cloud</h5>
-                        </div>
-                        <p class='card-text text-body small'>Developer tools</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-
-              <div class='col-sm-6 col-md-4 mb-3'>
-                <!-- Card -->
-                <div
-                  class='card card-bordered card-transition shadow-none h-100'
-                >
-                  <a
-                    class='card-body'
-                    href='@@autopath/demo-app-marketplace/app-overview.html'
-                  >
-                    <div class='d-flex'>
-                      <div class='flex-shrink-0'>
-                        <img
-                          class='avatar avatar-xs'
-                          src='@@autopath/assets/svg/brands/weave-icon.svg'
-                          alt='Logo'
-                        />
-                      </div>
-
-                      <div class='flex-grow-1 ms-3'>
-                        <div class='d-flex align-items-center'>
-                          <h5 class='card-title mb-0'>Weave</h5>
-                        </div>
-                        <p class='card-text text-body small'>Customer service</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Card -->
-              </div>
-              <!-- End Col -->
-            </div> --}}
+              {{/each}}
+            </div>
             <!-- End Row -->
+            {{/if}}
           </div>
         </div>
         <!-- End Col -->

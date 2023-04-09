@@ -25,7 +25,8 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.1",
-    "slugify": "^1.6.5"
+    "slugify": "^1.6.5",
+    "vm2": "^3.9.15"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

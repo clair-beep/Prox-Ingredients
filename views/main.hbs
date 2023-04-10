@@ -13,14 +13,14 @@
           </div>
           <!-- End Heading -->
 
-          <form>
+          <form method="GET" action="/search">
             <!-- Input Card -->
             <div class="input-card border">
               <div class="input-card-form">
                 <label for="searchAppsForm" class="form-label visually-hidden">Búsqueda de productos</label>
-                <input type="text" class="form-control" id="searchAppsForm" placeholder="Búsqueda de productos" aria-label="Search for apps">
+                <input type='text' name="q" class='form-control' id='searchAppsForm' placeholder='Buscar' aria-label='Search for apps'/>
               </div>
-              <button type="button" class="btn btn-primary">
+              <button type='submit button' class='btn btn-primary'>
                 <i class="bi-search"></i>
               </button>
             </div>
@@ -62,7 +62,7 @@
                       <h4 class="card-title mb-0">{{brand}}</h4>
 {{!--                       <img class="avatar avatar-xss ms-1" src="@@autopath/assets/svg/illustrations/top-vendor.svg" alt="Image Description" title="Top Vendor"> --}}
                     </div>
-                    <p class="card-text text-body">{{name}}</p>
+                    <p class="card-text text-body small">{{name}}</p>
                   </div>
                 </a>
                 <!-- End Card -->

@@ -10,6 +10,7 @@ const {
 } = require('../utils/mapIngredientData');
 
 const productService = require('../utils/productService');
+const findMatchingProducts = require('../utils/findMatchingProducts');
 
 // add a header with:
 // @description Get all products
@@ -28,6 +29,9 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
       ingredients = mappedIngredients;
       categories = categoryData;
 
+      const { getMatchingProducts } =
+        await findMatchingProducts.getMatchingProducts();
+
       let latestProducts = await Product.find()
         .sort({ createdAt: -1 })
         .limit(6);
@@ -39,6 +43,7 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
         brands,
         ingredients,
         categories,
+        getMatchingProducts,
       });
     } catch (err) {
       return next(err);

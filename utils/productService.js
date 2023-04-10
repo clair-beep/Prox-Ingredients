@@ -5,6 +5,7 @@ const {
   mapIngredientData,
   sortAndMapIngredientsData,
 } = require('../utils/mapIngredientData');
+
 async function getIngredientsAndCategories() {
   const ingredients = await Ingredient.find();
   const mappedIngredients = sortAndMapIngredientsData(ingredients);

@@ -6,7 +6,7 @@ const connectDB = async () => {
   try {
     //! Additional properties no longer needed.
     const conn = await mongoose.connect(process.env.MONGO_URI);
-    const url = `http://localhost:${process.env.PORT}/v1/products`;
+    const url = `http://localhost:${process.env.PORT}`;
     console.log(
       `MongoDB Connected. Servers running in ${url.red.underline.bold}`.cyan
         .bold,

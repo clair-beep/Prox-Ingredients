@@ -39,7 +39,7 @@ router
 router.route('/search').get(searchProducts);
 
 router
-  .route('/:id')
+  .route('/product/:id')
   .get(getProduct)
   .put(
     protect,

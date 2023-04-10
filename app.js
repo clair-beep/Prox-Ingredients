@@ -53,7 +53,7 @@ app.use(express.static(__dirname + '/node_modules/bootstrap/'));
 
 //Mount routers
 app.use('/v1/', getRoutes);
-app.use('/v1/products', products);
+app.use('/', products);
 app.use('/v1/ingredients', ingredients);
 app.use('/v1/categories', categories);
 app.use('/v1/auth', auth);

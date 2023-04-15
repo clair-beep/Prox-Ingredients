@@ -15,8 +15,8 @@
   },
   {
     "_id": "63e3f4ce37aba21f56087e30",
-    "englishTitle": "Ácido Benzoico",
-    "spanishTitle": "Benzonic Acid",
+    "englishTitle": "Benzoic Acid",
+    "spanishTitle": "Ácido Benzoico",
     "description": "Los ácidos benzoicos funcionan como ingredientes fragantes, pesticidas, ajustadores de pH, conservantes, solventes y/o agentes que disminuyen la viscosidad en productos cosméticos. Se consideran suaves y no irritantes para la piel.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
@@ -101,7 +101,7 @@
   },
   {
     "_id": "641f65a32eedab22989b6c9b",
-    "englishTitle": "Ceteth-20 ",
+    "englishTitle": "Ceteth-20",
     "spanishTitle": "N/A",
     "description": "Ceteth-20 es un tensioactivo no iónico de la familia del polietilenglicol que se utiliza con frecuencia en productos cosméticos. Facilita la disolución de otros ingredientes en un solvente en el que normalmente no se disolverían.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
@@ -122,10 +122,17 @@
   },
   {
     "_id": "63e3f57837aba21f56087e33",
-    "englishTitle": "Cetyl Hidroxietilcelulosa",
-    "spanishTitle": "Cetyl Hydroxyethylcellulose",
+    "englishTitle": "Cetyl Hydroxyethylcellulose",
+    "spanishTitle": "Cetyl Hidroxietilcelulosa",
     "description": "Un ingrediente auxiliar derivado de celulosa que se crea al unir una molécula que parece ser rechazada de una masa de agua al una molécula que tiene afinidad al agua, Hidroxietilcelulosa. Lo resultante, Cetil Hidroxietilcelulosa, también es un espesante pero con algunas propiedades superficiales activas (ya que parte de la molécula es amante del agua y parte es amante del aceite). Gracias a sus propiedades superficialmente activas, también funciona como estabilizador de emulsión.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "643ad27c7dce90a2e791918b",
+    "englishTitle": "Chlorella Vulgaris Extract",
+    "spanishTitle": "Extracto Chlorella Vulgaris",
+    "description": "Es un extracto derivado de la alga Chlorella vulgaris. Se utiliza comúnmente en productos cosméticos y de cuidado personal por sus propiedades hidratantes.",
+    "references": "https://incibeauty.com/"
   },
 
   {
@@ -169,6 +176,13 @@
     "spanishTitle": "Diaminopropiónico Tripéptido-33",
     "description": "Diaminopropiónico tripéptido-33 es una molécula de péptido sintético utilizada en cosméticos como agente de condicionamiento de la piel. Se afirma que tiene un impacto potencial en la firmeza y elasticidad de la piel al estimular la producción de fibras de colágeno y elastina en la piel. Sin embargo, la evidencia científica que respalda estas afirmaciones es limitada y se necesita más investigación para comprender plenamente su efectividad y posibles efectos secundarios.",
     "references": "https://www.jdsjournal.com/"
+  },
+  {
+    "_id": "643ada3c484ce63c0596086e",
+    "englishTitle": "Dicaprylyl Carbonate",
+    "spanishTitle": "Carbonato de Dicaprililo",
+    "description": "Un aceite claro, incoloro y casi inodoro que se extiende fácil y suavemente y da una sensación de piel seca aterciopelada. Es buen compañero de los agentes de protección solar y ayuda a solubilizarlos. Además, hace que los protectores solares se sientan más ligeros y se extiendan con mayor facilidad.",
+    "references": "https://incidecoder.com"
   },
   {
     "_id": "63dfc50ffef4cd4d415d50f8",
@@ -284,13 +298,19 @@
     "references": "https://pubmed.ncbi.nlm.nih.gov/"
   },
   {
+    "_id": "643addff19e879bead64d3f3",
+    "englishTitle": "Hydroxyethylcellulose",
+    "spanishTitle": "Hidroxietilcelulosa (celulosa modificada)",
+    "description": "Un agradable ayudante de ingredientes que puede espesar productos cosméticos y crear hermosas fórmulas en gel. Está derivado de la celulosa, el componente principal de la pared celular de las plantas verdes. Es compatible con la mayoría de los co-ingredientes y brinda una sensación muy suave a las fórmulas.",
+    "references": "https://incidecoder.com"
+  },
+  {
     "_id": "63dfc546f50728b80d330220",
     "englishTitle": "Hydroxyethyl Urea",
     "spanishTitle": "Urea Hidroxietil",
     "description": "Urea Hidroxietil es un humectante y emoliente utilizado en productos de cuidado personal, como cremas y lociones. Tiene una consistencia líquida y es un ingrediente común en productos diseñados para hidratar la piel. Se utiliza para mejorar la retención de humedad en la piel y para suavizar y suavizar la piel.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
-
   {
     "_id": "641f61b6a986f8047323ba21",
     "englishTitle": "Isononyl Isononanoate",
@@ -363,10 +383,17 @@
   },
   {
     "_id": "63dfc56cab537df7469c62ad",
-    "englishTitle": "Lecithin ",
+    "englishTitle": "Lecithin",
     "spanishTitle": "Lecitina",
     "description": "Lecitina es un ingrediente comúnmente usado en productos de belleza y cuidado personal debido a sus propiedades emolientes y humectantes. Se encuentra naturalmente en muchos alimentos, como huevos y soja, y se utiliza como ingrediente en muchos productos de maquillaje, productos faciales y productos de cuidado de la piel. La lecitina ayuda a mejorar la hidratación y la textura de la piel y del cabello, y también se utiliza como emulsionante para ayudar a mezclar ingredientes líquidos y sólidos en una fórmula homogénea.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "643adcbb4630b1f52ca02faf",
+    "englishTitle": "Leontopodium Alpinum Callus Culture Extract",
+    "spanishTitle": "Edelweiss , flor de las nieves, estrella de nieve, flor de nieve, garra de león, leontopodio, mano de león",
+    "description": "Se trata de un extracto de células madre de plantas derivado de la famosa flor de montaña, Edelweiss. Se comercializa bajo el nombre comercial de Majestem y el fabricante asegura que tiene una acción visible de lifting en el cuello y el rostro.En sus pruebas in vivo (realizadas en personas reales), la piel flácida del cuello se tensó entre un 10,6% y un 56% en tres semanas. Después de seis semanas, también se levantaron las mejillas y las arrugas de patas de gallo se suavizaron (superficie entre un 11% y un 75%).Además de las afirmaciones del fabricante, la Edelweiss se conoce tradicionalmente por sus propiedades calmantes y se utiliza por ellas. Encontramos un estudio de 2012 que confirma que el extracto de cultivo celular de Edelweiss contiene un activo llamado ácido leontopódico que parece ser responsable de las propiedades antiinflamatorias de la planta.",
+    "references": "https://incidecoder.com/"
   },
   {
     "_id": "63dfc570d1ac9f3f2f89b54b",
@@ -411,10 +438,17 @@
     "description": "El tipo más común de parabenos, que son temidos por todos, principalmente sin razones científicas. Es un ingrediente barato, efectivo y bien tolerado para asegurarse de que la fórmula cosmética no se estropee demasiado pronto.Aparte de la controversia general en torno a los parabenos (hablamos más de ello aquí), hay una investigación in vitro (realizada en laboratorio y no en personas reales) de 2006 sobre el metilparabeno (MP) que muestra que cuando se expusieron a la luz solar, las células de la piel tratadas con MP sufrieron más daño que las células de la piel no tratadas con MP. El estudio no se realizó en personas reales ni en piel real, pero aún así, usar un buen protector solar junto con productos que contengan MP es una buena idea",
     "references": "https://incidecoder.com/ingredients/methylparaben"
   },
+  {
+    "_id": "643ad59913803460964b1e15",
+    "englishTitle": "Methylpropanediol",
+    "spanishTitle": "Metilpropanodiol ",
+    "description": "Es un tipo de glicol que, según el fabricante, es un reemplazo extremadamente bueno para otros glicoles como el propileno o el butileno glicol. Su función principal es ser un solvente, pero también tiene muy buenas propiedades antimicrobianas y actúa como un verdadero potenciador de conservantes. También ayuda a la hidratación de la piel sin dejar una sensación pegajosa o pegajosa.",
+    "references": "https://incidecoder.com/ingredients/methylparaben"
+  },
 
   {
     "_id": "63dfc5831eea0394bb004d87",
-    "englishTitle": " Myrciaria Dubia Fruit Extract",
+    "englishTitle": "Myrciaria Dubia Fruit Extract",
     "spanishTitle": "Myrciaria floribunda extracto de fruta",
     "description": "El extracto de fruta de uva es un ingrediente natural que se obtiene de las uvas de la planta Myrciaria. Se utiliza en productos de cuidado personal para mejorar la apariencia y la salud de la piel, así como para proporcionar antioxidantes y otros beneficubrimientos benéficos para la piel.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
@@ -427,11 +461,32 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "643adaf03e4a7eacb4b6aeb0",
+    "englishTitle": "Niacinamide",
+    "spanishTitle": "Niacinamida",
+    "description": "La niacinamida es un ingrediente multifuncional para el cuidado de la piel con varios beneficios probados para la piel. Es un gran ingrediente anti-envejecimiento que suaviza las arrugas cuando se usa a una concentración del 4-5%. Además, puede desvanecer manchas marrones cuando se usa solo o en combinación con aminoazúcar, acetil glucosamina.Además, la niacinamida puede aumentar la síntesis de ceramidas, lo que resulta en una barrera cutánea más fuerte y saludable y una mejor hidratación de la piel. También puede ayudar a mejorar varias afecciones de la piel, como el acné, la rosácea y la dermatitis atópica. La niacinamida es un ingrediente versátil que puede beneficiar una amplia gama de tipos de piel y preocupaciones.",
+    "references": "https://incidecoder.com/"
+  },
+  {
     "_id": "64204ede2c6f32eed8a36712",
     "englishTitle": "Octyldodecanol",
     "spanishTitle": "Octildodecanol ",
     "description": "Un aceite claro, ligeramente amarillo, inodoro que es un emoliente de difusión media muy común. Hace que la piel se sienta agradable y suave y funciona en una amplia gama de fórmulas.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "643ad671e3e7e71204009862",
+    "englishTitle": "Palmitoyl Heptapeptide-18",
+    "spanishTitle": "Palmitoyl Heptapeptide-18",
+    "description": "El compañero de Palmitoyl Hexapeptide-52 en el dúo de péptidos relajantes musculares tópicos comercializado como X50 MYOCEPT. Por cierto, el dúo funciona a una concentración extremadamente baja recomendada de solo 0.001%.",
+    "references": "https://incidecoder.com"
+  },
+  {
+    "_id": "643ad7bbe2939fcdeb97bbdd",
+    "englishTitle": "Palmitoyl Hexapeptide-52",
+    "spanishTitle": "Palmitoyl Hexapeptide-52",
+    "description": "Palmitoyl Hexapeptide-52 es una molécula de péptido que pertenece al tipo de relajantes musculares tópicos conocidos como Botox en un frasco (si eres nuevo en este tipo de moléculas, escribimos más al respecto en la categoría de Argireline, que fue la primera en su tipo).En combinación con Palmitoyl Heptapeptide-18, se afirma que el dúo puede reducir las líneas de expresión en un promedio del 20% en 28 días, basado en una prueba con un panel de 30 voluntarios.",
+    "references": "https://incidecoder.com"
   },
   {
     "_id": "6420191699cbda46623e090d",
@@ -481,6 +536,13 @@
     "spanishTitle": "Pentaerytritil Tetradi-t-Butil",
     "description": "Pentaerythrityl Tetradi-t-Butyl es un conservante utilizado en productos de cuidado personal y cosméticos para prevenir la oxidación y extendere la vida útil del producto. Se considera seguro para su uso en productos de cuidado personal y ha sido aprobado por la FDA. Se encuentra comúnmente en productos como maquillaje, lociones y cremas.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "643ad8d5bb5b8c501d568a1e",
+    "englishTitle": "Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate",
+    "spanishTitle": "N/A",
+    "description": "El Pentaeritritol Tetra-Di-T-Butil Hidroxihidrocinamato es una molécula antioxidante utilizada en pequeñas cantidades (menos del 0,8%) para ayudar a que los productos mantengan su calidad durante más tiempo. Más específicamente, es excelente para prevenir la decoloración u otro tipo de degradación oxidativa. Es una alternativa de moda al estabilizador y antioxidante sintético, a menudo criticado, BHT.",
+    "references": "https://incidecoder.com"
   },
   {
     "_id": "63dfc5a625e16061407e44de",
@@ -560,6 +622,13 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "643ad8fa5646aa9fc642e2c7",
+    "englishTitle": "Rhamnose",
+    "spanishTitle": "Rhamnose",
+    "description": "Humectante: Mantiene el contenido de agua de un cosmético tanto en su envase como en la piel.Enmascarante: Reduce o inhibe el olor o sabor básico del producto.",
+    "references": "https://incidecoder.com/"
+  },
+  {
     "_id": "63dfc5d647eeb2aa5b69a72b",
     "englishTitle": "Rosmarinus Officinalis Leaf Oil",
     "spanishTitle": "Romero",
@@ -586,6 +655,13 @@
     "spanishTitle": "Sésamo",
     "description": "La semilla de sésamo es un ingrediente comúnmente utilizado en la elaboración de productos de belleza y cuidado personal, como aceites y cremas. Es rica en ácidos grasos esenciales y antioxidantes, por lo que se considera un ingrediente hidratante y protectora para la piel. La textura de la semilla de sésamo es suave y aceitosa, y se utiliza a menudo como emoliente en formulaciones cosméticas.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "643ad9ff75c9ed37222b187d",
+    "englishTitle": "Silanetriol",
+    "spanishTitle": "N/A",
+    "description": "Silanetriol se refiere a una agrupación de trihidroxisililo. Los silanos son los análogos del silicio a los compuestos de carbono (alcanos).",
+    "references": "https://cosmileeurope.eu/"
   },
   {
     "_id": "63dfc5ea9e2d65a8be8353d7",

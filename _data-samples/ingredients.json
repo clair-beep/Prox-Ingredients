@@ -100,6 +100,27 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "643b11edb96297793580064a",
+    "englishTitle": "Ceramide NP",
+    "spanishTitle": "N/A",
+    "description": "Uno de los muchos tipos de ceramidas que se encuentran naturalmente en la capa superior de la piel. Las ceramidas conforman alrededor del 50% de la sustancia viscosa que se encuentra entre las células de nuestra piel y desempeñan un papel súper importante en tener una barrera cutánea saludable y mantener la piel hidratada. Funciona aún mejor cuando se combina con su compañero, Ceramida 1.",
+    "references": "https://incidecoder.com/"
+  },
+  {
+    "_id": "643b1280ecc6199e57d62e73",
+    "englishTitle": "Ceramide AP",
+    "spanishTitle": "N/A",
+    "description": "Un tipo de ceramida que se encuentra naturalmente en la capa superior de la piel. Las ceramidas constituyen el 50% de la sustancia viscosa que se encuentra entre nuestras células cutáneas y desempeñan un papel súper importante en tener una barrera cutánea saludable y mantener la piel hidratada.",
+    "references": "https://incidecoder.com/"
+  },
+  {
+    "_id": "643b12a84d844655d77598f8",
+    "englishTitle": "Ceramide EOP",
+    "spanishTitle": "N/A",
+    "description": "Los ceramidas han recibido mucha atención últimamente y buenas noticias: hay una razón para eso. Pero antes de entrar en detalles, definamos rápidamente qué son los ceramidas: son lípidos cerosos que se encuentran naturalmente en la capa exterior de la piel (llamada estrato córneo). ¡Y están ahí en grandes cantidades! La sustancia pegajosa entre nuestras células de la piel se llama matriz extracelular que consiste principalmente en lípidos. Y los ceramidas son aproximadamente el 50% de esos lípidos (los otros importantes son el colesterol con un 25% y los ácidos grasos con un 15%).Bien, ahora que sabemos qué son los ceramidas, veamos qué hacen en nuestra piel: la investigación muestra claramente que desempeñan un papel súper importante en mantener la barrera cutánea saludable y la piel hidratada. Si los ceramidas en la piel disminuyen, más agua puede evaporarse de la piel y queda menos agua en la piel. Entonces, los ceramidas forman una capa protectora a prueba de agua y aseguran que nuestra piel permanezca agradable e hidratada.Ahora la pregunta es solo esta: si ponemos ceramidas por toda nuestra cara, ¿funcionan tan bien como los ceramidas ya presentes naturalmente en nuestra piel? Bueno, la respuesta probablemente es no, pero sí funcionan hasta cierto punto. El blog BeautyBrains hizo un artículo fantástico sobre los ceramidas y han enumerado algunos ejemplos de estudios que muestran que los ceramidas, especialmente cuando se usan en ciertas proporciones con colesterol y ácidos grasos, hidratan la piel y pueden ayudar a reparar la barrera cutánea.Hasta ahora estábamos escribiendo sobre los ceramidas en plural. Es porque hay muchos ceramidas diferentes, un artículo de 2014 indica que actualmente se conocen 12 clases base de ceramidas con más de 340 especies específicas. Químicamente hablando, los ceramidas son la conexión de un ácido graso y una base esfingoides y ambas partes pueden tener diferentes variaciones que resultan en los diferentes tipos de ceramidas.Nuestro actual tipo de ceramida, Ceramida 1, o más recientemente llamado Ceramida EOP, fue el primero que se identificó en 1982 y es único. Contiene el ácido graso esencial, ácido linoleico, y tiene una estructura única. Se cree que la ceramida 1 desempeña un papel de unión en las capas lipídicas de la matriz extracelular. Junto con los ceramidas 4 y 7, también desempeñan un papel vital en la integridad epidérmica y sirven como las principales áreas de almacenamiento para el ácido linoleico (un ácido graso que también es muy importante para la reparación de la barrera).Ah, y una cosa más: un pH alcalino inhibe las enzimas que ayudan a la síntesis de ceramidas en nuestra piel. Entonces, si usa un jabón y nota que su piel se está volviendo seca, ahora sabe por qué.",
+    "references": "https://incidecoder.com/"
+  },
+  {
     "_id": "641f65a32eedab22989b6c9b",
     "englishTitle": "Ceteth-20",
     "spanishTitle": "N/A",
@@ -112,6 +133,13 @@
     "spanishTitle": "N/A",
     "description": "El alcohol cetílico es un alcohol graso que proporciona consistencia a los productos cosméticos. Es un excelente emoliente que suaviza, ablanda y protege la piel. En los productos para el cabello, facilita el desenredado al tiempo que suaviza el cabello. En general, es muy adecuado para pieles secas. El alcohol cetílico puede ser producido a partir de aceite de coco y está permitido en cosmética natural.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "643b0efc316fdb78e4322fdb",
+    "englishTitle": "Cetearyl Alcohol",
+    "spanishTitle": "Alcohol cetearílico (mezcla de alcohol cetílico y estearílico)",
+    "description": "Un ingrediente multitarea extremadamente común que brinda a la piel una sensación suave y agradable (emoliente) y da cuerpo a las cremas y lociones. También ayuda a estabilizar las mezclas de aceite y agua (emulsiones), aunque no funciona como emulsionante en sí mismo. Su nivel de uso típico en la mayoría de las fórmulas de crema es del 2 al 3%.Es un llamado alcohol graso, una mezcla de alcohol cetílico y estearílico, otros dos alcoholes grasos emolientes. Aunque químicamente hablando es un alcohol (como en, tiene un grupo -OH en su molécula), sus propiedades son totalmente diferentes de las propiedades de los alcoholes de bajo peso molecular o alcoholes secantes como el alcohol desnaturalizado. Los alcoholes grasos tienen una parte de cola oleosa soluble en aceite (y, por lo tanto, emoliente) que los hace totalmente no secantes y no irritantes y son totalmente seguros para la piel.",
+    "references": "https://incidecoder.com/"
   },
   {
     "_id": "641f6707a1582e586c43b521",
@@ -517,6 +545,13 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "643b0f783321ecfe05f8fe23",
+    "englishTitle": "PEG-40 Stearate",
+    "spanishTitle": "N/A",
+    "description": "Un surfactante y emulsionante común que ama el agua y ayuda a mantener el agua y el aceite mezclados adecuadamente.",
+    "references": "https://incidecoder.com/"
+  },
+  {
     "_id": "6420197eb3ffbb957ad15a9f",
     "englishTitle": "PEG-75 Stearate",
     "spanishTitle": "N/A",
@@ -592,6 +627,13 @@
     "spanishTitle": "Alcohol polivinílico",
     "description": "El alcohol polivinílico es un polímero sintético utilizado en productos de cuidado personal, como cremas y lociones. Se utiliza como agente de envolvimiento y emulsificante. También se utiliza para mejorar la consistencia y la textura de los productos.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "643b11dd8a60354e463479c6",
+    "englishTitle": "Potassium Phosphate",
+    "spanishTitle": "Fosfato de potasio",
+    "description": "Es un ingrediente auxiliar que ayuda a ajustar el pH de una formulación cosmética para que sea justo el adecuado.",
+    "references": "https://incidecoder.com"
   },
   {
     "_id": "63e3f80137aba21f56087e35",
@@ -718,6 +760,13 @@
     "spanishTitle": "Ácido Esteárico",
     "description": "Un ácido graso multitarea común. Hace que tu piel se sienta agradable y suave (emoliente), da cuerpo a los productos tipo crema y ayuda a estabilizar las mezclas de agua y aceite (también conocidas como emulsiones).",
     "references": "https://incidecoder.com/ingredients/steareth-20"
+  },
+  {
+    "_id": "643b101415f609b7451fac51",
+    "englishTitle": "Stearyl Alcohol",
+    "spanishTitle": "Ácido Esteárico",
+    "description": "Un útil multi-tarea, una cera blanca a amarillo claro que ama el aceite y funciona muy bien en emulsiones aceite-en-agua. Hace que tu piel se sienta agradable y suave (emoliente), estabiliza mezclas de aceite y agua y les da cuerpo.Ah, y una cosa más: es un llamado alcohol graso, el buen tipo de alcohol emoliente que no reseca ni irrita la piel. A menudo se mezcla con su compañero de alcohol graso, el alcohol cetílico, y la mezcla se llama alcohol cetearílico en la lista de ingrediente.",
+    "references": "https://incidecoder.com"
   },
   {
     "_id": "63dfc6088120c98229243d44",

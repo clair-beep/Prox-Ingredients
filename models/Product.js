@@ -45,7 +45,7 @@ const ProductSchema = new mongoose.Schema({
     // Array of strings
     type: String,
     required: true,
-    enum: ['España', 'Francia'],
+    enum: ['España', 'Francia', 'Estados Unidos'],
   },
 
   ingredients: [

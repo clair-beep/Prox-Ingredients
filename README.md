@@ -6,11 +6,9 @@ This is a tool to help you to understand ingredient lists at a press of a button
 
 The overall development documentation is available at: 
 
-Below is quick steps to run Gulp:
+Below is quick steps to run the proyect:
 
-- npm install --global gulp-cli
 - npm install
-- gulp
 
 That's it.
 

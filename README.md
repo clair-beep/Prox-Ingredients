@@ -4,8 +4,14 @@
 This is a full stack application that provides users with skin products, explaining ingredients and their uses. It has a backend built with Node.js and Express.js, and a frontend built with HTML, CSS, and JavaScript. The application also uses a cloud-based image management service called Cloudinary.
 
 
+<<<<<<< HEAD
 
 ## Installation
+=======
+Below is quick steps to run the proyect:
+
+- npm install
+>>>>>>> 8697e5262b80a80f7d3c584a5a1bda77f4a2cba9
 
 Clone my proyect
 ```bash

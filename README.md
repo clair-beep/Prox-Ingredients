@@ -6,11 +6,9 @@ This is a full stack application that provides users with skin products, explain
 
 ## Installation
 
-=======
 Below is quick steps to run the proyect:
 
 - npm install
-  > > > > > > > 8697e5262b80a80f7d3c584a5a1bda77f4a2cba9
 
 Clone my proyect
 

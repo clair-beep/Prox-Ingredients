@@ -10,7 +10,6 @@ const {
 //Include other resource from routers
 
 const productRouter = require('./products');
-//Main Routes - simplified for now
 
 const router = express.Router();
 

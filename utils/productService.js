@@ -15,6 +15,7 @@ async function getIngredientsAndCategories() {
     name: category.name,
     description: category.description,
     productCount: category.products.length,
+    url: `v1/categories/${category._id}/products`,
   }));
   return { mappedIngredients, categoryData };
 }

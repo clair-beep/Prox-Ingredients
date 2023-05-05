@@ -33,7 +33,10 @@
 
         <h5 class='nav-subtitle'>Tipos de Productos<aside></aside></h5>
         {{#each categories}}
-          <a class='nav-link d-flex justify-content-between' href='#'>{{name}}
+          <a
+            class='nav-link d-flex justify-content-between'
+            href='{{url}}'
+          >{{name}}
             <span
               class='badge text-dark border rounded-pill'
             >{{productCount}}</span>

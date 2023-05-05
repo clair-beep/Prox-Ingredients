@@ -79,6 +79,18 @@ To deploy this project run
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
 
+#### Get a product by category
+
+```http
+  GET /v1/categories/:id/products
+  @access Public
+
+```
+
+| Parameter | Type     | Description                           |
+| :-------- | :------- | :------------------------------------ |
+| `id`      | `string` | **Required**. Id of category to fetch |
+
 #### Search products
 
 ```http

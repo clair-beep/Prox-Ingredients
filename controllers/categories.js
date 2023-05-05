@@ -3,6 +3,7 @@ const asyncHandler = require('../middleware/async');
 const Category = require('../models/Category');
 
 exports.getCategories = asyncHandler(async (req, res, next) => {
+  console.log('mayvbe');
   res.status(200).json(res.advancedResults);
 });
 

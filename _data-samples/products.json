@@ -1,6 +1,5 @@
 [
   {
-    "_idCategory": "5d241995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "LIMPIADOR CUTÁNEO SUSTITUTO DEL JÁBON",
@@ -52,7 +51,6 @@
     "cloudinaryId": "Alsace-Limpiador-Cutaneo-Sustituto-del-Jabon_zpb2jm"
   },
   {
-    "_idCategory": "5d241995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "LECHE LIMPIADORA FACIAL",
@@ -104,7 +102,6 @@
     "cloudinaryId": "Alsace-Leche-Limpiadora-Facial_bw2ltc"
   },
   {
-    "_idCategory": "5d241995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "ANTIOXIDANTE FACIAL",
@@ -179,7 +176,6 @@
     "cloudinaryId": "Alsace_Antioxidante_Facial_X_60_Ml_sfbhtf"
   },
   {
-    "_idCategory": "641f60b2d0d2132020061ffb",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "HIDRATANTE ANTIEDAD FACIAL",
@@ -243,11 +239,10 @@
     "description": "Hidrata la piel en superficie y profundidad gracias a su doble acción en la producción propia de ácido hialurónico en las células de la piel: Por el mecanismo de la tecnología Epidrone® cosmética que incrementa su síntesis sinergizado con el de las Glicokinas que estimula su producción; de esta forma las arrugas se rellenan de forma natural y complementa su acción con el complejo Phytoney CTG® más las vitaminas C y E, para mantener su balance hidro-lipídico. Libre de parabenos y fragancia. Modo de empleo: Aplicar mañana y noche con la yema de los dedos sobre la piel limpia del rostro, realizando masaje circular.",
     "approvedByAdmin": false,
     "likes": 0,
-    "image": "https://res.cloudinary.com/dri2lyo74/image/upload/v1679776194/Alsace_Antioxidante_Facial_X_60_Ml_sfbhtf.jpg",
-    "cloudinaryId": "Alsace_Antioxidante_Facial_X_60_Ml_sfbhtf"
+    "image": "https://res.cloudinary.com/dri2lyo74/image/upload/v1683317838/Alsace_Hidratante_antiedad_faciall_nfbuhp.jpg",
+    "cloudinaryId": "Alsace_Hidratante_antiedad_faciall_nfbuhp"
   },
   {
-    "_idCategory": "641f60b2d0d2132020061ffb",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "ANTIEDAD HUMECTANTE FACIAL PARA PIELES SENSIBLES",
@@ -307,11 +302,10 @@
     "description": "Es un gel cuidadosamente balanceado con extractos ricos en antioxidantes, vitaminas, minerales y enzimas de origen natural con un efecto inmediato y prolongado del balance humectante de la piel, protegiéndola contra el envejecimiento prematuro. Modo de empleo: Aplicar mañana y noche con la yema de los dedos sobre la piel limpia del rostro y cuello, realizando masaje circular.",
     "approvedByAdmin": false,
     "likes": 0,
-    "image": "",
-    "cloudinaryId": ""
+    "image": "https://res.cloudinary.com/dri2lyo74/image/upload/v1682954463/Alsace_Antiedad_Humectante_Facial_Pieles_Sensibles_znmxao.jpg",
+    "cloudinaryId": "Alsace_Antiedad_Humectante_Facial_Pieles_Sensibles_znmxao"
   },
   {
-    "_idCategory": "641f60b2d0d2132020061ffb",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "ALSACE ANTIEDAD FACIAL EPIDRONE 100",
@@ -372,11 +366,10 @@
     "description": "ALSACE ANTIEDAD FACIAL EPIDRONE 100, COMBATE EL ENVEJECIMIENTO BASADO EN LA TECNOLOGÍA EPIDRÓN (R), CON 4 DRONES QUE MANEJAN EL SISTEMA DE LIBERACIÓN INTELIGENTE QUE LLEGAN A LA CÉLULA ESPECÍFICA LIBERANDO LOS ACTIVOS DENTRO DE ELLAS, REACTIVANDO LA PRODUCCIÓN DE COLÁGENO, ELASTINA Y ÁCIDO HIALURÓNICO; AUMENTANDO LOS NIVELES DE ATP PARA MEJORAR LA LUMINOSIDAD E INHIBIENDO LA CONTRACCIÓN MUSCULAR EVITANDO LA FORMACIÓN DE ARRUGAS DE EXPRESIÓN Y MANTENIENDO UN EFECTO LIFTING MIENTRAS LO UTILIZA. ALSACE FACIAL EPIDRON 100 SIN AGUJAS, SIN EFECTOS SECUNDARIOS, REJUVENECIMIENTO FACIAL NO INVASIVO CON LAS PROPIEDADES REGENERANTES DE PHYNONEY CTG (R). LIBRE DE PARABENOS Y DE FRAGANCIA.",
     "approvedByAdmin": false,
     "likes": 0,
-    "image": "",
-    "cloudinaryId": ""
+    "image": "https://res.cloudinary.com/dri2lyo74/image/upload/v1682955030/Alsace_Antiedad_Facial_Epidrone_100_X_30ml_pnx9rg.jpg",
+    "cloudinaryId": "Alsace_Antiedad_Facial_Epidrone_100_X_30ml_pnx9rg"
   },
   {
-    "_idCategory": "641f60b2d0d2132020061ffb",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "ALSACE ANTIEDAD CONTORNO DE OJOS",
@@ -439,17 +432,15 @@
       "STEARETH-20",
       "TIBOUCHINA LEPIDOTA BARK/FLOWER/LEAF EXTRACT",
       "TRIETHANOLAMINE",
-      "XANTHAN GUM",
-      "word not in data"
+      "XANTHAN GUM"
     ],
     "description": "ALSACE ANTIEDAD CONTORNO DE OJOS, ÚNICA COMBINACIÓN DE BIOACTIVOS, PHYTONEY CTG ® Y TECNOLOGÍA EPIDRONE ®, PERMITE HIDRATAR LA DELICADA PIEL DEL CONTORNO DE OJOS EN SUPERFICIE Y EN PROFUNDIDAD MIENTRAS PROMUEVEN LA SÍNTESIS ENDÓGENA DE ÁCIDO HIALURÓNICO, COLÁGENO Y ELASTINA GRACIAS A LA LIBERACIÓN ESPECÍFICA DE LOS ACTIVOS EN LAS CÉLULAS DE LA PIEL LOGRANDO PREVENIR Y CORREGIR LOS SIGNOS DEL ENVEJECIMIENTO PARA LOGRAR UN EFECTO REAFIRMANTE Y LUMINOSO. ALSACE ANTIEDAD CONTORNO DE OJOS ESTÁ INDICADO PARA TODO TIPO DE PIELES. LIBRE DE PARABENOS Y DE FRAGANCIA. COMBINACIÓN DE BIOACTIVOS PARA UN TRATAMIENTO GLOBAL DEL CONTORNO DE OJOS, CON DIFERENTES MECANISMOS ANTIEDAD, ANTIOXIDANTES, ANTIINFLAMATORIOS, A NIVEL DE PÁRPADOS, ZONAS PARA DE GALLO Y ZONA LAGRIMAL. DA FIRMEZA Y MEJORA LA TONICIDAD. APORTA LUMINOSIDAD PARA UNA PIEL RADIANTE. RELLENO DE ARRUGAS EN FORMA NATURAL.    ",
     "approvedByAdmin": false,
     "likes": 0,
-    "image": "",
-    "cloudinaryId": ""
+    "image": "https://res.cloudinary.com/dri2lyo74/image/upload/v1682955309/Alsace_Antiedad_Contorno_de_Ojos_b9d1f3.jpg",
+    "cloudinaryId": "Alsace_Antiedad_Contorno_de_Ojos_b9d1f3"
   },
   {
-    "_idCategory": "641f60b2d0d2132020061ffb",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
     "name": "Gel limpiador espumoso para el rostro",
@@ -485,23 +476,50 @@
     "description": "Adecuado para pieles normales a secas y elimina suavemente la suciedad, la grasa y el maquillaje sin dejar la piel tirante o seca.Tecnología MVE: Este sistema patentado de suministro libera continuamente ingredientes humectantes para una hidratación a lo largo de todo el día. Ceramidas: Ayudan a restaurar y mantener la barrera natural de la piel. Ácido hialurónico: Ayuda a retener la humedad natural de la piel. No comedogénico, no irritante y sin perfume.Desarrollado con dermatólogos.Aceptado por la National Eczema Association",
     "approvedByAdmin": true,
     "likes": 0,
-    "image": "",
-    "cloudinaryId": ""
+    "image": "https://res.cloudinary.com/dri2lyo74/image/upload/v1682955638/Gel_limpiador_espumoso_para_el_rostro_gpuxz8.jpg",
+    "cloudinaryId": "Gel_limpiador_espumoso_para_el_rostro_gpuxz8"
   },
+
   {
-    "_idCategory": "641f60b2d0d2132020061ffb",
     "user": "5d7a514b5d2c12c7449be045",
     "email": "enroll@devworks.com",
-    "name": "Gel limpiador espumoso para el rostro",
-    "category": "5d725a4a7b292f5f8ceff789",
+    "name": "Loción hidratante facial de día con protección solar",
+    "category": "645142b57022fa52620deb04",
     "typeOfProduct": "Facial",
     "brand": "CERAVE",
     "brandCountry": "Estados Unidos",
-    "ingredients": [],
-    "description": "",
+    "ingredients": [
+      "HOMOSALATE",
+      "MERADIMATE",
+      "OCTINOXATE",
+      "OCTOCRYLENE",
+      "ZINC OXIDE INACTIVE INGREDIENTS: WATER",
+      "NIACINAMIDE",
+      "GLYCERIN",
+      "CETEARYL ALCOHOL",
+      "METHOSULFATE BEHENTRIMONIUM",
+      "DIMETHICONE",
+      "BHT",
+      "CERAMIDE NP",
+      "CERAMIDE AP",
+      "CERAMIDE EOP",
+      "CARBOMER",
+      "TRIETHOXYCAPRYLYLSILANE",
+      "METHYLPARABEN",
+      "SODIUM LAUROYL LACTYLATE",
+      "CHOLESTEROL",
+      "ALUMINUM STARCH OCTENYLSUCCINATE",
+      "DISODIUM EDTA",
+      "PROPYLPARABEN",
+      "HYDROXYETHYLCELLULOSE",
+      "HYDROLYZED HYALURONIC ACID",
+      "PHYTOSPHINGOSINE",
+      "XANTHAN GUM"
+    ],
+    "description": "Una loción hidratante facial es una parte clave de cualquier rutina de cuidado de la piel por la mañana, y un hidratante con FPS de amplio espectro es fundamental para ayudar a proteger su piel de los dañinos rayos UVA y UVB. Para conseguir efectos hidratantes y restaurar la barrera de la piel, busque ingredientes como el ácido hialurónico, la niacinamida y las ceramidas, y una fórmula no comedogénica, como la de la Loción hidratante facial de día con protección FPS 30 CeraVe, que no obstruye los poros ni provoca brotes de acné. El Hidratante facial de día CeraVe es una solución multitarea para el cuidado de la piel por la mañana, ya que contiene tres ceramidas esenciales, ácido hialurónico hidratante y niacinamida calmante, además de nuestra tecnología patentada MVE Delivery Technology para proporcionar la hidratación necesaria durante todo el día. Ofreciendo protección solar de amplio espectro, nuestra loción hidratante con FPS 30 cuenta con la tecnología InVisibleZinc™ (óxido de zinc microfino) que se extiende fácil y uniformemente sin dejar un residuo calcáreo. Y como la Loción hidratante facial de día CeraVe no es comedogénica y no obstruye los poros, es ideal para todo tipo de piel",
     "approvedByAdmin": true,
     "likes": 0,
-    "image": "",
-    "cloudinaryId": ""
+    "image": "https://res.cloudinary.com/dri2lyo74/image/upload/v1683055331/Cerave_Loci%C3%B3n_hidratante_facial_de_d%C3%ADa_con_protecci%C3%B3n_solar_qyqung.jpg",
+    "cloudinaryId": "Cerave_Loción_hidratante_facial_de_día_con_protección_solar_qyqung"
   }
 ]

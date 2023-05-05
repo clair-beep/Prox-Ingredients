@@ -44,7 +44,14 @@
   },
 
   {
-    "_id": "63dfc4b20e033bfbd29ce848",
+    "_id": "644fe38ca2d2a3b22c0bf407",
+    "englishTitle": "Behentrimonium Methosulfate",
+    "spanishTitle": "Metosulfato de behentrimonio Metilsulfato de docosiltrimetilamonio",
+    "description": "Los tensioactivos son las llamadas sustancias activas para el lavado y son de gran importancia en los cosméticos para la limpieza de la piel y el cabello. Los tensioactivos son sustancias que, debido a su estructura molecular, son capaces de reducir la tensión superficial de un líquido.Esto hace posible que dos líquidos que no se pueden mezclar entre sí, como el aceite y el agua, se mezclen bien. Debido a sus propiedades, los tensioactivos se utilizan de muchas maneras en los cosméticos: pueden limpiar, crear espuma y también actuar como emulsionantes y mezclar sustancias. En los champús, geles de ducha y jabones, por ejemplo, se utilizan tensioactivos para eliminar las partículas de grasa y suciedad del cuerpo con el agua. Los tensioactivos también se utilizan en los dentífricos. En este caso, favorecen la rápida y completa disolución y distribución de la pasta en la boca durante el cepillado dental.Los tensioactivos utilizados en los productos cosméticos se producen principalmente de forma sintética a partir de materias primas vegetales. Los tensioactivos se utilizan a menudo en combinación para cumplir todos los requisitos deseados -como la disolución de la suciedad y la formación de espuma combinadas con una buena compatibilidad con la piel. Así, combinando apropiadamente con un tensioactivo -considerado por separado- con una compatibilidad cutánea desfavorable, pero con muy buenas propiedades de disolución de la suciedad, con un tensioactivo muy suave y respetuoso con la piel, se obtiene un producto con buenas propiedades de limpieza y una compatibilidad cutánea igualmente buena en general.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "645005d8a2d2a3b22c0bf420",
     "englishTitle": "Benzyl Alcohol",
     "spanishTitle": "Benzyl Alcohol",
     "description": "El Alcohol bencílico funcionan como ingredientes fragantes, pesticidas, ajustadores de pH, conservantes, solventes y/o agentes que disminuyen la viscosidad en productos cosméticosSe puede encontrar naturalmente en frutas y tés, pero también puede ser fabricado sintéticamente. Sin importar su origen, en pequeñas cantidades (hasta un 1%) es un buen y suave conservante. Debe combinarse con otros buenos conservantes, como el sorbato de potasio, para ser lo suficientemente amplio de espectro.En grandes cantidades, puede ser un irritante de la piel.",
@@ -77,6 +84,13 @@
     "spanishTitle": "N/A",
     "description": "El Caprylyl glycol y otros glicoles relacionados se utilizan principalmente como agentes acondicionadores de piel y cabello y agentes de viscosidad en productos cosméticos, y el Caprylyl glycol y el glicol pentileno también funcionan como conservantes cosméticos. El Panel de Expertos de la Revisión de Ingredientes Cosméticos (CIR) señaló que, aunque estos ingredientes se absorben por vía dérmica, los datos de modelado predecían una disminución de la penetración cutánea de los glicoles de cadena más larga. Debido a que los datos de toxicidad oral negativos en los glicoles de cadena más corta y los datos de genotoxicidad respaldan la seguridad de los glicoles revisados en este análisis de seguridad, el Panel concluyó que estos ingredientes son seguros en las prácticas actuales de uso y concentración descritas en este análisis de seguridad.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "644fe25da2d2a3b22c0bf406",
+    "englishTitle": "Carbomer",
+    "spanishTitle": "Carbómero (ácido poliacrílico)",
+    "description": "El Carbomer (carbómero) es un polímero de ácido acrílico que puede utilizarse en soluciones acuosas y acuosas-alcohólicas como agente gelificante y como componente estabilizador de emulsiones.",
+    "references": "https://cosmileeurope.eu/"
   },
   {
     "_id": "63dfc4c7d15aee90d5a4e334",
@@ -161,6 +175,13 @@
     "spanishTitle": "Extracto Chlorella Vulgaris",
     "description": "Es un extracto derivado de la alga Chlorella vulgaris. Se utiliza comúnmente en productos cosméticos y de cuidado personal por sus propiedades hidratantes.",
     "references": "https://incibeauty.com/"
+  },
+  {
+    "_id": "644ffedfa2d2a3b22c0bf40a",
+    "englishTitle": "Cholesterol",
+    "spanishTitle": "Colesterol",
+    "description": "Los emulsionantes se utilizan a menudo en los cosméticos como excipientes. Permiten que componentes que no se pueden mezclar, como el aceite y el agua, formen una emulsión permanentemente estable. De este modo, se pueden utilizar en los productos cosméticos ingredientes activos y de cuidado tanto acuosos como grasos en un solo producto. Los emulsionantes son capaces de hacer esto porque sus moléculas consisten en una parte  lipofílica y otra hidrofílica. Esto les permite reducir la tensión interfacial que existe realmente entre dos sustancias incompatibles, como la grasa y el agua. Los emulsionantes se utilizan sobre todo en cremas, lociones y detergentes. Sin embargo, los emulsionantes son mucho más que sustancias auxiliares que mantienen estable una emulsión. Los ésteres de ácidos grasos a base de azúcar, lecitina o monodistearato de glicerol, por ejemplo, ayudan a mejorar el equilibrio de la humedad de la piel y, por tanto, también se consideran principios activos cosméticos.",
+    "references": "https://cosmileeurope.eu/"
   },
 
   {
@@ -261,6 +282,13 @@
     "description": "El disodio EDTA es un conservante y estabilizante comúnmente utilizado en productos de cuidado personal y cosméticos. También se utiliza para mejorar la eficacia de otros ingredientes activos. Se encuentra en una variedad de productos, incluyendo lociones, cremas y champús, y tiene una consistencia líquida.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
+  {
+    "_id": "645003b6a2d2a3b22c0bf412",
+    "englishTitle": "Ethylhexylglycerin",
+    "spanishTitle": "Etilhexilglicerina",
+    "description": "Mantiene la piel en buenas condiciones y en otras ocaciones reduce o enmascara el mal olor corporal",
+    "references": "https://cosmileeurope.eu/"
+  },
 
   {
     "_id": "63dfc5269eb4f00cf600a4a8",
@@ -317,6 +345,13 @@
     "spanishTitle": "N/A",
     "description": "Heptapeptide-15 Palmitate es un tipo de péptido que se utiliza comúnmente en la industria de cosméticos y cuidado personal. Es un péptido sintético compuesto por siete aminoácidos y está diseñado para mejorar la apariencia de la piel envejecida. Se utiliza a menudo en productos de cuidado de la piel, como sueros, cremas y hidratantes, y se dice que tiene una variedad de beneficubrimientos para la piel, incluyendo: la reducción de la apariencia de líneas finas y arrugas, mejora de la hidratación y firmeza de la piel estimulación de la producción de colágeno y mejora en la apariencia general de la piel envejecida.",
     "references": "https://onlinelibrary.wiley.com/journal/14732130"
+  },
+  {
+    "_id": "645167217022fa52620deb2f",
+    "englishTitle": "Homosalate",
+    "spanishTitle": "Homosalato",
+    "description": "El homosalato es un filtro UV-B orgánico soluble. Absorbe la radiación UV-B de unos 280 a 320 nm. La concentración máxima de homosalato es del 7,3 %. Los filtros UV minimizan los efectos no deseados de la radiación UV en la piel y, por tanto, son elementos importantes de los productos de protección solar. Al proteger la piel de las peligrosas radiaciones solares, ayudan a prevenir el envejecimiento prematuro de la piel provocado por la luz y el cáncer de piel. Se distingue entre los filtros UV orgánicos solubles y los basados en pigmentos minerales y/u orgánicos. Mientras que los filtros UV orgánicos solubles absorben la radiación UV, la transforman en calor y forman un escudo protector invisible en la capa superior de la piel, los filtros UV basados en pigmentos reflejan, dispersan y absorben los rayos solares ya en la superficie de la piel.Los filtros UV orgánicos absorben la energía de la parte ultravioleta de la luz en un rango de aproximadamente 280 a 400 nm. En este sentido, la energía del fotón absorbido debe corresponder a la energía necesaria para elevar el electrón de la molécula de la sustancia filtrante de una órbita inferior a una superior. Cuando el electrón vuelve a su órbita original, la energía absorbida se desprende en forma de calor o de radiación de mayor longitud de onda y, por tanto, se vuelve inofensiva. Los filtros UV orgánicos difieren, entre otras cosas, en la posición del rango de absorción, en la fotoestabilidad, en la solubilidad y en la capacidad de penetración. Según la gama de longitudes de onda de la radiación ultravioleta que absorbe el filtro UV, se distingue entre filtros UV-A, UV-B y de banda ancha.",
+    "references": "https://cosmileeurope.eu/"
   },
   {
     "_id": "63dfc54362eea721e486b04e",
@@ -419,7 +454,7 @@
   {
     "_id": "643adcbb4630b1f52ca02faf",
     "englishTitle": "Leontopodium Alpinum Callus Culture Extract",
-    "spanishTitle": "Edelweiss , flor de las nieves, estrella de nieve, flor de nieve, garra de león, leontopodio, mano de león",
+    "spanishTitle": "Edelweiss , flor de las nieves",
     "description": "Se trata de un extracto de células madre de plantas derivado de la famosa flor de montaña, Edelweiss. Se comercializa bajo el nombre comercial de Majestem y el fabricante asegura que tiene una acción visible de lifting en el cuello y el rostro.En sus pruebas in vivo (realizadas en personas reales), la piel flácida del cuello se tensó entre un 10,6% y un 56% en tres semanas. Después de seis semanas, también se levantaron las mejillas y las arrugas de patas de gallo se suavizaron (superficie entre un 11% y un 75%).Además de las afirmaciones del fabricante, la Edelweiss se conoce tradicionalmente por sus propiedades calmantes y se utiliza por ellas. Encontramos un estudio de 2012 que confirma que el extracto de cultivo celular de Edelweiss contiene un activo llamado ácido leontopódico que parece ser responsable de las propiedades antiinflamatorias de la planta.",
     "references": "https://incidecoder.com/"
   },
@@ -601,11 +636,25 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "64500090a2d2a3b22c0bf40b",
+    "englishTitle": "Dipotassium Phosphate",
+    "spanishTitle": "Fosfato Dipotásico",
+    "description": "Controla el pH de los productos cosméticos y también se usa para evitar la corrosión del envase (por ejemplo, debido a la oxidación)",
+    "references": "https://cosmileeurope.eu/"
+  },
+  {
     "_id": "63dfc5b5ed001fb0636bbb74",
     "englishTitle": "Phytolacca Bogotensis Leaf Extract",
     "spanishTitle": "Extracto de hoja de Phytolacca Bogotensis",
     "description": "El extracto de hoja de Phytolacca Bogotensis es un ingrediente obtenido de las hojas de la planta Phytolacca Bogotensis, también conocida como Sangorache. Se encuentra en algunos productos de cuidado personal, como cremas y productos para el cabello. Se utiliza por sus propiedades hidratantes y calmantes en la piel.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "64500136a2d2a3b22c0bf40c",
+    "englishTitle": "Phytosphingosine",
+    "spanishTitle": "N/A",
+    "description": "Mantiene la piel en buenas condiciones",
+    "references": "https://cosmileeurope.eu/"
   },
   {
     "_id": "63dfc5b998ba3d96f432a88b",
@@ -620,6 +669,13 @@
     "spanishTitle": "Ácido poligluconurónico",
     "description": "El ácido poligluconurónico es un polímero sintético utilizado en productos de cuidado personal, como cremas y lociones. Se utiliza como agente hidratante y para mejorar la textura y la consistencia de los productos. También se utiliza para mejorar la absorción de otros ingredientes en la piel.",
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
+  },
+  {
+    "_id": "6450028da2d2a3b22c0bf411",
+    "englishTitle": "Polysorbate 20",
+    "spanishTitle": "Polisorbato 20",
+    "description": "Los tensioactivos son las llamadas sustancias activas para el lavado y son de gran importancia en los cosméticos para la limpieza de la piel y el cabello. Los tensioactivos son sustancias que, debido a su estructura molecular, son capaces de reducir la tensión superficial de un líquido.Esto hace posible que dos líquidos que no se pueden mezclar entre sí, como el aceite y el agua, se mezclen bien. Debido a sus propiedades, los tensioactivos se utilizan de muchas maneras en los cosméticos: pueden limpiar, crear espuma y también actuar como emulsionantes y mezclar sustancias. En los champús, geles de ducha y jabones, por ejemplo, se utilizan tensioactivos para eliminar las partículas de grasa y suciedad del cuerpo con el agua. Los tensioactivos también se utilizan en los dentífricos. En este caso, favorecen la rápida y completa disolución y distribución de la pasta en la boca durante el cepillado dental.Los tensioactivos utilizados en los productos cosméticos se producen principalmente de forma sintética a partir de materias primas vegetales. Los tensioactivos se utilizan a menudo en combinación para cumplir todos los requisitos deseados -como la disolución de la suciedad y la formación de espuma combinadas con una buena compatibilidad con la piel. Así, combinando apropiadamente con un tensioactivo -considerado por separado- con una compatibilidad cutánea desfavorable, pero con muy buenas propiedades de disolución de la suciedad, con un tensioactivo muy suave y respetuoso con la piel, se obtiene un producto con buenas propiedades de limpieza y una compatibilidad cutánea igualmente buena en general.Los emulsionantes se utilizan a menudo en los cosméticos como excipientes. Permiten que componentes que no se pueden mezclar, como el aceite y el agua, formen una emulsión permanentemente estable. De este modo, se pueden utilizar en los productos cosméticos ingredientes activos y de cuidado tanto acuosos como grasos en un solo producto. Los emulsionantes son capaces de hacer esto porque sus moléculas consisten en una parte  lipofílica y otra hidrofílica. Esto les permite reducir la tensión interfacial que existe realmente entre dos sustancias incompatibles, como la grasa y el agua. Los emulsionantes se utilizan sobre todo en cremas, lociones y detergentes. Sin embargo, los emulsionantes son mucho más que sustancias auxiliares que mantienen estable una emulsión. Los ésteres de ácidos grasos a base de azúcar, lecitina o monodistearato de glicerol, por ejemplo, ayudan a mejorar el equilibrio de la humedad de la piel y, por tanto, también se consideran principios activos cosméticos.",
+    "references": "https://cosmileeurope.eu/"
   },
   {
     "_id": "63dfc5c12b7f61f5d2af192c",
@@ -727,11 +783,25 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "644ffdf2a2d2a3b22c0bf409",
+    "englishTitle": "Sodium Hyaluronate",
+    "spanishTitle": "Hialuronato de sodio; Ácido hialurónico, sal de sodio",
+    "description": "El ácido hialurónico se produce de forma natural en el cuerpo humano y es un componente importante de varios tejidos, como la piel y el tejido conectivo. El ácido hialurónico garantiza una piel suave y tersa ya que puede fijar bien el agua. Sin embargo, con el paso de los años, el cuerpo produce mucho menos ácido hialurónico. Por lo tanto, la piel pierde elasticidad con la edad y forma arrugas. Para contrarrestar este proceso, el ácido hialurónico se utiliza a menudo como ingrediente antienvejecimiento en productos como cremas para los ojos, cremas para la piel y el rostro y mascarillas nutritivas. En estos productos, el ácido hialurónico tiene la función de retener la humedad en la piel al fijar el agua en la capa celular superior. De este modo, se pueden reducir los signos visibles del envejecimiento de la piel.",
+    "references": "https://cosmileeurope.eu"
+  },
+  {
     "_id": "642064fa9c2ef8cfaa99cc95",
     "englishTitle": "Sodium Hydroxide",
     "spanishTitle": "Hidróxido de Sodio",
     "description": "El nombre poco elegante para ello es sosa cáustica. Es una sustancia sólida y blanca que es muy alcalina y se usa en pequeñas cantidades para ajustar el pH del producto y dejarlo perfecto.Por ejemplo, en el caso de exfoliantes AHA o BHA, el pH adecuado es súper importante, y se necesitan ajustadores de pH como el hidróxido de sodio.Por cierto, la sosa cáustica no es algo nuevo. Los antiguos egipcios ya la usaban para ayudar a que el aceite y la grasa se convirtieran mágicamente en otra cosa. ¿Puedes adivinar qué? Sí, es jabón. Todavía aparece con frecuencia en la lista de ingredientes de los jabones y otros limpiadores.El hidróxido de sodio en sí mismo es un irritante potente para la piel, pero una vez que reacciona (como suele ser el caso en los productos para el cuidado de la piel, como los exfoliantes), es totalmente inofensivo.",
     "references": "https://incidecoder.com/ingredients/sodium-hydroxide"
+  },
+  {
+    "_id": "644fe4e5a2d2a3b22c0bf408",
+    "englishTitle": "Sodium Lauroyl Lactylate",
+    "spanishTitle": "Sodio Lauroyl Lactylate",
+    "description": "Los emulsionantes se utilizan a menudo en los cosméticos como excipientes. Permiten que componentes que no se pueden mezclar, como el aceite y el agua, formen una emulsión permanentemente estable. De este modo, se pueden utilizar en los productos cosméticos ingredientes activos y de cuidado tanto acuosos como grasos en un solo producto. Los emulsionantes son capaces de hacer esto porque sus moléculas consisten en una parte  lipofílica y otra hidrofílica. Esto les permite reducir la tensión interfacial que existe realmente entre dos sustancias incompatibles, como la grasa y el agua. Los emulsionantes se utilizan sobre todo en cremas, lociones y detergentes. Sin embargo, los emulsionantes son mucho más que sustancias auxiliares que mantienen estable una emulsión. Los ésteres de ácidos grasos a base de azúcar, lecitina o monodistearato de glicerol, por ejemplo, ayudan a mejorar el equilibrio de la humedad de la piel y, por tanto, también se consideran principios activos cosméticos.",
+    "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
     "_id": "63dfc6036b61387d9f11e12f",

@@ -44,12 +44,12 @@
 
       <div class='nav nav-sm nav-pills nav-vertical'>
         <h5 class='nav-subtitle'>Marcas</h5>
-        {{#each brands}}
-          <a class='nav-link d-flex justify-content-between' href='#'>{{this}}
-            <span
-              class='badge text-dark border rounded-pill'
-            >{{this.length}}</span></a>
-
+        {{#each brandProductCounts}}
+          <a class='nav-link d-flex justify-content-between' href='#'>{{@key}}
+            <span class='badge text-dark border rounded-pill'>
+              {{this}}</span></a>
+        {{else}}
+          <p>No products found.</p>
         {{/each}}
       </div>
 

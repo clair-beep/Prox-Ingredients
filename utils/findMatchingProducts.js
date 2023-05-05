@@ -1,6 +1,6 @@
 const Product = require('../models/Product');
 
-async function getMatchingProducts() {
+async function getMatchingProducts(req) {
   let products;
   const searchQuery = req.query.q;
   console.log(`searchQuery: ${searchQuery}`);

@@ -12,8 +12,6 @@ const {
   productPhotoUpload,
 } = require('../controllers/products');
 
-//Main Routes - simplified for now
-
 const router = express.Router({
   mergeParams: true,
 });

@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI);
 
 //Read JSON files
 const products = JSON.parse(
-  fs.readFileSync(`${__dirname}/_data-samples/products.json`, 'utf-8'),
+  fs.readFileSync(`${__dirname}/_data-samples/products-updated.json`, 'utf-8'),
 );
 
 const ingredients = JSON.parse(

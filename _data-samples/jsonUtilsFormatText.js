@@ -9,11 +9,11 @@ function capitalize(str) {
 }
 
 // Read ingredients from ingredients.json file
-const ingredientsData = fs.readFileSync('_data-samples/ingredients.json');
+const ingredientsData = fs.readFileSync('ingredients.json');
 const ingredients = JSON.parse(ingredientsData);
 
 // Read products from products.json file
-const productsData = fs.readFileSync('_data-samples/products.json');
+const productsData = fs.readFileSync('products.json');
 const products = JSON.parse(productsData);
 
 // Map ingredient names to their corresponding IDs
@@ -39,7 +39,4 @@ products.forEach((product) => {
 });
 
 // Write updated products to products-updated.json file
-fs.writeFileSync(
-  '_data-samples/products-updated.json',
-  JSON.stringify(products),
-);
+fs.writeFileSync('products-updated.json', JSON.stringify(products));

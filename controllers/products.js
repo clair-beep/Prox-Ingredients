@@ -17,30 +17,36 @@ const findMatchingProducts = require('../utils/findMatchingProducts');
 // @route GET /v1/categories/:categoriesId/products
 // @access Public
 exports.getProducts = asyncHandler(async (req, res, next) => {
+  //console.log(req);
   let categoryId = req.params.categoryId;
   let products, ingredients, categories;
-
+  //console.log(`categoryId`, categoryId);
   if (categoryId) {
+    //console.log('here we are');
     try {
       products = await Product.find({ category: categoryId });
+      //console.log(`products`, products);
+
       const { mappedIngredients, categoryData } =
         await productService.getIngredientsAndCategories();
-      const { brands } = await productService.getProductData();
+      const { brandProductCounts } = await productService.getProductData();
       ingredients = mappedIngredients;
       categories = categoryData;
+      console.log('productsbyCategory');
 
       const { getMatchingProducts } =
-        await findMatchingProducts.getMatchingProducts();
+        await findMatchingProducts.getMatchingProducts(req);
 
       let latestProducts = await Product.find()
         .sort({ createdAt: -1 })
         .limit(6);
+
       let productData = products.map((product) => product.toJSON());
       let latestProductData = latestProducts.map((product) => product.toJSON());
       return res.render('product-categories', {
         productsbyCategory: productData,
         latestProducts: latestProductData,
-        brands,
+        brandProductCounts,
         ingredients,
         categories,
         getMatchingProducts,
@@ -56,21 +62,22 @@ exports.getProducts = asyncHandler(async (req, res, next) => {
     ingredients = mappedIngredients;
     categories = categoryData;
 
-    const { products, brands } = await productService.getProductData();
+    const { products, brandProductCounts } =
+      await productService.getProductData();
 
     let randomProducts = await Product.aggregate([{ $sample: { size: 9 } }]);
     let latestProducts = await Product.find().sort({ createdAt: -1 }).limit(6);
 
     let productData = products.map((product) => product.toJSON());
     let latestProductData = latestProducts.map((product) => product.toJSON());
-
     return res.render('main', {
       products: productData,
       latestProducts: latestProductData,
       randomProducts,
       categories,
-      brands,
+
       ingredients,
+      brandProductCounts,
     });
   } catch (err) {
     console.log('error');
@@ -90,10 +97,13 @@ exports.getProduct = asyncHandler(async (req, res, next) => {
     product = await Product.findById(id)
       .populate('ingredients')
       .populate('category');
+
+    console.log(`product: ${product}`);
     if (!product) {
       return next(new ErrorResponse('ValidationError'), 401);
     } else {
       const mappedIngredients = sortAndMapIngredientsData(product.ingredients);
+      console.log(`mappedIngredients: ${mappedIngredients}`);
       let productData = {
         id: product._id,
         name: product.name,
@@ -114,7 +124,6 @@ exports.getProduct = asyncHandler(async (req, res, next) => {
       const { brands } = await productService.getProductData();
 
       // limit the number of related products to 3
-      console.log(`relatedProducts: ${relatedProducts}`);
       res.render('product-overview', {
         product: productData,
         ingredients: mappedIngredients,

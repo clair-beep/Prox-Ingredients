@@ -20,6 +20,7 @@ async function getIngredientsAndCategories() {
 }
 
 async function getProductData() {
+  let brandProductCounts = {};
   const products = await Product.find();
   const brands = Array.from(
     new Set(
@@ -29,7 +30,14 @@ async function getProductData() {
       ),
     ),
   );
-  return { products, brands };
+
+  for (let product of products) {
+    let brand =
+      product.brand[0].toUpperCase() + product.brand.slice(1).toLowerCase();
+    brandProductCounts[brand] = brandProductCounts[brand] + 1 || 1;
+  }
+
+  return { products, brands, brandProductCounts };
 }
 
 module.exports = {

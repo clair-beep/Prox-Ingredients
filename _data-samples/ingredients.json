@@ -58,6 +58,13 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "6455808d5fd11d20f7037205",
+    "englishTitle": "BHT",
+    "spanishTitle": "Butilhidroxitolueno o BHT",
+    "description": "Uso como antioxidante para la protección del producto, a menudo junto con el BHA.En el sector cosmético, las fragancias y las mezclas de fragancias también se denominan agentes perfumantes, perfumes en aceites o aceites de perfume. En los productos cosméticos, se declaran con la denominación INCI PARFUM. Se trata de sustancias individuales no diluidas o mezclas de ellas, que pueden proceder de materias primas naturales o ser producidas (semi)sintéticamente. Son materiales de partida para la producción de perfumes, eau de parfum, eau de toilette, eau de cologne y otros productos cosméticos perfumados. El contenido medio de las fragancias en los perfumes es del 15-30 %, en el eau de parfum del 10-14 %, en el eau de toilette del 6-9%, en el eau de cologne del 3-5 %, así como en las cremas para la piel, los champús, los sprays para el cabello y los desodorantes del 0,2-1 % aproximadamente y del 1-3 % en los desodorantes en barra.Los perfumes en aceites incluyen aceites esenciales, resinoides y absolutos. Las fuentes incluyen flores, hojas y tallos, frutas y cáscaras de frutas o raíces de plantas; maderas, hierbas o hierbajos, agujas, resinas y bálsamos. Además, se utilizan compuestos aislados de productos naturales como aldehídos, cetonas, ésteres, alcoholes, etc. (Geraniol, Citronellal, Citral, Eugenol, Menthol), así como fragancias semisintéticas (Citronellol, Geranyl acetate, Jonone) y sintéticas (por ejemplo, alcohol de fenetilo y linalol). Las fragancias de origen animal, como el almizcle y el ámbar gris, se utilizan con menos frecuencia.",
+    "references": "https://cosmileeurope.eu/"
+  },
+  {
     "_id": "63e3f52637aba21f56087e31",
     "englishTitle": "Buteth-3",
     "spanishTitle": "Buteth-3",
@@ -481,6 +488,13 @@
     "references": "https://online.personalcarecouncil.org/jsp/IngredInfoSearchResultPage.jsp"
   },
   {
+    "_id": "64557c675fd11d20f70371f4",
+    "englishTitle": "Meradimate",
+    "spanishTitle": "N/A",
+    "description": "Protege el producto cosmético de los daños causados por la luz UV",
+    "references": "https://cosmileeurope.eu/"
+  },
+  {
     "_id": "63dfc57d69e9ed3cd27e2b40",
     "englishTitle": "Methyl Glucose",
     "spanishTitle": "Metil Glucosa",
@@ -529,6 +543,20 @@
     "spanishTitle": "Niacinamida",
     "description": "La niacinamida es un ingrediente multifuncional para el cuidado de la piel con varios beneficios probados para la piel. Es un gran ingrediente anti-envejecimiento que suaviza las arrugas cuando se usa a una concentración del 4-5%. Además, puede desvanecer manchas marrones cuando se usa solo o en combinación con aminoazúcar, acetil glucosamina.Además, la niacinamida puede aumentar la síntesis de ceramidas, lo que resulta en una barrera cutánea más fuerte y saludable y una mejor hidratación de la piel. También puede ayudar a mejorar varias afecciones de la piel, como el acné, la rosácea y la dermatitis atópica. La niacinamida es un ingrediente versátil que puede beneficiar una amplia gama de tipos de piel y preocupaciones.",
     "references": "https://incidecoder.com/"
+  },
+  {
+    "_id": "64557de65fd11d20f70371f7",
+    "englishTitle": "Octinoxate",
+    "spanishTitle": "Octinoxato",
+    "description": "Octinoxato es un éster de cinamato e ingrediente común en protector solar y otros productos de cuidado de la piel para minimizar el fotodaño del ADN. Fue desarrollado originalmente en la década de 1950 como un filtro orgánico UV-B que absorbe los rayos UV-B del sol. A menudo se combina con nanopartículas u otros liposomas resistentes al agua en formulaciones para aumentar la localización en la epidermis y disminuir el riesgo de absorción percutánea. Su uso en formulaciones farmacéuticas y cosméticas está aprobado por la FDA.",
+    "references": "https://pubchem.ncbi.nlm.nih.gov/"
+  },
+  {
+    "_id": "64557e555fd11d20f70371f8",
+    "englishTitle": "Octocrylene",
+    "spanishTitle": "Octocrileno",
+    "description": "El octocrileno (INCI: OCTOCRYLENE) es un filtro UV-B orgánico soluble. Absorbe los rayos UV-B de unos 280 a 320 nm. La concentración máxima de Octocrilen es del 10 %.Los filtros UV minimizan los efectos no deseados de la radiación UV en la piel y, por tanto, son elementos importantes de los productos de protección solar. Al proteger la piel de las peligrosas radiaciones solares, ayudan a prevenir el envejecimiento prematuro de la piel provocado por la luz y el cáncer de piel. Se distingue entre los filtros UV orgánicos solubles y los basados en pigmentos minerales y/u orgánicos. Mientras que los filtros UV orgánicos solubles absorben la radiación UV, la transforman en calor y forman un escudo protector invisible en la capa superior de la piel, los filtros UV basados en pigmentos reflejan, dispersan y absorben los rayos solares ya en la superficie de la piel.Los filtros UV orgánicos absorben la energía de la parte ultravioleta de la luz en un rango de aproximadamente 280 a 400 nm. En este sentido, la energía del fotón absorbido debe corresponder a la energía necesaria para elevar el electrón de la molécula de la sustancia filtrante de una órbita inferior a una superior. Cuando el electrón vuelve a su órbita original, la energía absorbida se desprende en forma de calor o de radiación de mayor longitud de onda y, por tanto, se vuelve inofensiva.Los filtros UV orgánicos difieren, entre otras cosas, en la posición del rango de absorción, en la fotoestabilidad, en la solubilidad y en la capacidad de penetración. Según la gama de longitudes de onda de la radiación ultravioleta que absorbe el filtro UV, se distingue entre filtros UV-A, UV-B y de banda ancha.",
+    "references": "https://cosmileeurope.eu/"
   },
   {
     "_id": "64204ede2c6f32eed8a36712",
